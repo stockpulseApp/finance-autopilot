@@ -11,15 +11,19 @@ export function AffiliateCard({
   const href = withAffiliateParams(program.url, source);
 
   return (
-    <div className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-5 flex flex-col">
-      <p className="text-xs uppercase text-[var(--muted)]">{program.category.replace(/-/g, " ")}</p>
-      <h3 className="mt-1 text-lg font-semibold">{program.name}</h3>
-      <p className="mt-2 text-sm text-[var(--muted)] flex-1">{program.description}</p>
+    <div className="glass-card flex flex-col rounded-2xl p-6 transition-transform hover:-translate-y-1">
+      <p className="text-xs font-bold uppercase tracking-wider text-[var(--muted)]">
+        {program.category.replace(/-/g, " ")}
+      </p>
+      <h3 className="font-display mt-2 text-xl font-semibold">{program.name}</h3>
+      <p className="mt-3 flex-1 text-sm leading-relaxed text-[var(--muted)]">
+        {program.description}
+      </p>
       <a
         href={href}
         target="_blank"
         rel="sponsored noopener noreferrer"
-        className="mt-4 inline-flex justify-center rounded-lg bg-[var(--accent)] px-4 py-2 text-sm font-semibold text-black no-underline hover:bg-[var(--accent-dim)] hover:text-white"
+        className="btn-primary mt-6 text-center text-sm"
       >
         {program.cta}
       </a>

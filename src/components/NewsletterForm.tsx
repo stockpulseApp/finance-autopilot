@@ -36,12 +36,12 @@ export function NewsletterForm({ compact = false }: { compact?: boolean }) {
         placeholder="you@email.com"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        className="w-full rounded-lg border border-[var(--border)] bg-[#0b0f14] px-4 py-3 text-sm"
+        className="w-full rounded-xl border border-[var(--border)] bg-[var(--background)] px-4 py-3 text-sm text-[var(--foreground)] placeholder:text-[var(--muted)] focus:border-emerald-500/50 focus:outline-none focus:ring-2 focus:ring-emerald-500/20"
       />
       <button
         type="submit"
         disabled={status === "loading"}
-        className="rounded-lg bg-[var(--accent)] px-4 py-3 text-sm font-semibold text-black disabled:opacity-60"
+        className="btn-primary shrink-0 disabled:opacity-60 disabled:transform-none"
       >
         {status === "loading" ? "Joining…" : "Get free guides"}
       </button>
