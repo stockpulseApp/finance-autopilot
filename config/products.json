@@ -18,7 +18,8 @@
       "headline": "Automate saving, investing, and cashflow growth.",
       "description": "8-week implementation system to build your personal money machine.",
       "delivery": "Course portal",
-      "stripePriceId": "price_REPLACE_ME"
+      "stripePriceId": "price_REPLACE_ME",
+      "checkoutUrl": "https://buy.stripe.com/9B628tanTahR63X4x07Re04"
     },
     {
       "slug": "portfolio-cashflow-intensive",
