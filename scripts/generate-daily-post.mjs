@@ -19,7 +19,7 @@ const AFFILIATES_PATH = path.join(ROOT, "config", "affiliates.json");
 const dryRun = process.argv.includes("--dry-run");
 const apiKey = process.env.ANTHROPIC_API_KEY;
 const model =
-  process.env.ANTHROPIC_MODEL || "claude-sonnet-4-20250514";
+  process.env.ANTHROPIC_MODEL || "claude-sonnet-4-5-20250929";
 
 function todayISO() {
   return new Date().toISOString().slice(0, 10);

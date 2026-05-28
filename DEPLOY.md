@@ -14,14 +14,16 @@ Your Vercel team: **Stock Pulse** (`stock-pulse1`)
 
 4. After it is **Ready**, open the new `*.vercel.app` URL (not `stockpulse-web-cy75`).
 
-## Custom domain (Namecheap)
+## Custom domain (Bluehost DNS)
 
-Remove the old A record pointing to `50.6.3.234`, then set:
+Your domain uses **Bluehost** nameservers (`ns1.bluehost.com`). In Bluehost → **Domains** → **DNS** for `wealthybrainiac.com`:
 
-| Type  | Host | Value                 |
-|-------|------|-----------------------|
-| A     | `@`  | `76.76.21.21`         |
-| CNAME | `www`| `cname.vercel-dns.com`|
+| Type | Host | Value |
+|------|------|-------|
+| A    | `@`  | `76.76.21.21` |
+| A    | `www`| `76.76.21.21` |
+
+Remove any old A record pointing to `50.6.3.234`. DNS can take up to 48 hours; often under 1 hour.
 
 In Vercel → **wealthy-brainiac** → **Settings** → **Domains**, add:
 - `wealthybrainiac.com`
@@ -46,7 +48,7 @@ After the site is on GitHub, add this secret under **Settings → Secrets → Ac
 |--------|---------|
 | `ANTHROPIC_API_KEY` | Powers `scripts/daily-growth-pipeline.mjs` (new post every day at 6:00 UTC) |
 
-Optional repo variable: `ANTHROPIC_MODEL` (default `claude-sonnet-4-20250514`).
+Optional repo variable: `ANTHROPIC_MODEL` (default `claude-sonnet-4-5-20250929`).
 
 The workflow `.github/workflows/daily-post.yml` commits new posts and triggers a Vercel redeploy.
 

@@ -10,7 +10,7 @@ const apiKey = process.env.ANTHROPIC_API_KEY;
 const model =
   process.env.SOCIAL_REPURPOSE_MODEL ||
   process.env.ANTHROPIC_MODEL ||
-  "claude-sonnet-4-20250514";
+  "claude-sonnet-4-5-20250929";
 
 function getLatestPostPath() {
   const files = fs
