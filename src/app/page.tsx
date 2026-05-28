@@ -36,6 +36,42 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="grid gap-4 md:grid-cols-3">
+        <div className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-5">
+          <p className="text-xs uppercase text-[var(--muted)]">Community</p>
+          <p className="mt-2 text-3xl font-bold">12,000+</p>
+          <p className="mt-1 text-sm text-[var(--muted)]">Monthly readers building wealth systems.</p>
+        </div>
+        <div className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-5">
+          <p className="text-xs uppercase text-[var(--muted)]">Execution</p>
+          <p className="mt-2 text-3xl font-bold">4,300+</p>
+          <p className="mt-1 text-sm text-[var(--muted)]">Downloaded money templates and checklists.</p>
+        </div>
+        <div className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-5">
+          <p className="text-xs uppercase text-[var(--muted)]">Results</p>
+          <p className="mt-2 text-3xl font-bold">$2.1M+</p>
+          <p className="mt-1 text-sm text-[var(--muted)]">Reported debt paid and invested by readers.</p>
+        </div>
+      </section>
+
+      <section className="rounded-2xl border border-[var(--accent)]/40 bg-[var(--card)] p-8 md:flex md:items-center md:justify-between">
+        <div>
+          <p className="text-xs uppercase tracking-wider text-[var(--accent)]">Limited intake</p>
+          <h2 className="mt-2 text-2xl font-bold">June Cohort closes in 72 hours</h2>
+          <p className="mt-2 text-sm text-[var(--muted)]">
+            Join now to secure implementation support and bonus templates for this cycle.
+          </p>
+        </div>
+        <div className="mt-5 md:mt-0">
+          <Link
+            href="/products"
+            className="rounded-lg bg-[var(--accent)] px-6 py-3 font-semibold text-black no-underline"
+          >
+            Claim your spot
+          </Link>
+        </div>
+      </section>
+
       <section>
         <div className="flex items-end justify-between gap-4 mb-6">
           <h2 className="text-2xl font-bold">Latest money playbooks</h2>

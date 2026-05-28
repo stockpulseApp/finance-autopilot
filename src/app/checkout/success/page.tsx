@@ -3,7 +3,50 @@ import { RevenueCtaPanel } from "@/components/RevenueCtaPanel";
 
 export const metadata = { title: "Purchase Successful" };
 
-export default function CheckoutSuccessPage() {
+function getUpsell(searchParams: Record<string, string | string[] | undefined>) {
+  const course = typeof searchParams.course === "string" ? searchParams.course : "";
+  const product = typeof searchParams.product === "string" ? searchParams.product : "";
+  const key = course || product;
+
+  if (key === "wealth-foundation" || key === "money-os-template-pack") {
+    return {
+      title: "Suggested next step: Wealth Operating System",
+      href: "/products",
+      cta: "Unlock full system",
+    };
+  }
+
+  if (key === "real-estate-starter") {
+    return {
+      title: "Suggested next step: Portfolio & Cashflow Intensive",
+      href: "/products",
+      cta: "Book intensive",
+    };
+  }
+
+  if (key === "credit-mastery") {
+    return {
+      title: "Suggested next step: Money OS Template Pack",
+      href: "/products",
+      cta: "Get templates",
+    };
+  }
+
+  return {
+    title: "Suggested next step: Start your roadmap",
+    href: "/start-here",
+    cta: "Continue",
+  };
+}
+
+export default async function CheckoutSuccessPage({
+  searchParams,
+}: {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}) {
+  const resolved = await searchParams;
+  const upsell = getUpsell(resolved);
+
   return (
     <div className="mx-auto max-w-3xl">
       <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-8">
@@ -13,6 +56,12 @@ export default function CheckoutSuccessPage() {
           Thank you for your purchase. Your onboarding and access instructions should arrive by
           email shortly. If not, check spam or contact support.
         </p>
+        <div className="mt-6 rounded-lg border border-[var(--border)] bg-[#0f1520] p-4">
+          <p className="text-sm font-semibold">{upsell.title}</p>
+          <Link href={upsell.href} className="mt-2 inline-block text-sm text-[var(--accent)]">
+            {upsell.cta} {"->"}
+          </Link>
+        </div>
         <div className="mt-8 flex flex-wrap gap-4">
           <Link
             href="/start-here"

@@ -5,6 +5,7 @@ import { useState } from "react";
 export function NewsletterForm({ compact = false }: { compact?: boolean }) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "ok" | "error">("idle");
+  const [leadMagnetUrl, setLeadMagnetUrl] = useState<string>("");
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -16,6 +17,10 @@ export function NewsletterForm({ compact = false }: { compact?: boolean }) {
         body: JSON.stringify({ email }),
       });
       if (!res.ok) throw new Error("subscribe failed");
+      const data = (await res.json()) as { leadMagnetUrl?: string };
+      if (data.leadMagnetUrl) {
+        setLeadMagnetUrl(data.leadMagnetUrl);
+      }
       setStatus("ok");
       setEmail("");
     } catch {
@@ -41,7 +46,14 @@ export function NewsletterForm({ compact = false }: { compact?: boolean }) {
         {status === "loading" ? "Joining…" : "Get free guides"}
       </button>
       {status === "ok" && (
-        <p className="text-sm text-[var(--accent)]">You&apos;re in — check your inbox.</p>
+        <div className="text-sm text-[var(--accent)] space-y-1">
+          <p>You&apos;re in — check your inbox.</p>
+          {leadMagnetUrl && (
+            <a href={leadMagnetUrl} className="underline">
+              Download your free Wealth Sprint checklist
+            </a>
+          )}
+        </div>
       )}
       {status === "error" && (
         <p className="text-sm text-red-400">

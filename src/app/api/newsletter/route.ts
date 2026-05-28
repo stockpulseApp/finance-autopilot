@@ -12,7 +12,11 @@ export async function POST(request: Request) {
   if (!apiKey || !formId) {
     // Dev-friendly: log and succeed so UI can be tested
     console.log("[newsletter] subscribe (not wired):", email);
-    return NextResponse.json({ ok: true, mode: "stub" });
+    return NextResponse.json({
+      ok: true,
+      mode: "stub",
+      leadMagnetUrl: "/lead-magnets/wealth-sprint-checklist.txt",
+    });
   }
 
   const res = await fetch(
@@ -28,5 +32,8 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Provider error" }, { status: 502 });
   }
 
-  return NextResponse.json({ ok: true });
+  return NextResponse.json({
+    ok: true,
+    leadMagnetUrl: "/lead-magnets/wealth-sprint-checklist.txt",
+  });
 }
