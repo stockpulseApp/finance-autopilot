@@ -8,7 +8,11 @@
       "level": "Beginner",
       "modules": 8,
       "description": "A step-by-step system to automate savings, kill high-interest debt, and start investing with confidence.",
-      "outcomes": ["Build a budget you won't quit", "Set up automatic saving and investing", "Pick your first index fund portfolio"],
+      "outcomes": [
+        "Build a budget you won't quit",
+        "Set up automatic saving and investing",
+        "Pick your first index fund portfolio"
+      ],
       "stripePriceId": "price_REPLACE_ME",
       "checkoutUrl": "https://buy.stripe.com/7sY3cx8fL3Ttdwpd3w7Re01"
     },
@@ -20,7 +24,11 @@
       "level": "Intermediate",
       "modules": 10,
       "description": "Learn cash flow, cap rate, and due diligence — with spreadsheets and checklists included.",
-      "outcomes": ["Run cash-flow analysis on any rental", "Spot red flags before you offer", "Decide rent vs buy with numbers"],
+      "outcomes": [
+        "Run cash-flow analysis on any rental",
+        "Spot red flags before you offer",
+        "Decide rent vs buy with numbers"
+      ],
       "stripePriceId": "price_REPLACE_ME",
       "checkoutUrl": "https://buy.stripe.com/28E6oJ67DfCb0JDfbE7Re02"
     },
@@ -32,7 +40,11 @@
       "level": "Beginner",
       "modules": 6,
       "description": "Optimize utilization, disputes, and card strategy without carrying balances.",
-      "outcomes": ["Understand what moves your score", "Design a card lineup for your goals", "Avoid fees and interest traps"],
+      "outcomes": [
+        "Understand what moves your score",
+        "Design a card lineup for your goals",
+        "Avoid fees and interest traps"
+      ],
       "stripePriceId": "price_REPLACE_ME",
       "checkoutUrl": "https://buy.stripe.com/dRmaEZeE99dNgIB6F87Re03"
     },
@@ -44,9 +56,13 @@
       "level": "Intermediate",
       "modules": 7,
       "description": "Legal strategies for W-2 earners, freelancers, and investors to keep more of what you make.",
-      "outcomes": ["Pick the right account types", "Plan estimated taxes", "Harvest losses intelligently"],
+      "outcomes": [
+        "Pick the right account types",
+        "Plan estimated taxes",
+        "Harvest losses intelligently"
+      ],
       "stripePriceId": "price_REPLACE_ME",
-      "checkoutUrl": "https://buy.stripe.com/PLACEHOLDER_COURSE_TAX"
+      "checkoutUrl": "https://buy.stripe.com/4gMfZhbFr29S0Jd5Hqd3i0i"
     },
     {
       "slug": "side-income-accelerator",
@@ -56,9 +72,13 @@
       "level": "Beginner",
       "modules": 9,
       "description": "From zero to $2k/month with services, digital products, or freelancing.",
-      "outcomes": ["Validate a profitable offer", "Price and package services", "Land first 5 clients"],
+      "outcomes": [
+        "Validate a profitable offer",
+        "Price and package services",
+        "Land first 5 clients"
+      ],
       "stripePriceId": "price_REPLACE_ME",
-      "checkoutUrl": "https://buy.stripe.com/PLACEHOLDER_COURSE_SIDE"
+      "checkoutUrl": "https://buy.stripe.com/28EbJ1aBnaGo9fJb1Kd3i0j"
     },
     {
       "slug": "crypto-fundamentals",
@@ -68,9 +88,13 @@
       "level": "Beginner",
       "modules": 6,
       "description": "Bitcoin, Ethereum, custody, and portfolio sizing without hype.",
-      "outcomes": ["Understand core assets", "Set risk rules", "Self-custody safely"],
+      "outcomes": [
+        "Understand core assets",
+        "Set risk rules",
+        "Self-custody safely"
+      ],
       "stripePriceId": "price_REPLACE_ME",
-      "checkoutUrl": "https://buy.stripe.com/PLACEHOLDER_COURSE_CRYPTO"
+      "checkoutUrl": "https://buy.stripe.com/eVqeVdfVHeWE1Nhfi0d3i0k"
     },
     {
       "slug": "fire-fast-track",
@@ -80,9 +104,13 @@
       "level": "Advanced",
       "modules": 11,
       "description": "Coast FIRE, savings rate math, and withdrawal planning for early retirement.",
-      "outcomes": ["Calculate your FIRE number", "Optimize savings rate", "Build withdrawal plan"],
+      "outcomes": [
+        "Calculate your FIRE number",
+        "Optimize savings rate",
+        "Build withdrawal plan"
+      ],
       "stripePriceId": "price_REPLACE_ME",
-      "checkoutUrl": "https://buy.stripe.com/PLACEHOLDER_COURSE_FIRE"
+      "checkoutUrl": "https://buy.stripe.com/8x23cvdNz3dWajNgm4d3i0l"
     },
     {
       "slug": "rental-property-pro",
@@ -92,9 +120,13 @@
       "level": "Advanced",
       "modules": 12,
       "description": "Scale from one rental to a small portfolio with systems and financing.",
-      "outcomes": ["Underwrite deals fast", "Manage contractors", "Refinance strategically"],
+      "outcomes": [
+        "Underwrite deals fast",
+        "Manage contractors",
+        "Refinance strategically"
+      ],
       "stripePriceId": "price_REPLACE_ME",
-      "checkoutUrl": "https://buy.stripe.com/PLACEHOLDER_COURSE_RENTAL"
+      "checkoutUrl": "https://buy.stripe.com/3cIfZhbFr6q8gIb1rad3i0m"
     }
   ]
 }

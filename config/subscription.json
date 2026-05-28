@@ -8,7 +8,7 @@
       "price": 19,
       "interval": "month",
       "badge": "Most popular",
-      "checkoutUrl": "https://buy.stripe.com/PLACEHOLDER_PRO_MONTHLY",
+      "checkoutUrl": "https://buy.stripe.com/3cI8wPeRDcOw63x8TCd3i00",
       "features": [
         "Daily premium guides (AI + editorial)",
         "Weekly deal digest email",
@@ -23,7 +23,7 @@
       "price": 149,
       "interval": "year",
       "badge": "Save 35%",
-      "checkoutUrl": "https://buy.stripe.com/PLACEHOLDER_PRO_ANNUAL",
+      "checkoutUrl": "https://buy.stripe.com/7sY5kD7pb4i063x5Hqd3i01",
       "features": [
         "Everything in Pro Monthly",
         "2 months free vs monthly",
@@ -38,7 +38,7 @@
       "price": 399,
       "interval": "year",
       "badge": "For serious builders",
-      "checkoutUrl": "https://buy.stripe.com/PLACEHOLDER_ELITE_ANNUAL",
+      "checkoutUrl": "https://buy.stripe.com/4gM6oHcJv5m44Zt9XGd3i02",
       "features": [
         "Everything in Pro Annual",
         "Quarterly group Q&A calls",

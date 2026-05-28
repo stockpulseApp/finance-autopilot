@@ -8,7 +8,8 @@
       "headline": "Plug-and-play budget, debt, and investing trackers.",
       "description": "Notion + Google Sheets system for daily money control with video walkthrough.",
       "delivery": "Instant download",
-      "stripePriceId": "price_1TbtRyRKSrgPXv3ELiX9Huwg"
+      "stripePriceId": "price_1TbtRyRKSrgPXv3ELiX9Huwg",
+      "checkoutUrl": "https://buy.stripe.com/28E9AT24R8yg9fJ7Pyd3i08"
     },
     {
       "slug": "wealth-operating-system",
@@ -39,7 +40,7 @@
       "headline": "Avalanche and snowball planners with payoff timelines.",
       "description": "Spreadsheet + PDF workbook with negotiation scripts and progress dashboards.",
       "delivery": "Instant download",
-      "checkoutUrl": "https://buy.stripe.com/PLACEHOLDER_DEBT_WORKBOOK"
+      "checkoutUrl": "https://buy.stripe.com/8x29AT24R6q80Jdfi0d3i09"
     },
     {
       "slug": "investing-starter-kit",
@@ -49,7 +50,7 @@
       "headline": "Broker comparison, allocation models, and first-buy checklist.",
       "description": "Everything to open accounts and automate your first index portfolio.",
       "delivery": "Instant download",
-      "checkoutUrl": "https://buy.stripe.com/PLACEHOLDER_INVEST_KIT"
+      "checkoutUrl": "https://buy.stripe.com/5kQfZheRD4i04Zt0n6d3i0a"
     },
     {
       "slug": "rental-analyzer-pro",
@@ -59,7 +60,7 @@
       "headline": "Cash flow, cap rate, and BRRRR calculators in one sheet.",
       "description": "Analyze any deal in under 15 minutes with video examples.",
       "delivery": "Instant download",
-      "checkoutUrl": "https://buy.stripe.com/PLACEHOLDER_RENTAL"
+      "checkoutUrl": "https://buy.stripe.com/fZu8wP38V5m42Rlfi0d3i0b"
     },
     {
       "slug": "tax-optimizer-pack",
@@ -69,7 +70,7 @@
       "headline": "Account ordering, withholding, and quarterly estimate templates.",
       "description": "For W-2 earners with side income and investors.",
       "delivery": "Instant download",
-      "checkoutUrl": "https://buy.stripe.com/PLACEHOLDER_TAX"
+      "checkoutUrl": "https://buy.stripe.com/6oUbJ1eRD01KbnRfi0d3i0c"
     },
     {
       "slug": "side-hustle-launch-kit",
@@ -79,7 +80,7 @@
       "headline": "Validate, price, and land your first paying clients.",
       "description": "Proposal templates, pricing calculator, and 30-day launch calendar.",
       "delivery": "Instant download",
-      "checkoutUrl": "https://buy.stripe.com/PLACEHOLDER_SIDE"
+      "checkoutUrl": "https://buy.stripe.com/aFa7sL38V6q8fE7d9Sd3i0d"
     },
     {
       "slug": "credit-optimizer-spreadsheet",
@@ -89,7 +90,7 @@
       "headline": "Card lineup planner and utilization tracker.",
       "description": "Maximize rewards while protecting your score.",
       "delivery": "Instant download",
-      "checkoutUrl": "https://buy.stripe.com/PLACEHOLDER_CREDIT"
+      "checkoutUrl": "https://buy.stripe.com/14A3cveRD5m4gIb6Lud3i0e"
     },
     {
       "slug": "net-worth-dashboard",
@@ -99,7 +100,7 @@
       "headline": "Track assets, liabilities, and monthly momentum.",
       "description": "Beautiful Sheets dashboard with trend charts and goal tracking.",
       "delivery": "Instant download",
-      "checkoutUrl": "https://buy.stripe.com/PLACEHOLDER_NW"
+      "checkoutUrl": "https://buy.stripe.com/7sY28r10NbKseA37Pyd3i0f"
     },
     {
       "slug": "crypto-safety-bundle",
@@ -109,7 +110,7 @@
       "headline": "Custody checklists, position sizing, and tax log templates.",
       "description": "For investors who want rules before size.",
       "delivery": "Instant download",
-      "checkoutUrl": "https://buy.stripe.com/PLACEHOLDER_CRYPTO"
+      "checkoutUrl": "https://buy.stripe.com/fZu3cv5h301KcrV4Dmd3i0g"
     },
     {
       "slug": "retirement-runway-planner",
@@ -119,7 +120,7 @@
       "headline": "FIRE math, withdrawal order, and scenario modeling.",
       "description": "Model lean, barista, and full FIRE paths with sensitivity tables.",
       "delivery": "Instant download",
-      "checkoutUrl": "https://buy.stripe.com/PLACEHOLDER_RETIRE"
+      "checkoutUrl": "https://buy.stripe.com/8x2bJ15h3cOwajNedWd3i0h"
     }
   ]
 }
