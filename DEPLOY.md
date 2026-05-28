@@ -38,6 +38,24 @@ npx vercel@latest env add NEXT_PUBLIC_SITE_URL production
 npx vercel@latest deploy --prod
 ```
 
+## Autonomous daily blog (GitHub Actions)
+
+After the site is on GitHub, add this secret under **Settings → Secrets → Actions**:
+
+| Secret | Purpose |
+|--------|---------|
+| `ANTHROPIC_API_KEY` | Powers `scripts/daily-growth-pipeline.mjs` (new post every day at 6:00 UTC) |
+
+Optional repo variable: `ANTHROPIC_MODEL` (default `claude-sonnet-4-20250514`).
+
+The workflow `.github/workflows/daily-post.yml` commits new posts and triggers a Vercel redeploy.
+
+## Monetization checklist
+
+1. **Stripe Payment Links** — replace `PLACEHOLDER_*` URLs in `config/subscription.json`, `config/guides.json`, and any products/courses.
+2. **Affiliate URLs** — swap `example.com` links in `config/affiliates.json` with your real tracking links.
+3. **Vercel env** — `NEXT_PUBLIC_SITE_URL`, `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET` (if using API checkout).
+
 ## Automated script (needs token once)
 
 Create a token at https://vercel.com/account/tokens, then:

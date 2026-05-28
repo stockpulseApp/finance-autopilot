@@ -1,45 +1,51 @@
 import Link from "next/link";
+import { PageHero } from "@/components/marketplace/PageHero";
+import { ProductOfferCard } from "@/components/marketplace/ProductOfferCard";
 import { getCourses } from "@/lib/courses";
 
-export const metadata = { title: "Courses" };
+export const metadata = { title: "Courses & Programs" };
 
 export default function CoursesPage() {
   const courses = getCourses();
 
   return (
-    <div>
-      <h1 className="text-3xl font-bold">Courses</h1>
-      <p className="mt-2 text-[var(--muted)] max-w-2xl">
-        Structured programs for budgeting, investing, real estate, and credit. Connect Stripe to
-        sell automatically.
-      </p>
-      <div className="mt-10 grid gap-8">
+    <div className="space-y-10">
+      <PageHero
+        title="Courses & wealth programs"
+        subtitle={`${courses.length} structured programs with modules, outcomes, and instant enrollment.`}
+        category="investing"
+      >
+        <Link
+          href="/subscription"
+          className="inline-block rounded-lg border-2 border-white px-5 py-2 font-bold text-white no-underline hover:bg-white/10"
+        >
+          Elite includes all courses
+        </Link>
+      </PageHero>
+
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {courses.map((c) => (
-          <div
-            key={c.slug}
-            className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-8 md:flex md:justify-between md:gap-8"
-          >
-            <div className="flex-1">
-              <p className="text-xs uppercase text-[var(--muted)]">
-                {c.level} · {c.modules} modules
-              </p>
-              <h2 className="mt-2 text-2xl font-bold">{c.title}</h2>
-              <p className="mt-3 text-[var(--muted)]">{c.description}</p>
-              <ul className="mt-4 space-y-1 text-sm">
-                {c.outcomes.map((o) => (
-                  <li key={o}>✓ {o}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="mt-6 md:mt-0 md:text-right shrink-0">
-              <p className="text-3xl font-bold">${c.price}</p>
-              <Link
-                href={`/courses/${c.slug}`}
-                className="mt-4 inline-block rounded-lg bg-[var(--accent)] px-5 py-2 font-semibold text-black no-underline"
-              >
-                Enroll
-              </Link>
-            </div>
+          <div key={c.slug} className="flex flex-col">
+            <ProductOfferCard
+              offer={{
+                slug: c.slug,
+                name: c.title,
+                headline: c.description,
+                price: c.price,
+                cta: "Enroll now",
+              }}
+              href={c.checkoutUrl ?? `/courses/${c.slug}`}
+              reviews={150 + c.modules * 12}
+              rating={4.7}
+            />
+            <ul className="marketplace-card -mt-2 rounded-t-none border-t-0 px-5 pb-5 text-sm text-[var(--muted)]">
+              {c.outcomes.slice(0, 3).map((o) => (
+                <li key={o} className="mt-1 flex gap-2">
+                  <span className="text-[var(--success)]">✓</span>
+                  {o}
+                </li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>

@@ -2,49 +2,364 @@
   "disclosure": "We may earn a commission when you use links on this site. This supports our free content at no extra cost to you.",
   "programs": [
     {
-      "id": "chase-sapphire",
+      "id": "chase-sapphire-preferred",
       "name": "Chase Sapphire Preferred",
       "category": "credit-cards",
-      "description": "Popular travel rewards card for beginners with good credit.",
+      "description": "Premium travel rewards card with 60k+ point welcome offers for qualified applicants.",
       "cta": "Compare offer",
-      "url": "https://example.com/affiliate/chase-sapphire?ref=YOUR_ID",
-      "featured": true
+      "featured": true,
+      "url": "https://example.com/go/chase-sapphire-preferred?ref=wealthybrainiac"
+    },
+    {
+      "id": "chase-freedom-unlimited",
+      "name": "Chase Freedom Unlimited",
+      "category": "credit-cards",
+      "description": "Flat cash back on every purchase with no annual fee.",
+      "cta": "See rates",
+      "featured": false,
+      "url": "https://example.com/go/chase-freedom-unlimited?ref=wealthybrainiac"
+    },
+    {
+      "id": "amex-gold",
+      "name": "American Express Gold",
+      "category": "credit-cards",
+      "description": "Dining and grocery rewards powerhouse for everyday spend.",
+      "cta": "View offer",
+      "featured": true,
+      "url": "https://example.com/go/amex-gold?ref=wealthybrainiac"
+    },
+    {
+      "id": "citi-double-cash",
+      "name": "Citi Double Cash",
+      "category": "credit-cards",
+      "description": "2% cash back on all purchases — simple and effective.",
+      "cta": "Apply now",
+      "featured": false,
+      "url": "https://example.com/go/citi-double-cash?ref=wealthybrainiac"
+    },
+    {
+      "id": "capital-one-venture",
+      "name": "Capital One Venture",
+      "category": "credit-cards",
+      "description": "Flexible travel miles with easy redemption options.",
+      "cta": "Compare",
+      "featured": false,
+      "url": "https://example.com/go/capital-one-venture?ref=wealthybrainiac"
     },
     {
       "id": "fidelity-brokerage",
-      "name": "Fidelity Brokerage Account",
+      "name": "Fidelity Brokerage",
       "category": "investing",
-      "description": "Low-cost index funds and retirement accounts.",
+      "description": "Zero-fee index funds, IRAs, and industry-leading research tools.",
       "cta": "Open account",
-      "url": "https://example.com/affiliate/fidelity?ref=YOUR_ID",
-      "featured": true
+      "featured": true,
+      "url": "https://example.com/go/fidelity-brokerage?ref=wealthybrainiac"
+    },
+    {
+      "id": "schwab-brokerage",
+      "name": "Charles Schwab",
+      "category": "investing",
+      "description": "Commission-free stocks and ETFs with excellent customer service.",
+      "cta": "Start investing",
+      "featured": true,
+      "url": "https://example.com/go/schwab-brokerage?ref=wealthybrainiac"
+    },
+    {
+      "id": "vanguard",
+      "name": "Vanguard",
+      "category": "investing",
+      "description": "Low-cost index funds built for long-term wealth builders.",
+      "cta": "Open account",
+      "featured": false,
+      "url": "https://example.com/go/vanguard?ref=wealthybrainiac"
+    },
+    {
+      "id": "m1-finance",
+      "name": "M1 Finance",
+      "category": "investing",
+      "description": "Automated pie investing with fractional shares and borrowing.",
+      "cta": "Get started",
+      "featured": false,
+      "url": "https://example.com/go/m1-finance?ref=wealthybrainiac"
+    },
+    {
+      "id": "robinhood",
+      "name": "Robinhood",
+      "category": "investing",
+      "description": "Mobile-first trading with fractional shares and options.",
+      "cta": "Sign up",
+      "featured": false,
+      "url": "https://example.com/go/robinhood?ref=wealthybrainiac"
+    },
+    {
+      "id": "etrade",
+      "name": "E*TRADE",
+      "category": "investing",
+      "description": "Full-service brokerage with powerful trading platforms.",
+      "cta": "Compare",
+      "featured": false,
+      "url": "https://example.com/go/etrade?ref=wealthybrainiac"
     },
     {
       "id": "fundrise",
       "name": "Fundrise",
       "category": "real-estate",
-      "description": "Fractional real estate investing for smaller portfolios.",
+      "description": "Fractional real estate investing starting at low minimums.",
       "cta": "Learn more",
-      "url": "https://example.com/affiliate/fundrise?ref=YOUR_ID",
-      "featured": false
+      "featured": true,
+      "url": "https://example.com/go/fundrise?ref=wealthybrainiac"
     },
     {
-      "id": "policygenius",
-      "name": "Policygenius",
-      "category": "insurance",
-      "description": "Compare term life and other insurance quotes.",
+      "id": "roofstock",
+      "name": "Roofstock",
+      "category": "real-estate",
+      "description": "Buy cash-flowing rental properties with vetted data.",
+      "cta": "Browse rentals",
+      "featured": false,
+      "url": "https://example.com/go/roofstock?ref=wealthybrainiac"
+    },
+    {
+      "id": "airbnb-host",
+      "name": "Airbnb Hosting",
+      "category": "real-estate",
+      "description": "Monetize spare space or build a short-term rental business.",
+      "cta": "Start hosting",
+      "featured": false,
+      "url": "https://example.com/go/airbnb-host?ref=wealthybrainiac"
+    },
+    {
+      "id": "lendingtree-mortgage",
+      "name": "LendingTree Mortgages",
+      "category": "real-estate",
+      "description": "Compare mortgage rates from multiple lenders in minutes.",
       "cta": "Get quotes",
-      "url": "https://example.com/affiliate/policygenius?ref=YOUR_ID",
-      "featured": false
+      "featured": false,
+      "url": "https://example.com/go/lendingtree-mortgage?ref=wealthybrainiac"
     },
     {
       "id": "ynab",
       "name": "YNAB",
       "category": "personal-finance",
-      "description": "Budgeting app built around giving every dollar a job.",
-      "cta": "Try YNAB",
-      "url": "https://example.com/affiliate/ynab?ref=YOUR_ID",
-      "featured": true
+      "description": "Zero-based budgeting app that gives every dollar a job.",
+      "cta": "Try free",
+      "featured": true,
+      "url": "https://example.com/go/ynab?ref=wealthybrainiac"
+    },
+    {
+      "id": "monarch-money",
+      "name": "Monarch Money",
+      "category": "personal-finance",
+      "description": "Modern net worth tracking and collaborative budgeting.",
+      "cta": "Start trial",
+      "featured": false,
+      "url": "https://example.com/go/monarch-money?ref=wealthybrainiac"
+    },
+    {
+      "id": "empower-dashboard",
+      "name": "Empower (Personal Capital)",
+      "category": "personal-finance",
+      "description": "Free net worth dashboard and retirement planning tools.",
+      "cta": "Link accounts",
+      "featured": false,
+      "url": "https://example.com/go/empower-dashboard?ref=wealthybrainiac"
+    },
+    {
+      "id": "mint-alternative",
+      "name": "Copilot Money",
+      "category": "personal-finance",
+      "description": "AI-powered spending insights for Apple ecosystem users.",
+      "cta": "Try app",
+      "featured": false,
+      "url": "https://example.com/go/mint-alternative?ref=wealthybrainiac"
+    },
+    {
+      "id": "coinbase",
+      "name": "Coinbase",
+      "category": "crypto",
+      "description": "Beginner-friendly crypto exchange with recurring buys.",
+      "cta": "Create account",
+      "featured": true,
+      "url": "https://example.com/go/coinbase?ref=wealthybrainiac"
+    },
+    {
+      "id": "kraken",
+      "name": "Kraken",
+      "category": "crypto",
+      "description": "Established exchange with strong security track record.",
+      "cta": "Sign up",
+      "featured": false,
+      "url": "https://example.com/go/kraken?ref=wealthybrainiac"
+    },
+    {
+      "id": "ledger-wallet",
+      "name": "Ledger Hardware Wallet",
+      "category": "crypto",
+      "description": "Cold storage for long-term crypto self-custody.",
+      "cta": "Shop wallets",
+      "featured": false,
+      "url": "https://example.com/go/ledger-wallet?ref=wealthybrainiac"
+    },
+    {
+      "id": "gemini-credit",
+      "name": "Gemini Credit Card",
+      "category": "crypto",
+      "description": "Earn crypto rewards on everyday purchases.",
+      "cta": "View card",
+      "featured": false,
+      "url": "https://example.com/go/gemini-credit?ref=wealthybrainiac"
+    },
+    {
+      "id": "policygenius",
+      "name": "Policygenius",
+      "category": "insurance",
+      "description": "Compare term life insurance quotes from top carriers.",
+      "cta": "Get quotes",
+      "featured": true,
+      "url": "https://example.com/go/policygenius?ref=wealthybrainiac"
+    },
+    {
+      "id": "lemonade-insurance",
+      "name": "Lemonade Insurance",
+      "category": "insurance",
+      "description": "Fast renters and home insurance with digital claims.",
+      "cta": "Get price",
+      "featured": false,
+      "url": "https://example.com/go/lemonade-insurance?ref=wealthybrainiac"
+    },
+    {
+      "id": "haven-life",
+      "name": "Haven Life",
+      "category": "insurance",
+      "description": "Online term life insurance backed by MassMutual.",
+      "cta": "Check rate",
+      "featured": false,
+      "url": "https://example.com/go/haven-life?ref=wealthybrainiac"
+    },
+    {
+      "id": "sofi-refinance",
+      "name": "SoFi Student Loan Refinance",
+      "category": "debt",
+      "description": "Lower your student loan rate with member benefits.",
+      "cta": "Check rate",
+      "featured": true,
+      "url": "https://example.com/go/sofi-refinance?ref=wealthybrainiac"
+    },
+    {
+      "id": "national-debt-relief",
+      "name": "National Debt Relief",
+      "category": "debt",
+      "description": "Debt settlement program for overwhelming unsecured debt.",
+      "cta": "Free consult",
+      "featured": false,
+      "url": "https://example.com/go/national-debt-relief?ref=wealthybrainiac"
+    },
+    {
+      "id": "upstart-loans",
+      "name": "Upstart Personal Loans",
+      "category": "debt",
+      "description": "AI-powered personal loans for consolidation.",
+      "cta": "Check rate",
+      "featured": false,
+      "url": "https://example.com/go/upstart-loans?ref=wealthybrainiac"
+    },
+    {
+      "id": "turbotax",
+      "name": "TurboTax",
+      "category": "taxes",
+      "description": "File federal and state returns with guided support.",
+      "cta": "Start return",
+      "featured": true,
+      "url": "https://example.com/go/turbotax?ref=wealthybrainiac"
+    },
+    {
+      "id": "hr-block",
+      "name": "H&R Block",
+      "category": "taxes",
+      "description": "Online and in-person tax prep with audit support.",
+      "cta": "Compare plans",
+      "featured": false,
+      "url": "https://example.com/go/hr-block?ref=wealthybrainiac"
+    },
+    {
+      "id": "taxact",
+      "name": "TaxAct",
+      "category": "taxes",
+      "description": "Affordable DIY tax software for simple to moderate returns.",
+      "cta": "See pricing",
+      "featured": false,
+      "url": "https://example.com/go/taxact?ref=wealthybrainiac"
+    },
+    {
+      "id": "fiverr-freelance",
+      "name": "Fiverr",
+      "category": "side-income",
+      "description": "Sell digital services and skills on a global marketplace.",
+      "cta": "Start selling",
+      "featured": false,
+      "url": "https://example.com/go/fiverr-freelance?ref=wealthybrainiac"
+    },
+    {
+      "id": "upwork",
+      "name": "Upwork",
+      "category": "side-income",
+      "description": "Freelance contracts for writing, dev, design, and ops.",
+      "cta": "Create profile",
+      "featured": true,
+      "url": "https://example.com/go/upwork?ref=wealthybrainiac"
+    },
+    {
+      "id": "shopify-store",
+      "name": "Shopify",
+      "category": "side-income",
+      "description": "Launch an e-commerce store with payments built in.",
+      "cta": "Start trial",
+      "featured": false,
+      "url": "https://example.com/go/shopify-store?ref=wealthybrainiac"
+    },
+    {
+      "id": "amazon-associates",
+      "name": "Amazon Associates",
+      "category": "side-income",
+      "description": "Earn commissions promoting products you recommend.",
+      "cta": "Join program",
+      "featured": false,
+      "url": "https://example.com/go/amazon-associates?ref=wealthybrainiac"
+    },
+    {
+      "id": "betterment",
+      "name": "Betterment",
+      "category": "retirement",
+      "description": "Robo-advisor for IRAs and taxable automated investing.",
+      "cta": "Open IRA",
+      "featured": true,
+      "url": "https://example.com/go/betterment?ref=wealthybrainiac"
+    },
+    {
+      "id": "wealthfront",
+      "name": "Wealthfront",
+      "category": "retirement",
+      "description": "Automated investing plus high-yield cash account.",
+      "cta": "Get started",
+      "featured": false,
+      "url": "https://example.com/go/wealthfront?ref=wealthybrainiac"
+    },
+    {
+      "id": "target-date-funds",
+      "name": "Vanguard Target Retirement",
+      "category": "retirement",
+      "description": "Set-and-forget retirement funds by target year.",
+      "cta": "Learn more",
+      "featured": false,
+      "url": "https://example.com/go/target-date-funds?ref=wealthybrainiac"
+    },
+    {
+      "id": "headspace-money",
+      "name": "Wealth affirmations bundle",
+      "category": "mindset",
+      "description": "Mindset routines paired with money habit stacking.",
+      "cta": "Try free",
+      "featured": false,
+      "url": "https://example.com/go/headspace-money?ref=wealthybrainiac"
     }
   ]
 }

@@ -4,11 +4,12 @@ import { MobileNav } from "./MobileNav";
 
 const nav = [
   { href: "/deals", label: "Deals" },
-  { href: "/categories", label: "Destinations" },
+  { href: "/categories", label: "Topics" },
   { href: "/blog", label: "Guides" },
-  { href: "/products", label: "Packages" },
+  { href: "/guides", label: "Downloads" },
+  { href: "/products", label: "Products" },
   { href: "/courses", label: "Courses" },
-  { href: "/tools", label: "Tools" },
+  { href: "/subscription", label: "Pro" },
 ];
 
 export function Header() {

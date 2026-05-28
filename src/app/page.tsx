@@ -5,7 +5,7 @@ import { DealOfferCard } from "@/components/marketplace/DealOfferCard";
 import { CategoryTile } from "@/components/marketplace/CategoryTile";
 import { GuideOfferCard } from "@/components/marketplace/GuideOfferCard";
 import { ProductOfferCard } from "@/components/marketplace/ProductOfferCard";
-import { getFeaturedPosts, getAllPosts } from "@/lib/posts";
+import { getAllPosts } from "@/lib/posts";
 import { getAffiliatePrograms, getFeaturedAffiliates } from "@/lib/affiliates";
 import { getProducts } from "@/lib/products";
 import { getCourses } from "@/lib/courses";
@@ -15,7 +15,7 @@ import site from "../../config/site.json";
 export default function HomePage() {
   const featuredDeals = getFeaturedAffiliates();
   const allDeals = getAffiliatePrograms();
-  const posts = getFeaturedPosts(8);
+  const posts = getAllPosts().slice(0, 12);
   const products = getProducts();
   const courses = getCourses().filter((c) => c.checkoutUrl?.startsWith("https://"));
 
@@ -45,8 +45,8 @@ export default function HomePage() {
             See all deals →
           </Link>
         </div>
-        <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-hide md:grid md:grid-cols-3 md:overflow-visible">
-          {featuredDeals.map((deal, i) => (
+        <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-hide lg:grid lg:grid-cols-3 lg:overflow-visible">
+          {featuredDeals.slice(0, 6).map((deal, i) => (
             <DealOfferCard
               key={deal.id}
               program={deal}

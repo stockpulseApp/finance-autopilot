@@ -8,7 +8,11 @@ export function getAffiliatePrograms(): AffiliateProgram[] {
 }
 
 export function getFeaturedAffiliates(): AffiliateProgram[] {
-  return getAffiliatePrograms().filter((p) => p.featured);
+  const all = getAffiliatePrograms();
+  const featured = all.filter((p) => p.featured);
+  if (featured.length >= 6) return featured;
+  const rest = all.filter((p) => !p.featured);
+  return [...featured, ...rest].slice(0, 12);
 }
 
 export function getAffiliatesByCategory(category: string): AffiliateProgram[] {

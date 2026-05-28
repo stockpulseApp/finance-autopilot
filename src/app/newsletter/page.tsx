@@ -1,25 +1,33 @@
+import Link from "next/link";
+import { PageHero } from "@/components/marketplace/PageHero";
 import { NewsletterForm } from "@/components/NewsletterForm";
-import { RevenueCtaPanel } from "@/components/RevenueCtaPanel";
 
-export const metadata = { title: "Newsletter" };
+export const metadata = { title: "Deal Alerts & Newsletter" };
 
 export default function NewsletterPage() {
   return (
-    <div className="max-w-3xl mx-auto">
-      <div className="max-w-lg text-center mx-auto">
-        <h1 className="text-3xl font-bold">Wealth Weekly</h1>
-        <p className="mt-4 text-[var(--muted)]">
-          One email per week: actionable money moves, new articles, and vetted deals. No spam.
-        </p>
-        <div className="mt-8 text-left">
-          <NewsletterForm />
-        </div>
+    <div className="space-y-10">
+      <PageHero
+        title="Free deal alerts & wealth sprint"
+        subtitle="Weekly partner deals, new guides, and instant access to our 30-day checklist — the same urgency as flash travel sales, for your wallet."
+        category="personal-finance"
+      />
+
+      <div className="mx-auto max-w-lg rounded-2xl border border-[var(--border)] bg-white p-8 shadow-sm">
+        <NewsletterForm />
       </div>
 
-      <RevenueCtaPanel
-        title="Want faster results than free content alone?"
-        subtitle="Use paid templates and systems to implement your money plan this week."
-      />
+      <section className="rounded-2xl bg-[var(--primary-light)] p-8 text-center">
+        <h2 className="text-xl font-extrabold text-[var(--primary)]">
+          Want daily AI guides on autopilot?
+        </h2>
+        <p className="mx-auto mt-2 max-w-md text-sm text-[var(--muted)]">
+          Pro members get fresh research every day — powered by our autonomous publishing bot.
+        </p>
+        <Link href="/subscription" className="btn-deal mt-6 inline-flex">
+          View Pro plans
+        </Link>
+      </section>
     </div>
   );
 }

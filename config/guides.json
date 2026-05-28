@@ -1,0 +1,84 @@
+{
+  "guides": [
+    {
+      "slug": "30-day-wealth-sprint",
+      "title": "30-Day Wealth Sprint",
+      "type": "free",
+      "price": 0,
+      "pages": 24,
+      "description": "Daily actions to stabilize cash, kill debt, and start investing.",
+      "downloadUrl": "/lead-magnets/wealth-sprint-checklist.txt",
+      "category": "personal-finance"
+    },
+    {
+      "slug": "emergency-fund-blueprint",
+      "title": "Emergency Fund Blueprint",
+      "type": "free",
+      "price": 0,
+      "pages": 12,
+      "description": "How much to save, where to park it, and automation setup.",
+      "downloadUrl": "/newsletter",
+      "category": "personal-finance"
+    },
+    {
+      "slug": "index-fund-starter-kit",
+      "title": "Index Fund Starter Kit",
+      "type": "paid",
+      "price": 27,
+      "pages": 48,
+      "description": "Asset allocation templates, broker comparison, and first-buy checklist.",
+      "checkoutUrl": "https://buy.stripe.com/PLACEHOLDER_GUIDE_INDEX",
+      "category": "investing"
+    },
+    {
+      "slug": "rental-deal-analyzer",
+      "title": "Rental Deal Analyzer Guide",
+      "type": "paid",
+      "price": 37,
+      "pages": 56,
+      "description": "Cap rate, cash-on-cash, and due diligence worksheets with examples.",
+      "checkoutUrl": "https://buy.stripe.com/PLACEHOLDER_GUIDE_RENTAL",
+      "category": "real-estate"
+    },
+    {
+      "slug": "credit-score-750-playbook",
+      "title": "750+ Credit Score Playbook",
+      "type": "paid",
+      "price": 19,
+      "pages": 32,
+      "description": "Utilization hacks, dispute letters, and card sequencing strategy.",
+      "checkoutUrl": "https://buy.stripe.com/PLACEHOLDER_GUIDE_CREDIT",
+      "category": "credit-cards"
+    },
+    {
+      "slug": "crypto-custody-checklist",
+      "title": "Crypto Custody & Security Checklist",
+      "type": "free",
+      "price": 0,
+      "pages": 18,
+      "description": "Wallet setup, backup phrases, and scam avoidance for self-custody.",
+      "downloadUrl": "/newsletter",
+      "category": "crypto"
+    },
+    {
+      "slug": "side-income-launch-map",
+      "title": "Side Income Launch Map",
+      "type": "paid",
+      "price": 29,
+      "pages": 40,
+      "description": "Validate ideas, price services, and land first $1k/month.",
+      "checkoutUrl": "https://buy.stripe.com/PLACEHOLDER_GUIDE_SIDE",
+      "category": "side-income"
+    },
+    {
+      "slug": "tax-advantaged-accounts-guide",
+      "title": "Tax-Advantaged Accounts Guide",
+      "type": "paid",
+      "price": 24,
+      "pages": 36,
+      "description": "401(k), IRA, HSA ranked with contribution order flowchart.",
+      "checkoutUrl": "https://buy.stripe.com/PLACEHOLDER_GUIDE_TAX",
+      "category": "taxes"
+    }
+  ]
+}

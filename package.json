@@ -12,6 +12,7 @@
     "generate:clusters": "node scripts/generate-content-clusters.mjs",
     "repurpose:social": "node scripts/repurpose-social.mjs",
     "pipeline:daily": "node scripts/daily-growth-pipeline.mjs",
+    "seed:platform": "node scripts/seed-full-platform.mjs",
     "revenue:check": "node scripts/revenue-readiness-check.mjs"
   },
   "dependencies": {

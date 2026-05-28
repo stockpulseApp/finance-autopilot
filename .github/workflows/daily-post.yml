@@ -1,8 +1,8 @@
-name: Generate daily blog post
+name: Autonomous daily content pipeline
 
 on:
   schedule:
-    # 6:00 AM UTC daily — adjust to your audience timezone
+    # 6:00 AM UTC daily — adjust in GitHub repo Settings → Actions
     - cron: "0 6 * * *"
   workflow_dispatch:
 
@@ -19,17 +19,23 @@ jobs:
           node-version: "22"
           cache: npm
 
-      - name: Generate post + social assets
+      - run: npm ci
+
+      - name: Generate AI blog post + social repurposing
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          ANTHROPIC_MODEL: claude-sonnet-4-20250514
-          SOCIAL_REPURPOSE_MODEL: claude-sonnet-4-20250514
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-sonnet-4-20250514' }}
+          SOCIAL_REPURPOSE_MODEL: ${{ vars.SOCIAL_REPURPOSE_MODEL || 'claude-sonnet-4-20250514' }}
         run: node scripts/daily-growth-pipeline.mjs
 
-      - name: Commit and push
+      - name: Commit and push (triggers Vercel redeploy)
         run: |
-          git config user.name "finance-autopilot-bot"
+          git config user.name "wealthy-brainiac-bot"
           git config user.email "bot@users.noreply.github.com"
           git add content/posts/ content/social/
-          git diff --staged --quiet || git commit -m "chore: daily growth content $(date -u +%Y-%m-%d)"
+          if git diff --staged --quiet; then
+            echo "No new content today (duplicate or dry run)."
+            exit 0
+          fi
+          git commit -m "content: autonomous daily publish $(date -u +%Y-%m-%d)"
           git push
