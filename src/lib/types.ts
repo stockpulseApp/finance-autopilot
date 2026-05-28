@@ -31,6 +31,7 @@ export type Course = {
   description: string;
   outcomes: string[];
   stripePriceId: string;
+  checkoutUrl?: string;
 };
 
 export type DigitalProduct = {

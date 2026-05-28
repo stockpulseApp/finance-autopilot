@@ -133,6 +133,16 @@ Schedule a Cursor automation to run `npm run pipeline:daily` and commit changes.
 
 4. **Digital products + courses** — Add real checkout links in `config/products.json`; set Stripe `price_...` IDs in `config/courses.json`.
 
+### No-secret fallback (fastest launch)
+
+If Stripe dashboard does not let you reveal API keys, use Stripe Payment Links:
+
+1. In Stripe, create a Payment Link per product/course.
+2. Paste each link (`https://buy.stripe.com/...`) into:
+   - `config/products.json` (`checkoutUrl`)
+   - `config/courses.json` (`checkoutUrl`)
+3. The site will route buyers directly to Stripe with no backend key required.
+
 5. **Lead magnets** — PDF checklists ("Debt snowball planner", "Rental deal analyzer") in exchange for email.
 
 6. **Sponsored posts** — Once traffic grows, charge brands for dedicated reviews (label as Sponsored).

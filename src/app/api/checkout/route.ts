@@ -11,12 +11,18 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Course not found" }, { status: 404 });
   }
 
+  // Fallback mode: direct Stripe Payment Link checkout (no secret key required).
+  if (course.checkoutUrl && course.checkoutUrl.startsWith("https://buy.stripe.com/")) {
+    return NextResponse.redirect(course.checkoutUrl, { status: 303 });
+  }
+
   const stripeKey = process.env.STRIPE_SECRET_KEY;
   if (!stripeKey) {
     return NextResponse.json(
       {
         error: "Stripe not configured",
-        hint: "Add STRIPE_SECRET_KEY and real stripePriceId values in config/courses.json",
+        hint:
+          "Either set STRIPE_SECRET_KEY + stripePriceId, or add a Stripe Payment Link in checkoutUrl.",
         course: course.title,
       },
       { status: 501 }

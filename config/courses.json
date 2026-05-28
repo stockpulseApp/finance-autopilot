@@ -13,7 +13,8 @@
         "Set up automatic saving and investing",
         "Pick your first index fund portfolio"
       ],
-      "stripePriceId": "price_REPLACE_ME"
+      "stripePriceId": "price_REPLACE_ME",
+      "checkoutUrl": "https://buy.stripe.com/REPLACE_WEALTH_FOUNDATION"
     },
     {
       "slug": "real-estate-starter",
@@ -28,7 +29,8 @@
         "Spot red flags before you offer",
         "Decide rent vs buy with numbers"
       ],
-      "stripePriceId": "price_REPLACE_ME"
+      "stripePriceId": "price_REPLACE_ME",
+      "checkoutUrl": "https://buy.stripe.com/REPLACE_REAL_ESTATE_STARTER"
     },
     {
       "slug": "credit-mastery",
@@ -43,7 +45,8 @@
         "Design a card lineup for your goals",
         "Avoid fees and interest traps"
       ],
-      "stripePriceId": "price_REPLACE_ME"
+      "stripePriceId": "price_REPLACE_ME",
+      "checkoutUrl": "https://buy.stripe.com/REPLACE_CREDIT_MASTERY"
     }
   ]
 }

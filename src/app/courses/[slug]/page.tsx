@@ -41,15 +41,26 @@ export default async function CourseDetailPage({
         ))}
       </ul>
       <p className="mt-10 text-4xl font-bold">${course.price}</p>
-      <form action="/api/checkout" method="POST" className="mt-6">
-        <input type="hidden" name="courseSlug" value={course.slug} />
-        <button
-          type="submit"
-          className="rounded-lg bg-[var(--accent)] px-8 py-3 font-semibold text-black"
+      {course.checkoutUrl?.startsWith("https://buy.stripe.com/") ? (
+        <a
+          href={course.checkoutUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-block rounded-lg bg-[var(--accent)] px-8 py-3 font-semibold text-black no-underline"
         >
           Buy now — Stripe checkout
-        </button>
-      </form>
+        </a>
+      ) : (
+        <form action="/api/checkout" method="POST" className="mt-6">
+          <input type="hidden" name="courseSlug" value={course.slug} />
+          <button
+            type="submit"
+            className="rounded-lg bg-[var(--accent)] px-8 py-3 font-semibold text-black"
+          >
+            Buy now — Stripe checkout
+          </button>
+        </form>
+      )}
       <p className="mt-4 text-xs text-[var(--muted)]">
         Add `STRIPE_SECRET_KEY` and a real `stripePriceId` in `config/courses.json` to enable live
         checkout.
