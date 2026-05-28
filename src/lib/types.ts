@@ -20,6 +20,7 @@ export type Post = {
   author: string;
   featured?: boolean;
   affiliateIds?: string[];
+  coverImage?: string;
   sources?: PostSource[];
   socialQuotes?: SocialQuote[];
   content: string;

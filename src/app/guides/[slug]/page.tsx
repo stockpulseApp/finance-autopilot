@@ -3,9 +3,11 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MarkdownContent } from "@/components/MarkdownContent";
 import { GuideUpgrade } from "@/components/editorial/GuideUpgrade";
-import { getImageAlt, getVisualImage } from "@/lib/marketplace-images";
+import { resolveVisualImage, getImageAlt } from "@/lib/marketplace-images";
 import { getCategoryMeta } from "@/lib/categories";
 import { getGuideBySlug } from "@/lib/guides";
+import { guideOpenGraphImages } from "@/lib/metadata-images";
+import { RelatedGuides } from "@/components/editorial/RelatedGuides";
 import { getGuidePage, getGuidePageSlugs } from "@/lib/guide-pages";
 
 export async function generateStaticParams() {
@@ -23,6 +25,16 @@ export async function generateMetadata({
   return {
     title: page.title,
     description: page.description,
+    openGraph: {
+      title: page.title,
+      description: page.description,
+      images: guideOpenGraphImages(page),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: page.title,
+      description: page.description,
+    },
   };
 }
 
@@ -37,7 +49,7 @@ export default async function GuideReaderPage({
   if (!page || !catalog) notFound();
 
   const cat = getCategoryMeta(page.category);
-  const image = getVisualImage(page.slug, page.category);
+  const image = resolveVisualImage({ slug: page.slug, category: page.category });
   const imageAlt = getImageAlt(page.slug, page.title, cat.label);
   const isFree = page.type === "free";
 
@@ -74,6 +86,7 @@ export default async function GuideReaderPage({
 
       <p className="max-w-3xl text-lg text-[var(--muted)]">{page.description}</p>
 
+      <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_280px]">
       {page.content ? (
         <div className="rounded-2xl border border-[var(--border)] bg-white p-6 md:p-10 lg:p-12">
           <MarkdownContent content={page.content} />
@@ -87,6 +100,8 @@ export default async function GuideReaderPage({
           </Link>
         </div>
       )}
+        <RelatedGuides category={page.category} />
+      </div>
     </article>
   );
 }

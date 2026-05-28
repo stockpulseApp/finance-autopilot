@@ -5,9 +5,11 @@ import { MarkdownContent } from "@/components/MarkdownContent";
 import { ArticleCard } from "@/components/editorial/ArticleCard";
 import { DealOfferCard } from "@/components/marketplace/DealOfferCard";
 import { NewsletterForm } from "@/components/NewsletterForm";
-import { getImageAlt, getVisualImage } from "@/lib/marketplace-images";
+import { postOpenGraphImages } from "@/lib/metadata-images";
+import { getImageAlt, resolveVisualImage } from "@/lib/marketplace-images";
 import { getCategoryMeta } from "@/lib/categories";
 import { ArticleSources } from "@/components/editorial/ArticleSources";
+import { RelatedGuides } from "@/components/editorial/RelatedGuides";
 import { getEnrichedPosts, getEnrichedPostBySlug } from "@/lib/posts";
 import { getAffiliatesByIds, affiliateDisclosure } from "@/lib/affiliates";
 
@@ -26,6 +28,19 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.excerpt,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: "article",
+      publishedTime: post.date,
+      images: postOpenGraphImages(post),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: postOpenGraphImages(post).map((i) => i.url),
+    },
   };
 }
 
@@ -39,7 +54,11 @@ export default async function PostPage({
   if (!post) notFound();
 
   const cat = getCategoryMeta(post.category);
-  const image = getVisualImage(post.slug, post.category);
+  const image = resolveVisualImage({
+    slug: post.slug,
+    category: post.category,
+    coverImage: post.coverImage,
+  });
   const imageAlt = getImageAlt(post.slug, post.title, cat.label);
   const relatedAffiliates = post.affiliateIds?.length
     ? getAffiliatesByIds(post.affiliateIds)
@@ -106,6 +125,8 @@ export default async function PostPage({
               </div>
             </div>
           )}
+
+          <RelatedGuides category={post.category} />
 
           <div className="rounded-xl border border-[var(--border)] bg-[var(--primary-light)] p-5">
             <h2 className="font-bold text-[var(--primary)]">Weekly digest</h2>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getImageAlt, getVisualImage } from "@/lib/marketplace-images";
+import { getImageAlt, resolveVisualImage } from "@/lib/marketplace-images";
 import { getCategoryMeta } from "@/lib/categories";
 import type { Post } from "@/lib/types";
 
@@ -10,7 +10,11 @@ export function FeaturedStory({
   post: Post & { excerpt: string; readingTime: number };
 }) {
   const cat = getCategoryMeta(post.category);
-  const image = getVisualImage(post.slug, post.category);
+  const image = resolveVisualImage({
+    slug: post.slug,
+    category: post.category,
+    coverImage: post.coverImage,
+  });
   const imageAlt = getImageAlt(post.slug, post.title, cat.label);
 
   return (

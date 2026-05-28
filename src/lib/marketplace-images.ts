@@ -137,6 +137,10 @@ const SLUG_IMAGES: Record<string, string> = {
   "side-hustle-accelerator": u("photo-1600880292203-757bb62b4baf"),
   "retirement-roadmap": u("photo-1478737270239-2f1bfc3f6f0b"),
   "debt-destroyer": u("photo-1554224155-6726b3ff858f"),
+  "crypto-fundamentals": u("photo-1642100725681-d451d5ddc972"),
+  "fire-fast-track": u("photo-1478737270239-2f1bfc3f6f0b"),
+  "rental-property-pro": u("photo-1600566753190-17f0baa2a6c3"),
+  "side-income-accelerator": u("photo-1600880292203-757bb62b4baf"),
   "compound-interest": u("photo-1551288049-bebda4e38f71"),
   "mortgage-payment": u("photo-1600607687939-ce8a6c25118c"),
   "debt-payoff": u("photo-1579621970795-87facc2f976d"),
@@ -185,6 +189,28 @@ export function getVisualImage(slug: string, category: string): string {
   if (SLUG_IMAGES[key]) return SLUG_IMAGES[key];
   const pool = poolFor(category);
   return pool[hashIndex(`${category}:${key}`, pool.length)]!;
+}
+
+/** Prefer explicit cover URL from frontmatter, else per-slug visual. */
+export function resolveVisualImage(opts: {
+  slug: string;
+  category: string;
+  coverImage?: string;
+}): string {
+  if (opts.coverImage?.startsWith("http")) return opts.coverImage;
+  return getVisualImage(opts.slug, opts.category);
+}
+
+export function getSiteBaseUrl(): string {
+  return (
+    process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
+    "https://wealthy-brainiac.vercel.app"
+  );
+}
+
+export function absoluteImageUrl(src: string): string {
+  if (src.startsWith("http")) return src;
+  return `${getSiteBaseUrl()}${src.startsWith("/") ? src : `/${src}`}`;
 }
 
 /** Category landing tiles — stable but distinct from item cards */

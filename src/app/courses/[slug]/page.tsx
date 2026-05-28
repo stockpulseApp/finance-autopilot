@@ -35,10 +35,10 @@ export default async function CourseDetailPage({
     "real-estate-starter": "real-estate",
     "credit-mastery": "credit-cards",
     "tax-optimization-lab": "taxes",
-    "crypto-investor-bootcamp": "crypto",
-    "side-hustle-accelerator": "side-income",
-    "fire-masterclass": "retirement",
-    "insurance-essentials": "insurance",
+    "crypto-fundamentals": "crypto",
+    "side-income-accelerator": "side-income",
+    "fire-fast-track": "retirement",
+    "rental-property-pro": "real-estate",
   };
   const category = categoryBySlug[course.slug] ?? "investing";
   const image = getVisualImage(course.slug, category);

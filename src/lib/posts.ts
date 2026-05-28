@@ -49,6 +49,7 @@ export function getPostBySlug(slug: string): Post | null {
     affiliateIds: Array.isArray(data.affiliateIds)
       ? data.affiliateIds.map(String)
       : undefined,
+    coverImage: data.coverImage ? String(data.coverImage) : undefined,
     sources: Array.isArray(data.sources)
       ? (data.sources as { title?: string; url?: string; outlet?: string }[]).map(
           (s) => ({

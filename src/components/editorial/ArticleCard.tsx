@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getImageAlt, getVisualImage } from "@/lib/marketplace-images";
+import { getImageAlt, resolveVisualImage } from "@/lib/marketplace-images";
 import { getCategoryMeta } from "@/lib/categories";
 import type { Post } from "@/lib/types";
 
@@ -12,7 +12,11 @@ export function ArticleCard({
   variant?: "default" | "compact" | "horizontal";
 }) {
   const cat = getCategoryMeta(post.category);
-  const image = getVisualImage(post.slug, post.category);
+  const image = resolveVisualImage({
+    slug: post.slug,
+    category: post.category,
+    coverImage: post.coverImage,
+  });
   const imageAlt = getImageAlt(post.slug, post.title, cat.label);
   const href = `/blog/${post.slug}`;
 
@@ -48,16 +52,30 @@ export function ArticleCard({
 
   if (variant === "compact") {
     return (
-      <article className="border-b border-[var(--border)] py-4 last:border-0">
-        <p className="text-xs font-bold uppercase text-[var(--primary)]">{cat.label}</p>
-        <h3 className="mt-1 text-base font-bold leading-snug">
-          <Link href={href} className="text-[var(--foreground)] no-underline hover:text-[var(--primary)]">
-            {post.title}
-          </Link>
-        </h3>
-        <p className="mt-1 text-xs text-[var(--muted)]">
-          {post.readingTime} min · {post.date}
-        </p>
+      <article className="group flex gap-4 border-b border-[var(--border)] py-4 last:border-0">
+        <div className="relative h-16 w-20 shrink-0 overflow-hidden rounded-lg md:h-20 md:w-24">
+          <Image
+            src={image}
+            alt={imageAlt}
+            fill
+            className="object-cover transition duration-300 group-hover:scale-105"
+            sizes="96px"
+          />
+        </div>
+        <div className="min-w-0 flex-1">
+          <p className="text-xs font-bold uppercase text-[var(--primary)]">{cat.label}</p>
+          <h3 className="mt-0.5 text-base font-bold leading-snug">
+            <Link href={href} className="text-[var(--foreground)] no-underline hover:text-[var(--primary)]">
+              {post.title}
+            </Link>
+          </h3>
+          <p className="mt-1 line-clamp-2 text-xs leading-relaxed text-[var(--muted)]">
+            {post.excerpt}
+          </p>
+          <p className="mt-1 text-xs text-[var(--muted)]">
+            {post.readingTime} min · {post.date}
+          </p>
+        </div>
       </article>
     );
   }

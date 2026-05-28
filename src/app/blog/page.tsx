@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { FeaturedStory } from "@/components/editorial/FeaturedStory";
 import { ArticleCard } from "@/components/editorial/ArticleCard";
+import { PageHero } from "@/components/marketplace/PageHero";
 import { getEnrichedPosts } from "@/lib/posts";
 
 export const metadata = {
@@ -16,16 +16,12 @@ export default function BlogPage() {
 
   return (
     <div className="space-y-10">
-      <div className="max-w-3xl">
-        <h1 className="text-3xl font-extrabold text-[var(--foreground)] md:text-4xl">
-          Money guides that teach you something
-        </h1>
-        <p className="mt-4 text-lg leading-relaxed text-[var(--muted)]">
-          Long-form articles with real examples, step-by-step frameworks, and honest
-          context — not affiliate boxes disguised as content. Pick a topic, read for
-          10–15 minutes, leave with a plan.
-        </p>
-      </div>
+      <PageHero
+        title="Money guides that teach you something"
+        subtitle="Long-form articles with real examples, cited sources, and step-by-step frameworks — read for 10–15 minutes, leave with a plan."
+        heroContext="blog"
+        category="personal-finance"
+      />
 
       {featured && <FeaturedStory post={featured} />}
 
