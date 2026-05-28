@@ -1,12 +1,47 @@
 import Link from "next/link";
 import { RevenueCtaPanel } from "@/components/RevenueCtaPanel";
+import { getGuideBySlug } from "@/lib/guides";
+import { getSubscriptionPlans } from "@/lib/subscription";
+import site from "../../../../config/site.json";
 
 export const metadata = { title: "Purchase Successful" };
 
-function getUpsell(searchParams: Record<string, string | string[] | undefined>) {
+type Upsell = {
+  title: string;
+  href: string;
+  cta: string;
+  primary?: { href: string; label: string };
+};
+
+function getUpsell(searchParams: Record<string, string | string[] | undefined>): Upsell {
+  const guideSlug = typeof searchParams.guide === "string" ? searchParams.guide : "";
+  const planId = typeof searchParams.plan === "string" ? searchParams.plan : "";
   const course = typeof searchParams.course === "string" ? searchParams.course : "";
   const product = typeof searchParams.product === "string" ? searchParams.product : "";
   const key = course || product;
+
+  if (guideSlug) {
+    const guide = getGuideBySlug(guideSlug);
+    return {
+      title: guide ? `Your guide: ${guide.title}` : "Your guide is ready",
+      href: `/guides/${guideSlug}?purchased=1`,
+      cta: "Open guide now",
+      primary: {
+        href: `/guides/${guideSlug}?purchased=1`,
+        label: guide ? `Read ${guide.title}` : "Open your guide",
+      },
+    };
+  }
+
+  if (planId) {
+    const plan = getSubscriptionPlans().find((p) => p.id === planId);
+    return {
+      title: plan ? `Welcome to ${plan.name}` : "Welcome to Wealthy Brainiac Pro",
+      href: "/insights",
+      cta: "Open Money Pulse",
+      primary: { href: "/insights", label: "See today's Money Pulse" },
+    };
+  }
 
   if (key === "wealth-foundation" || key === "money-os-template-pack") {
     return {
@@ -46,6 +81,8 @@ export default async function CheckoutSuccessPage({
 }) {
   const resolved = await searchParams;
   const upsell = getUpsell(resolved);
+  const supportEmail =
+    (site as { supportEmail?: string }).supportEmail ?? "support@wealthybrainiac.com";
 
   return (
     <div className="mx-auto max-w-3xl">
@@ -53,8 +90,12 @@ export default async function CheckoutSuccessPage({
         <p className="text-sm uppercase tracking-wide text-[var(--accent)]">Payment complete</p>
         <h1 className="mt-2 text-3xl font-bold">You are in.</h1>
         <p className="mt-4 text-[var(--muted)]">
-          Thank you for your purchase. Your onboarding and access instructions should arrive by
-          email shortly. If not, check spam or contact support.
+          Thank you for your purchase. Bookmark the link below — that is your access. If anything
+          looks wrong, email{" "}
+          <a href={`mailto:${supportEmail}`} className="text-[var(--accent)]">
+            {supportEmail}
+          </a>
+          .
         </p>
         <div className="mt-6 rounded-lg border border-[var(--border)] bg-[#0f1520] p-4">
           <p className="text-sm font-semibold">{upsell.title}</p>
@@ -63,24 +104,33 @@ export default async function CheckoutSuccessPage({
           </Link>
         </div>
         <div className="mt-8 flex flex-wrap gap-4">
+          {upsell.primary ? (
+            <Link
+              href={upsell.primary.href}
+              className="rounded-lg bg-[var(--accent)] px-5 py-3 font-semibold text-black no-underline"
+            >
+              {upsell.primary.label}
+            </Link>
+          ) : (
+            <Link
+              href="/start-here"
+              className="rounded-lg bg-[var(--accent)] px-5 py-3 font-semibold text-black no-underline"
+            >
+              Continue with roadmap
+            </Link>
+          )}
           <Link
-            href="/start-here"
-            className="rounded-lg bg-[var(--accent)] px-5 py-3 font-semibold text-black no-underline"
-          >
-            Continue with roadmap
-          </Link>
-          <Link
-            href="/products"
+            href="/guides"
             className="rounded-lg border border-[var(--border)] px-5 py-3 font-semibold no-underline text-[var(--foreground)]"
           >
-            See other offers
+            Browse guides
           </Link>
         </div>
       </div>
 
       <RevenueCtaPanel
         title="Upgrade your momentum"
-        subtitle="Most successful buyers stack one template + one course for faster execution."
+        subtitle="Most successful buyers stack one guide + one course for faster execution."
       />
     </div>
   );

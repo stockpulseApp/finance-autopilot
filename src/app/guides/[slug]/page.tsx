@@ -40,10 +40,14 @@ export async function generateMetadata({
 
 export default async function GuideReaderPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ slug: string }>;
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
   const { slug } = await params;
+  const resolvedSearch = await searchParams;
+  const purchased = resolvedSearch.purchased === "1";
   const page = getGuidePage(slug);
   const catalog = getGuideBySlug(slug);
   if (!page || !catalog) notFound();
@@ -79,7 +83,8 @@ export default async function GuideReaderPage({
           </h1>
           <p className="mt-2 text-sm text-white/90">
             {page.pages} pages · {cat.label}
-            {page.isPreview ? " · Preview" : ""}
+            {page.isPreview && !purchased ? " · Preview" : ""}
+            {purchased && page.type === "paid" ? " · Purchased" : ""}
           </p>
         </div>
       </div>
@@ -90,7 +95,11 @@ export default async function GuideReaderPage({
       {page.content ? (
         <div className="rounded-2xl border border-[var(--border)] bg-white p-6 md:p-10 lg:p-12">
           <MarkdownContent content={page.content} />
-          <GuideUpgrade guide={page} checkoutUrl={catalog.checkoutUrl} />
+          <GuideUpgrade
+            guide={page}
+            checkoutUrl={catalog.checkoutUrl}
+            purchased={purchased}
+          />
         </div>
       ) : (
         <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-8 text-center">

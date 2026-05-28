@@ -15,7 +15,7 @@ export async function POST(request: Request) {
     return NextResponse.json({
       ok: true,
       mode: "stub",
-      leadMagnetUrl: "/lead-magnets/wealth-sprint-checklist.txt",
+      leadMagnetUrl: "/guides/30-day-wealth-sprint",
     });
   }
 
@@ -34,6 +34,6 @@ export async function POST(request: Request) {
 
   return NextResponse.json({
     ok: true,
-    leadMagnetUrl: "/lead-magnets/wealth-sprint-checklist.txt",
+    leadMagnetUrl: "/guides/30-day-wealth-sprint",
   });
 }

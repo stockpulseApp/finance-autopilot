@@ -4,6 +4,15 @@ Automation-first finance media + product business: daily AI-assisted blog publis
 
 **Location:** `C:\Users\User\Projects\finance-autopilot`
 
+## Ready to earn money?
+
+Follow **[LAUNCH.md](./LAUNCH.md)** — your checklist for Stripe, Vercel env, domain DNS, and affiliate tracking URLs.
+
+```bash
+npm run setup:stripe    # after STRIPE_SECRET_KEY is in .env.local
+npm run launch:verify   # preflight before going live
+```
+
 ## What you get
 
 | Feature | Status |

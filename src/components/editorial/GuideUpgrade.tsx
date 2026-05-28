@@ -5,10 +5,25 @@ import type { GuidePage } from "@/lib/guide-pages";
 export function GuideUpgrade({
   guide,
   checkoutUrl,
+  purchased = false,
 }: {
   guide: GuidePage;
   checkoutUrl?: string;
+  purchased?: boolean;
 }) {
+  if (purchased && guide.type === "paid") {
+    return (
+      <aside className="mt-12 rounded-2xl border border-[var(--success)] bg-[#e6f4ea] p-6 md:p-8">
+        <p className="text-xs font-bold uppercase tracking-wide text-[var(--success)]">
+          Purchase confirmed
+        </p>
+        <p className="mt-2 text-sm text-[var(--muted)]">
+          Bookmark this page — your guide stays here. Need help? Use the contact link in the site
+          footer.
+        </p>
+      </aside>
+    );
+  }
   if (guide.type === "free" && guide.paidUpgrade) {
     return (
       <aside className="mt-12 rounded-2xl border-2 border-[var(--primary)] bg-[var(--primary-light)] p-6 md:p-8">
@@ -32,7 +47,7 @@ export function GuideUpgrade({
     );
   }
 
-  if (guide.type === "paid" && guide.isPreview) {
+  if (guide.type === "paid") {
     const href = resolvePurchaseHref({
       checkoutUrl,
       slug: guide.slug,

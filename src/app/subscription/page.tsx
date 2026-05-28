@@ -95,9 +95,9 @@ export default function SubscriptionPage() {
       </section>
 
       <section className="rounded-2xl bg-[var(--primary-light)] p-6 text-sm text-[var(--muted)]">
-        <strong className="text-[var(--foreground)]">Automation:</strong> Pro members
-        receive content from our daily AI publishing pipeline (GitHub Actions + Anthropic).
-        Set <code>ANTHROPIC_API_KEY</code> in repo secrets — see README.
+        <strong className="text-[var(--foreground)]">What Pro includes:</strong> priority Money
+        Pulse briefings, member-only guides, deal alerts, and templates — plus everything in the
+        free newsletter. Cancel anytime from your Stripe receipt email.
       </section>
     </div>
   );
