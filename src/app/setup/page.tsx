@@ -122,6 +122,20 @@ export default function SetupPage() {
         heroContext="earn"
       />
 
+      <div className="marketplace-card border-[var(--success)] bg-[#e6f4ea] p-6">
+        <h2 className="text-lg font-extrabold text-[var(--success)]">Already automated for you</h2>
+        <ul className="mt-3 space-y-1 text-sm text-[var(--muted)]">
+          <li>✓ Stripe checkout — 23 live Payment Links</li>
+          <li>✓ Stripe webhook → wealthybrainiac.com</li>
+          <li>✓ Vercel production env (Stripe, Anthropic, Tavily)</li>
+          <li>✓ Daily blog bot (GitHub Actions)</li>
+          <li>✓ 75 posts, 8 guides, Money Pulse</li>
+        </ul>
+        <p className="mt-3 text-sm font-semibold text-[var(--foreground)]">
+          Finish the links below (requires your login) to earn affiliate + email commissions.
+        </p>
+      </div>
+
       <div className="marketplace-card p-6">
         <h2 className="text-lg font-extrabold">Your site (test these)</h2>
         <div className="mt-4 flex flex-wrap gap-3">

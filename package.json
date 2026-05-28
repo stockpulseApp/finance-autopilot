@@ -20,6 +20,7 @@
     "setup:webhook": "node scripts/setup-stripe-webhook.mjs",
     "push:vercel-env": "node scripts/push-vercel-env.mjs",
     "open:setup": "powershell -ExecutionPolicy Bypass -File scripts/open-setup-tabs.ps1",
+    "apply:amazon-tag": "node scripts/apply-amazon-tag.mjs",
     "launch:verify": "node scripts/launch-verify.mjs"
   },
   "dependencies": {

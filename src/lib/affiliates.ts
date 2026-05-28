@@ -11,18 +11,29 @@ export function getAffiliatePrograms(): AffiliateProgram[] {
   return affiliatesConfig.programs as AffiliateProgram[];
 }
 
-/** Outbound URL for visitors — override > destination > never example.com */
+function amazonTagUrl(tag: string, source: string): string {
+  const base = `https://www.amazon.com/?tag=${encodeURIComponent(tag)}`;
+  return withAffiliateParams(base, source);
+}
+
+/** Outbound URL for visitors — override > env tag > destination > never example.com */
 export function getAffiliateOutboundUrl(
   program: AffiliateProgram,
   source = "site",
 ): string {
   const override = overrides[program.id]?.trim();
-  const base =
-    override && !isBrokenLink(override)
-      ? override
-      : isBrokenLink(program.url)
-        ? program.affiliateSignupUrl ?? program.url
-        : program.url;
+  if (override && !isBrokenLink(override)) {
+    return withAffiliateParams(override, source);
+  }
+
+  const amazonTag = process.env.NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG?.trim();
+  if (program.id === "amazon-associates" && amazonTag) {
+    return amazonTagUrl(amazonTag, source);
+  }
+
+  const base = isBrokenLink(program.url)
+    ? program.affiliateSignupUrl ?? program.url
+    : program.url;
 
   return withAffiliateParams(base, source);
 }
