@@ -3,6 +3,7 @@ import { MarkdownContent } from "@/components/MarkdownContent";
 import { AffiliateCard } from "@/components/AffiliateCard";
 import { AdSlot } from "@/components/AdSlot";
 import { NewsletterForm } from "@/components/NewsletterForm";
+import { RevenueCtaPanel } from "@/components/RevenueCtaPanel";
 import { getAllPosts, getPostBySlug } from "@/lib/posts";
 import { getAffiliatesByIds, affiliateDisclosure } from "@/lib/affiliates";
 
@@ -71,6 +72,11 @@ export default async function PostPage({
           <NewsletterForm compact />
         </div>
       </section>
+
+      <RevenueCtaPanel
+        title="Turn learning into results"
+        subtitle="Pick a premium template or program and apply it this week."
+      />
     </article>
   );
 }
