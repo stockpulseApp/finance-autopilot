@@ -31,8 +31,13 @@ function checkProducts() {
   const data = JSON.parse(fs.readFileSync(productsPath, "utf8"));
   const issues = [];
   for (const p of data.products) {
-    if (p.type !== "service" && !hasRealValue(p.stripePriceId)) {
-      issues.push(`Product ${p.slug} missing real stripePriceId`);
+    const hasPaymentLink =
+      typeof p.checkoutUrl === "string" &&
+      p.checkoutUrl.startsWith("https://buy.stripe.com/");
+    const hasStripePrice = hasRealValue(p.stripePriceId);
+
+    if (p.type !== "service" && !hasPaymentLink && !hasStripePrice) {
+      issues.push(`Product ${p.slug} needs checkoutUrl or stripePriceId`);
     }
     if (p.type === "service" && !hasRealValue(p.checkoutUrl)) {
       issues.push(`Service ${p.slug} missing checkoutUrl`);
@@ -46,8 +51,12 @@ function checkCourses() {
   const data = JSON.parse(fs.readFileSync(coursesPath, "utf8"));
   const issues = [];
   for (const c of data.courses) {
-    if (!hasRealValue(c.stripePriceId)) {
-      issues.push(`Course ${c.slug} missing real stripePriceId`);
+    const hasPaymentLink =
+      typeof c.checkoutUrl === "string" &&
+      c.checkoutUrl.startsWith("https://buy.stripe.com/");
+    const hasStripePrice = hasRealValue(c.stripePriceId);
+    if (!hasPaymentLink && !hasStripePrice) {
+      issues.push(`Course ${c.slug} needs checkoutUrl or stripePriceId`);
     }
   }
   return issues;
@@ -55,12 +64,8 @@ function checkCourses() {
 
 function main() {
   const env = getEnvMap(path.join(ROOT, ".env.local"));
-  const required = [
-    "NEXT_PUBLIC_SITE_URL",
-    "ANTHROPIC_API_KEY",
-    "STRIPE_SECRET_KEY",
-    "STRIPE_WEBHOOK_SECRET",
-  ];
+  const required = ["NEXT_PUBLIC_SITE_URL", "ANTHROPIC_API_KEY"];
+  const optionalRevenue = ["STRIPE_SECRET_KEY", "STRIPE_WEBHOOK_SECRET"];
 
   const issues = [];
 
@@ -70,11 +75,24 @@ function main() {
     }
   }
 
+  const warnings = [];
+  for (const key of optionalRevenue) {
+    if (!hasRealValue(env[key] ?? "")) {
+      warnings.push(`Optional env var missing (API mode only): ${key}`);
+    }
+  }
+
   issues.push(...checkProducts());
   issues.push(...checkCourses());
 
   if (!issues.length) {
     console.log("Revenue readiness: PASS");
+    if (warnings.length) {
+      console.log("Warnings:");
+      for (const warning of warnings) {
+        console.log(`- ${warning}`);
+      }
+    }
     return;
   }
 
