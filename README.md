@@ -15,7 +15,9 @@ Automation-first finance media + product business: daily AI-assisted blog publis
 | GitHub Action (cron daily publish + repurpose) | Ready |
 | Affiliate deals page + in-article CTAs | Ready — replace URLs in `config/affiliates.json` |
 | Product ladder page (`/products`) | Ready |
-| Courses catalog + Stripe checkout | Ready — add Stripe keys + price IDs |
+| Courses catalog + Stripe checkout | Live route ready — add Stripe keys + `price_...` IDs |
+| Product ladder checkout | Live route ready — `POST /api/product-checkout` |
+| Stripe webhook endpoint | Ready at `POST /api/stripe/webhook` |
 | Newsletter API (ConvertKit) | Stub — add keys |
 | Calculators (SEO + affiliate hooks) | Compound, mortgage, debt payoff live |
 | Sitemap + robots.txt | Ready |
@@ -55,6 +57,7 @@ Automation-first finance media + product business: daily AI-assisted blog publis
    npm run repurpose:social
    # or run both:
    npm run pipeline:daily
+   npm run revenue:check
    ```
 
 ## Automation (daily growth machine)
@@ -64,6 +67,34 @@ Automation-first finance media + product business: daily AI-assisted blog publis
 1. Push this repo to GitHub.
 2. Add secret `ANTHROPIC_API_KEY` in repo Settings → Secrets.
 3. Workflow `.github/workflows/daily-post.yml` runs daily, generates blog + social assets, commits to repo, and triggers Vercel rebuild.
+
+## Revenue activation checklist (required)
+
+1. **Stripe products/prices**
+   - Create Stripe products + prices for each course and digital product.
+   - Replace `stripePriceId` placeholders in:
+     - `config/courses.json`
+     - `config/products.json`
+
+2. **Environment variables** (Vercel + local `.env.local`)
+   - `NEXT_PUBLIC_SITE_URL`
+   - `ANTHROPIC_API_KEY`
+   - `STRIPE_SECRET_KEY`
+   - `STRIPE_WEBHOOK_SECRET`
+
+3. **Webhook setup**
+   - In Stripe Dashboard: Developers → Webhooks → Add endpoint
+   - Endpoint URL: `https://YOUR_DOMAIN/api/stripe/webhook`
+   - Events: `checkout.session.completed`
+   - Copy signing secret into `STRIPE_WEBHOOK_SECRET`
+
+4. **Run readiness checker**
+
+   ```bash
+   npm run revenue:check
+   ```
+
+   It will list any missing env vars or placeholder Stripe IDs.
 
 ### Option B — Windows Task Scheduler
 

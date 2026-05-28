@@ -26,14 +26,26 @@ export default function ProductsPage() {
             <p className="mt-2 text-sm text-[var(--muted)]">{product.headline}</p>
             <p className="mt-4 text-3xl font-bold">${product.price}</p>
             <p className="mt-1 text-xs text-[var(--muted)]">Delivery: {product.delivery}</p>
-            <a
-              href={product.checkoutUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-5 inline-block rounded-lg bg-[var(--accent)] px-4 py-2 text-sm font-semibold text-black no-underline"
-            >
-              Buy now
-            </a>
+            {product.type === "service" ? (
+              <a
+                href={product.checkoutUrl ?? "/newsletter"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-5 inline-block rounded-lg bg-[var(--accent)] px-4 py-2 text-sm font-semibold text-black no-underline"
+              >
+                Book now
+              </a>
+            ) : (
+              <form action="/api/product-checkout" method="POST" className="mt-5">
+                <input type="hidden" name="productSlug" value={product.slug} />
+                <button
+                  type="submit"
+                  className="rounded-lg bg-[var(--accent)] px-4 py-2 text-sm font-semibold text-black"
+                >
+                  Buy now
+                </button>
+              </form>
+            )}
           </article>
         ))}
       </section>

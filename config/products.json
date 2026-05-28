@@ -8,7 +8,7 @@
       "headline": "Plug-and-play budget, debt, and investing trackers.",
       "description": "Notion + Google Sheets system for daily money control.",
       "delivery": "Instant download",
-      "checkoutUrl": "https://gumroad.com/l/REPLACE_ME"
+      "stripePriceId": "price_REPLACE_ME"
     },
     {
       "slug": "wealth-operating-system",
@@ -18,7 +18,7 @@
       "headline": "Automate saving, investing, and cashflow growth.",
       "description": "8-week implementation system to build your personal money machine.",
       "delivery": "Course portal",
-      "checkoutUrl": "https://checkout.stripe.com/pay/REPLACE_ME"
+      "stripePriceId": "price_REPLACE_ME"
     },
     {
       "slug": "portfolio-cashflow-intensive",

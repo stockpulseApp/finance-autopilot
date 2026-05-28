@@ -41,5 +41,6 @@ export type DigitalProduct = {
   headline: string;
   description: string;
   delivery: string;
-  checkoutUrl: string;
+  checkoutUrl?: string;
+  stripePriceId?: string;
 };

@@ -10,7 +10,8 @@
     "generate:post": "node scripts/generate-daily-post.mjs",
     "generate:post:dry": "node scripts/generate-daily-post.mjs --dry-run",
     "repurpose:social": "node scripts/repurpose-social.mjs",
-    "pipeline:daily": "node scripts/daily-growth-pipeline.mjs"
+    "pipeline:daily": "node scripts/daily-growth-pipeline.mjs",
+    "revenue:check": "node scripts/revenue-readiness-check.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
