@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { getCourseBySlug } from "@/lib/courses";
+import Stripe from "stripe";
 
 export async function POST(request: Request) {
   const form = await request.formData();
@@ -15,20 +16,41 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         error: "Stripe not configured",
-        hint: "Add STRIPE_SECRET_KEY and stripePriceId in config/courses.json",
+        hint: "Add STRIPE_SECRET_KEY and real stripePriceId values in config/courses.json",
         course: course.title,
       },
       { status: 501 }
     );
   }
 
-  // Stripe Checkout: install `stripe` package and create session here
-  // https://docs.stripe.com/checkout/quickstart
-  return NextResponse.json(
-    {
-      message: "Install stripe SDK and implement createCheckoutSession",
-      priceId: course.stripePriceId,
+  if (!course.stripePriceId || course.stripePriceId.startsWith("price_REPLACE_ME")) {
+    return NextResponse.json(
+      {
+        error: "Course Stripe price not configured",
+        hint: "Set a real Stripe price id for this course in config/courses.json",
+      },
+      { status: 501 }
+    );
+  }
+
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+  const stripe = new Stripe(stripeKey);
+
+  const session = await stripe.checkout.sessions.create({
+    mode: "payment",
+    line_items: [{ price: course.stripePriceId, quantity: 1 }],
+    success_url: `${siteUrl}/checkout/success?course=${encodeURIComponent(course.slug)}`,
+    cancel_url: `${siteUrl}/checkout/cancel?course=${encodeURIComponent(course.slug)}`,
+    metadata: {
+      courseSlug: course.slug,
+      courseTitle: course.title,
     },
-    { status: 501 }
-  );
+    allow_promotion_codes: true,
+  });
+
+  if (!session.url) {
+    return NextResponse.json({ error: "Stripe session URL missing" }, { status: 502 });
+  }
+
+  return NextResponse.redirect(session.url, { status: 303 });
 }

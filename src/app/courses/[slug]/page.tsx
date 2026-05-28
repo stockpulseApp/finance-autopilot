@@ -51,7 +51,8 @@ export default async function CourseDetailPage({
         </button>
       </form>
       <p className="mt-4 text-xs text-[var(--muted)]">
-        Wire Stripe keys in .env. Until then, checkout returns setup instructions.
+        Add `STRIPE_SECRET_KEY` and a real `stripePriceId` in `config/courses.json` to enable live
+        checkout.
       </p>
       <Link href="/courses" className="mt-8 inline-block text-sm">
         ← All courses

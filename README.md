@@ -1,6 +1,6 @@
-# Finance Autopilot
+# StockPulse Money
 
-Automated personal finance blog — daily AI articles, affiliate monetization, courses, newsletter, and SEO tools.
+Automation-first finance media + product business: daily AI-assisted blog publishing, social repurposing, affiliate monetization, digital products, and course sales.
 
 **Location:** `C:\Users\User\Projects\finance-autopilot`
 
@@ -10,11 +10,14 @@ Automated personal finance blog — daily AI articles, affiliate monetization, c
 |--------|--------|
 | Next.js blog (MDX-ready markdown posts) | Ready |
 | Daily post generator (`scripts/generate-daily-post.mjs`) | Ready — uses **Claude** (Anthropic API) |
-| GitHub Action (cron daily publish) | Ready |
+| Social repurposing (`scripts/repurpose-social.mjs`) | Ready — creates X thread, video script, email teaser |
+| Daily growth pipeline (`scripts/daily-growth-pipeline.mjs`) | Ready — blog + social in one command |
+| GitHub Action (cron daily publish + repurpose) | Ready |
 | Affiliate deals page + in-article CTAs | Ready — replace URLs in `config/affiliates.json` |
-| Courses catalog + Stripe checkout stub | Ready — wire Stripe |
+| Product ladder page (`/products`) | Ready |
+| Courses catalog + Stripe checkout | Ready — add Stripe keys + price IDs |
 | Newsletter API (ConvertKit) | Stub — add keys |
-| Calculators (SEO + affiliate hooks) | Starter |
+| Calculators (SEO + affiliate hooks) | Compound, mortgage, debt payoff live |
 | Sitemap + robots.txt | Ready |
 
 ## Quick start
@@ -45,19 +48,22 @@ Automated personal finance blog — daily AI articles, affiliate monetization, c
 
    Open http://localhost:3000
 
-5. **Generate a post manually**
+5. **Generate content manually**
 
    ```bash
    npm run generate:post
+   npm run repurpose:social
+   # or run both:
+   npm run pipeline:daily
    ```
 
-## Automation (daily blog on autopilot)
+## Automation (daily growth machine)
 
 ### Option A — GitHub Actions (recommended)
 
 1. Push this repo to GitHub.
 2. Add secret `ANTHROPIC_API_KEY` in repo Settings → Secrets.
-3. Workflow `.github/workflows/daily-post.yml` runs daily, commits new markdown, triggers Vercel rebuild.
+3. Workflow `.github/workflows/daily-post.yml` runs daily, generates blog + social assets, commits to repo, and triggers Vercel rebuild.
 
 ### Option B — Windows Task Scheduler
 
@@ -65,13 +71,13 @@ Create a daily task:
 
 ```powershell
 cd C:\Users\User\Projects\finance-autopilot
-node scripts\generate-daily-post.mjs
+node scripts\daily-growth-pipeline.mjs
 # then git add, commit, push if you use git deploy
 ```
 
 ### Option C — Cursor Automations
 
-Schedule a Cursor automation to run `npm run generate:post` and commit changes.
+Schedule a Cursor automation to run `npm run pipeline:daily` and commit changes.
 
 ## Deploy (free tier friendly)
 
@@ -94,7 +100,7 @@ Schedule a Cursor automation to run `npm run generate:post` and commit changes.
 
 3. **Email list** — ConvertKit, Beehiiv, or MailerLite. Monetize with sponsored emails and course launches.
 
-4. **Digital courses** — Create content in Teachable, Gumroad, or Stripe + gated pages. Update `config/courses.json` and implement checkout in `src/app/api/checkout/route.ts`.
+4. **Digital products + courses** — Add real checkout links in `config/products.json`; set Stripe `price_...` IDs in `config/courses.json`.
 
 5. **Lead magnets** — PDF checklists ("Debt snowball planner", "Rental deal analyzer") in exchange for email.
 
@@ -105,6 +111,8 @@ Schedule a Cursor automation to run `npm run generate:post` and commit changes.
 ## Customize branding
 
 - `config/site.json` — name, tagline, categories
+- `config/brand.json` — positioning, funnel, and social content pillars
+- `config/products.json` — digital product ladder and checkout links
 - `config/topics.json` — daily topic rotation for AI
 - `src/app/globals.css` — colors and theme
 
@@ -120,7 +128,9 @@ Schedule a Cursor automation to run `npm run generate:post` and commit changes.
 - [ ] Pick domain and set `NEXT_PUBLIC_SITE_URL`
 - [ ] Replace placeholder affiliate links
 - [ ] Add Anthropic API key and run first automated post
+- [ ] Set live Stripe `price_...` IDs in `config/courses.json`
+- [ ] Set live checkout URLs in `config/products.json`
 - [ ] Connect ConvertKit + Stripe
 - [ ] Deploy to Vercel
 - [ ] Submit sitemap to Google Search Console
-- [ ] Add 2–3 more calculators under `/tools`
+- [ ] Launch daily posting on X/YouTube/Instagram using generated social assets
