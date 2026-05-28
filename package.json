@@ -17,6 +17,8 @@
     "sync:affiliates": "node scripts/sync-affiliate-urls.mjs",
     "revenue:check": "node scripts/revenue-readiness-check.mjs",
     "setup:stripe": "node scripts/setup-stripe-monetization.mjs",
+    "setup:webhook": "node scripts/setup-stripe-webhook.mjs",
+    "push:vercel-env": "node scripts/push-vercel-env.mjs",
     "launch:verify": "node scripts/launch-verify.mjs"
   },
   "dependencies": {
