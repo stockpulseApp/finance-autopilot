@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Open launch setup tabs — Wealthy Brainiac</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        max-width: 640px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        line-height: 1.5;
+      }
+      button {
+        display: block;
+        width: 100%;
+        margin: 0.75rem 0;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        border: none;
+        border-radius: 8px;
+        background: #1a56db;
+        color: #fff;
+      }
+      button.secondary {
+        background: #e8eef7;
+        color: #111;
+      }
+      p.muted {
+        color: #555;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Launch setup — open all tabs</h1>
+    <p class="muted">
+      Click once to open Stripe, Vercel, ConvertKit, affiliate networks, and your site checklist.
+      Allow pop-ups if your browser blocks them.
+    </p>
+    <button type="button" id="open-all">Open all setup tabs (12)</button>
+    <button type="button" class="secondary" id="open-core">Core only (Stripe + Vercel + ConvertKit)</button>
+    <p><a href="/setup">Go to full setup hub on Wealthy Brainiac →</a></p>
+    <script>
+      const all = [
+        "https://wealthybrainiac.com/setup",
+        "https://dashboard.stripe.com/apikeys",
+        "https://dashboard.stripe.com/webhooks",
+        "https://vercel.com/stock-pulse1/wealthy-brainiac/settings/environment-variables",
+        "https://app.convertkit.com/users/signup",
+        "https://affiliate-program.amazon.com/",
+        "https://www.cardratings.com/affiliate-center/",
+        "https://impact.com/partners/",
+        "https://www.fidelity.com/customer-service/affiliate-program",
+        "https://www.policygenius.com/affiliates",
+        "https://wealthybrainiac.com/earn",
+        "https://search.google.com/search-console",
+      ];
+      const core = all.slice(0, 5);
+      function openList(list) {
+        list.forEach((url, i) => {
+          setTimeout(() => window.open(url, "_blank", "noopener,noreferrer"), i * 350);
+        });
+      }
+      document.getElementById("open-all").onclick = () => openList(all);
+      document.getElementById("open-core").onclick = () => openList(core);
+    </script>
+  </body>
+</html>

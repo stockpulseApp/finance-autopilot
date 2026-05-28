@@ -1,5 +1,7 @@
 # Wealthy Brainiac — Launch checklist (your last steps)
 
+**Quick start:** open **[https://wealthybrainiac.com/setup](https://wealthybrainiac.com/setup)** (or run `npm run open:setup` on Windows) to launch all signup tabs.
+
 The site is built to earn from **affiliate commissions**, **digital guide/course sales**, and **Pro subscriptions**. Everything below is what only you can do (accounts, DNS, API keys).
 
 Estimated time: **45–90 minutes**.

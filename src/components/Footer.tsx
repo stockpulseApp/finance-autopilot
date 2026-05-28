@@ -26,6 +26,7 @@ const columns = [
     links: [
       { href: "/about", label: "About" },
       { href: "/earn", label: "Partner programs" },
+      { href: "/setup", label: "Launch setup" },
       { href: "/disclosure", label: "Affiliate disclosure" },
       { href: "/privacy", label: "Privacy" },
     ],

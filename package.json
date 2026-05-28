@@ -19,6 +19,7 @@
     "setup:stripe": "node scripts/setup-stripe-monetization.mjs",
     "setup:webhook": "node scripts/setup-stripe-webhook.mjs",
     "push:vercel-env": "node scripts/push-vercel-env.mjs",
+    "open:setup": "powershell -ExecutionPolicy Bypass -File scripts/open-setup-tabs.ps1",
     "launch:verify": "node scripts/launch-verify.mjs"
   },
   "dependencies": {
