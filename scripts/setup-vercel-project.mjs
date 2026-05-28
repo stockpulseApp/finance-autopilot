@@ -9,7 +9,7 @@
 const TEAM_ID = "team_r9nIL3r5TuTOOKIr1Egdi0nQ";
 const PROJECT_NAME = "wealthy-brainiac";
 const GITHUB_REPO = "stockpulseApp/finance-autopilot";
-const PRODUCTION_URL = "https://www.wealthybrainiac.com";
+const PRODUCTION_URL = "https://www.dunriteglobal.com";
 
 const token = process.env.VERCEL_TOKEN;
 if (!token) {

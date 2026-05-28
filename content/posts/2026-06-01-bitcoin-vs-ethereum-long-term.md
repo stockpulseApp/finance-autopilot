@@ -4,7 +4,7 @@ description: "A practical framework to compare Bitcoin and Ethereum for long-hor
 date: "2026-06-01"
 category: crypto
 tags: [crypto, bitcoin, ethereum, investing]
-author: Wealthy Brainiac Editorial Team
+author: Dunrite Global Editorial Team
 featured: false
 ---
 

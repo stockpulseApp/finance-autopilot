@@ -4,7 +4,7 @@ description: "Set up a rewards strategy that maximizes points while avoiding int
 date: "2026-06-06"
 category: credit-cards
 tags: [credit-cards, rewards, personal-finance]
-author: Wealthy Brainiac Editorial Team
+author: Dunrite Global Editorial Team
 featured: false
 ---
 

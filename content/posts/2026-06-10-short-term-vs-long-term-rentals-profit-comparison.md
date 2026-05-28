@@ -4,7 +4,7 @@ description: "Actionable guide on short-term vs long-term rentals: profit compar
 date: 2026-06-10
 category: real-estate
 tags: [real-estate, wealth-building, guides]
-author: Wealthy Brainiac Research Desk
+author: Dunrite Global Research Desk
 featured: false
 affiliateIds: ["fundrise", "roofstock"]
 ---
@@ -56,4 +56,4 @@ Use our [deals page](/deals) to compare vetted partners in **real estate**. We r
 
 ## Bottom line
 
-Short-Term vs Long-Term Rentals: Profit Comparison rewards consistency more than intensity. Build the system, automate it, and let compounding do the heavy lifting. For a structured multi-week plan, start with our [free wealth sprint](/newsletter) or explore [Wealth Brainiac Pro](/subscription) for daily research on autopilot.
+Short-Term vs Long-Term Rentals: Profit Comparison rewards consistency more than intensity. Build the system, automate it, and let compounding do the heavy lifting. For a structured multi-week plan, start with our [free wealth sprint](/newsletter) or explore [Dunrite Global Pro](/subscription) for daily research on autopilot.

@@ -4,7 +4,7 @@ description: "Actionable guide on capital gains basics every investor should kno
 date: 2026-06-25
 category: taxes
 tags: [taxes, wealth-building, guides]
-author: Wealthy Brainiac Research Desk
+author: Dunrite Global Research Desk
 featured: false
 affiliateIds: ["turbotax", "hr-block"]
 ---
@@ -56,4 +56,4 @@ Use our [deals page](/deals) to compare vetted partners in **taxes**. We rank of
 
 ## Bottom line
 
-Capital Gains Basics Every Investor Should Know rewards consistency more than intensity. Build the system, automate it, and let compounding do the heavy lifting. For a structured multi-week plan, start with our [free wealth sprint](/newsletter) or explore [Wealth Brainiac Pro](/subscription) for daily research on autopilot.
+Capital Gains Basics Every Investor Should Know rewards consistency more than intensity. Build the system, automate it, and let compounding do the heavy lifting. For a structured multi-week plan, start with our [free wealth sprint](/newsletter) or explore [Dunrite Global Pro](/subscription) for daily research on autopilot.

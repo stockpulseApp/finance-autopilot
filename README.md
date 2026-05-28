@@ -1,4 +1,4 @@
-# Wealthy Brainiac
+# Dunrite Global
 
 Automation-first finance media + product business: daily AI-assisted blog publishing, social repurposing, affiliate monetization, digital products, and course sales.
 

@@ -204,7 +204,7 @@ export function resolveVisualImage(opts: {
 export function getSiteBaseUrl(): string {
   return (
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
-    "https://wealthy-brainiac.vercel.app"
+    "https://www.dunriteglobal.com"
   );
 }
 
@@ -224,5 +224,5 @@ export function getHeroImage(context: keyof typeof HERO_BY_CONTEXT | string = "d
 }
 
 export function getImageAlt(slug: string, title: string, categoryLabel: string): string {
-  return `${title} — ${categoryLabel} guide on Wealthy Brainiac`;
+  return `${title} — ${categoryLabel} guide on Dunrite Global`;
 }

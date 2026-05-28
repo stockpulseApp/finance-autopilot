@@ -36,7 +36,7 @@ function getUpsell(searchParams: Record<string, string | string[] | undefined>):
   if (planId) {
     const plan = getSubscriptionPlans().find((p) => p.id === planId);
     return {
-      title: plan ? `Welcome to ${plan.name}` : "Welcome to Wealthy Brainiac Pro",
+      title: plan ? `Welcome to ${plan.name}` : "Welcome to Dunrite Global Pro",
       href: "/insights",
       cta: "Open Money Pulse",
       primary: { href: "/insights", label: "See today's Money Pulse" },
@@ -82,7 +82,7 @@ export default async function CheckoutSuccessPage({
   const resolved = await searchParams;
   const upsell = getUpsell(resolved);
   const supportEmail =
-    (site as { supportEmail?: string }).supportEmail ?? "support@wealthybrainiac.com";
+    (site as { supportEmail?: string }).supportEmail ?? "support@dunriteglobal.com";
 
   return (
     <div className="mx-auto max-w-3xl">

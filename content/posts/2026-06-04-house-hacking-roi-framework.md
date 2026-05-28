@@ -4,7 +4,7 @@ description: "Use this framework to evaluate cash flow, equity, and downside bef
 date: "2026-06-04"
 category: real-estate
 tags: [real-estate, house-hacking, cash-flow]
-author: Wealthy Brainiac Editorial Team
+author: Dunrite Global Editorial Team
 featured: false
 ---
 

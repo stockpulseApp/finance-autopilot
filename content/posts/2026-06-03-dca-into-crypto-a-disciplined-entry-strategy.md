@@ -4,7 +4,7 @@ description: "Actionable guide on dca into crypto: a disciplined entry strategy 
 date: 2026-06-03
 category: crypto
 tags: [crypto, wealth-building, guides]
-author: Wealthy Brainiac Research Desk
+author: Dunrite Global Research Desk
 featured: false
 affiliateIds: ["coinbase", "kraken"]
 ---
@@ -56,4 +56,4 @@ Use our [deals page](/deals) to compare vetted partners in **crypto**. We rank o
 
 ## Bottom line
 
-DCA Into Crypto: A Disciplined Entry Strategy rewards consistency more than intensity. Build the system, automate it, and let compounding do the heavy lifting. For a structured multi-week plan, start with our [free wealth sprint](/newsletter) or explore [Wealth Brainiac Pro](/subscription) for daily research on autopilot.
+DCA Into Crypto: A Disciplined Entry Strategy rewards consistency more than intensity. Build the system, automate it, and let compounding do the heavy lifting. For a structured multi-week plan, start with our [free wealth sprint](/newsletter) or explore [Dunrite Global Pro](/subscription) for daily research on autopilot.

@@ -9,7 +9,7 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = resolve(__dirname, "..");
 const envPath = resolve(root, ".env.local");
-const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.wealthybrainiac.com").replace(
+const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.dunriteglobal.com").replace(
   /\/$/,
   "",
 );
@@ -78,7 +78,7 @@ async function main() {
     endpoint = await stripePost("/webhook_endpoints", {
       url: webhookUrl,
       "enabled_events[0]": "checkout.session.completed",
-      description: "Wealthy Brainiac checkout fulfillment",
+      description: "Dunrite Global checkout fulfillment",
     });
     console.log(`Created webhook: ${endpoint.id}`);
   }

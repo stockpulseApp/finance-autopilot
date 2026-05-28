@@ -64,7 +64,7 @@ export function getAffiliatesByIds(ids: string[]): AffiliateProgram[] {
 export function withAffiliateParams(url: string, source: string): string {
   try {
     const u = new URL(url);
-    u.searchParams.set("utm_source", "wealthybrainiac");
+    u.searchParams.set("utm_source", "dunriteglobal");
     u.searchParams.set("utm_medium", "affiliate");
     u.searchParams.set("utm_campaign", source);
     return u.toString();

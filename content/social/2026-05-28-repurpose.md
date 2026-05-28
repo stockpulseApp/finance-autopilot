@@ -103,7 +103,7 @@ Read the full breakdown inside.
 
 [Read Full Article] →
 
-P.S. — If you're ready to move faster, join Wealth Brainiac Pro for daily research on autopilot. We'll do the thinking; you'll do the winning.
+P.S. — If you're ready to move faster, join Dunrite Global Pro for daily research on autopilot. We'll do the thinking; you'll do the winning.
 ```
 
 ---

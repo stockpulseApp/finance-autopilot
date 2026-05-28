@@ -155,7 +155,7 @@ description: "Actionable guide on ${title.toLowerCase()} — frameworks, mistake
 date: DATE_PLACEHOLDER
 category: ${category}
 tags: [${category}, wealth-building, guides]
-author: Wealthy Brainiac Research Desk
+author: Dunrite Global Research Desk
 featured: false
 affiliateIds: [${affiliateHint.map((id) => `"${id}"`).join(", ")}]
 ---
@@ -207,14 +207,14 @@ Use our [deals page](/deals) to compare vetted partners in **${category.replace(
 
 ## Bottom line
 
-${title} rewards consistency more than intensity. Build the system, automate it, and let compounding do the heavy lifting. For a structured multi-week plan, start with our [free wealth sprint](/newsletter) or explore [Wealth Brainiac Pro](/subscription) for daily research on autopilot.
+${title} rewards consistency more than intensity. Build the system, automate it, and let compounding do the heavy lifting. For a structured multi-week plan, start with our [free wealth sprint](/newsletter) or explore [Dunrite Global Pro](/subscription) for daily research on autopilot.
 `;
 }
 
 function writeAffiliates() {
   const programs = AFFILIATES.map((p) => ({
     ...p,
-    url: `https://example.com/go/${p.id}?ref=wealthybrainiac`,
+    url: `https://example.com/go/${p.id}?ref=dunriteglobal`,
   }));
   const data = {
     disclosure: "We may earn a commission when you use links on this site. This supports our free content at no extra cost to you.",

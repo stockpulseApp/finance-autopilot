@@ -31,7 +31,7 @@ jobs:
 
       - name: Commit and push (triggers Vercel redeploy)
         run: |
-          git config user.name "wealthy-brainiac-bot"
+          git config user.name "dunrite-global-bot"
           git config user.email "bot@users.noreply.github.com"
           git add content/posts/ content/social/ content/insights/
           if git diff --staged --quiet; then

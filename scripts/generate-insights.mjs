@@ -33,7 +33,7 @@ async function synthesize(apiKey, model, researchBlock) {
     body: JSON.stringify({
       model,
       max_tokens: 2048,
-      system: `You are the Wealthy Brainiac desk editor. Write original commentary that synthesizes external sources — never copy full paragraphs. Always include markdown links to sources. Add a short "On X" subsection with 2-3 attributed paraphrases from social results (link to posts). Return valid JSON only.`,
+      system: `You are the Dunrite Global desk editor. Write original commentary that synthesizes external sources — never copy full paragraphs. Always include markdown links to sources. Add a short "On X" subsection with 2-3 attributed paraphrases from social results (link to posts). Return valid JSON only.`,
       messages: [
         {
           role: "user",

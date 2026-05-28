@@ -4,7 +4,7 @@ description: "Actionable guide on amazon kdp vs courses: income potential compar
 date: 2026-07-03
 category: side-income
 tags: [side-income, wealth-building, guides]
-author: Wealthy Brainiac Research Desk
+author: Dunrite Global Research Desk
 featured: false
 affiliateIds: ["fiverr-freelance", "upwork"]
 ---
@@ -56,4 +56,4 @@ Use our [deals page](/deals) to compare vetted partners in **side income**. We r
 
 ## Bottom line
 
-Amazon KDP vs Courses: Income Potential Compared rewards consistency more than intensity. Build the system, automate it, and let compounding do the heavy lifting. For a structured multi-week plan, start with our [free wealth sprint](/newsletter) or explore [Wealth Brainiac Pro](/subscription) for daily research on autopilot.
+Amazon KDP vs Courses: Income Potential Compared rewards consistency more than intensity. Build the system, automate it, and let compounding do the heavy lifting. For a structured multi-week plan, start with our [free wealth sprint](/newsletter) or explore [Dunrite Global Pro](/subscription) for daily research on autopilot.

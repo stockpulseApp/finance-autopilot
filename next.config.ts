@@ -6,6 +6,15 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "images.unsplash.com" },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/wealthy-brainiac",
+        destination: "/dunrite-global",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

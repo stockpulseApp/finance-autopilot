@@ -4,7 +4,7 @@ description: "Security-first playbook for wallets, backups, and safe long-term c
 date: "2026-06-03"
 category: crypto
 tags: [crypto, security, wallets]
-author: Wealthy Brainiac Editorial Team
+author: Dunrite Global Editorial Team
 featured: false
 ---
 

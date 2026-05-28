@@ -89,7 +89,7 @@ description: "${post.description}"
 date: "${post.slug.slice(0, 10)}"
 category: ${post.category}
 tags: [${post.tags.join(", ")}]
-author: Wealthy Brainiac Editorial Team
+author: Dunrite Global Editorial Team
 featured: false
 ---
 `;

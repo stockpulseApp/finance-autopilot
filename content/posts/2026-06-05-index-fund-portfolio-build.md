@@ -4,7 +4,7 @@ description: "A no-fluff guide to asset allocation, rebalancing, and long-term c
 date: "2026-06-05"
 category: investing
 tags: [investing, index-funds, portfolio]
-author: Wealthy Brainiac Editorial Team
+author: Dunrite Global Editorial Team
 featured: false
 ---
 

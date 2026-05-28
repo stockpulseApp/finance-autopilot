@@ -4,9 +4,9 @@ import { isValidStripePaymentLink, resolvePurchaseHref } from "@/lib/checkout";
 import { getSubscriptionMeta, getSubscriptionPlans } from "@/lib/subscription";
 
 export const metadata = {
-  title: "Wealth Brainiac Pro — Subscription",
+  title: "Dunrite Global Pro — Subscription",
   description:
-    "Daily AI-powered money research, deal alerts, templates, and premium guides on autopilot.",
+    "Daily money research, deal alerts, templates, and premium guides — global wealth intelligence, done right.",
 };
 
 export default function SubscriptionPage() {

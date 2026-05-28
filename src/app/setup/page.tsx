@@ -25,7 +25,7 @@ const CORE: SetupLink[] = [
   {
     label: "Stripe — webhooks",
     href: "https://dashboard.stripe.com/webhooks",
-    note: "Confirm endpoint: https://www.wealthybrainiac.com/api/stripe/webhook",
+    note: "Confirm endpoint: https://www.dunriteglobal.com/api/stripe/webhook",
     priority: true,
   },
   {
@@ -48,7 +48,7 @@ const CORE: SetupLink[] = [
   {
     label: "Google Search Console",
     href: "https://search.google.com/search-console",
-    note: "Add property wealthybrainiac.com and submit sitemap.xml",
+    note: "Add property dunriteglobal.com and submit sitemap.xml",
   },
   {
     label: "Google Analytics",
@@ -126,7 +126,7 @@ export default function SetupPage() {
         <h2 className="text-lg font-extrabold text-[var(--success)]">Already automated for you</h2>
         <ul className="mt-3 space-y-1 text-sm text-[var(--muted)]">
           <li>✓ Stripe checkout — 23 live Payment Links</li>
-          <li>✓ Stripe webhook → wealthybrainiac.com</li>
+          <li>✓ Stripe webhook → dunriteglobal.com</li>
           <li>✓ Vercel production env (Stripe, Anthropic, Tavily)</li>
           <li>✓ Daily blog bot (GitHub Actions)</li>
           <li>✓ 75 posts, 8 guides, Money Pulse</li>

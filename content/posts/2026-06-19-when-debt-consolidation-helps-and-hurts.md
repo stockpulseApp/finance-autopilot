@@ -4,7 +4,7 @@ description: "Actionable guide on when debt consolidation helps — and hurts �
 date: 2026-06-19
 category: debt
 tags: [debt, wealth-building, guides]
-author: Wealthy Brainiac Research Desk
+author: Dunrite Global Research Desk
 featured: false
 affiliateIds: ["sofi-refinance", "national-debt-relief"]
 ---
@@ -56,4 +56,4 @@ Use our [deals page](/deals) to compare vetted partners in **debt**. We rank off
 
 ## Bottom line
 
-When Debt Consolidation Helps — and Hurts rewards consistency more than intensity. Build the system, automate it, and let compounding do the heavy lifting. For a structured multi-week plan, start with our [free wealth sprint](/newsletter) or explore [Wealth Brainiac Pro](/subscription) for daily research on autopilot.
+When Debt Consolidation Helps — and Hurts rewards consistency more than intensity. Build the system, automate it, and let compounding do the heavy lifting. For a structured multi-week plan, start with our [free wealth sprint](/newsletter) or explore [Dunrite Global Pro](/subscription) for daily research on autopilot.

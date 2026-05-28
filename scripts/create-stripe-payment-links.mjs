@@ -52,7 +52,7 @@ const products = [
 async function createLink(name, amountCents) {
   const product = await stripe("/products", {
     name,
-    "metadata[source]": "wealthy-brainiac",
+    "metadata[source]": "dunrite-global",
   });
   const price = await stripe("/prices", {
     product: product.id,

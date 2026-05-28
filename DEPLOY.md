@@ -1,4 +1,4 @@
-# Deploy Wealthy Brainiac (one-time setup)
+# Deploy Dunrite Global (one-time setup)
 
 Your Vercel team: **Stock Pulse** (`stock-pulse1`)
 
@@ -8,7 +8,7 @@ Your Vercel team: **Stock Pulse** (`stock-pulse1`)
    https://vercel.com/new/import?s=https://github.com/stockpulseApp/finance-autopilot&team=stock-pulse1&project-name=wealthy-brainiac&framework=nextjs
 
 2. Add environment variable before deploy:
-   - `NEXT_PUBLIC_SITE_URL` = `https://www.wealthybrainiac.com`
+   - `NEXT_PUBLIC_SITE_URL` = `https://www.dunriteglobal.com`
 
 3. Click **Deploy**.
 
@@ -16,7 +16,7 @@ Your Vercel team: **Stock Pulse** (`stock-pulse1`)
 
 ## Custom domain (Bluehost DNS)
 
-Your domain uses **Bluehost** nameservers (`ns1.bluehost.com`). In Bluehost → **Domains** → **DNS** for `wealthybrainiac.com`:
+Your domain uses **Bluehost** nameservers (`ns1.bluehost.com`). In Bluehost → **Domains** → **DNS** for `dunriteglobal.com`:
 
 | Type | Host | Value |
 |------|------|-------|
@@ -26,8 +26,8 @@ Your domain uses **Bluehost** nameservers (`ns1.bluehost.com`). In Bluehost → 
 Remove any old A record pointing to `50.6.3.234`. DNS can take up to 48 hours; often under 1 hour.
 
 In Vercel → **wealthy-brainiac** → **Settings** → **Domains**, add:
-- `wealthybrainiac.com`
-- `www.wealthybrainiac.com`
+- `dunriteglobal.com`
+- `www.dunriteglobal.com`
 
 ## CLI alternative
 
@@ -36,7 +36,7 @@ cd C:\Users\User\Projects\finance-autopilot
 npx vercel@latest login
 npx vercel@latest link --project wealthy-brainiac
 npx vercel@latest env add NEXT_PUBLIC_SITE_URL production
-# enter: https://www.wealthybrainiac.com
+# enter: https://www.dunriteglobal.com
 npx vercel@latest deploy --prod
 ```
 

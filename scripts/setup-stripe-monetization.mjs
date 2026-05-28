@@ -27,7 +27,7 @@ function loadEnv() {
 loadEnv();
 
 const key = process.env.STRIPE_SECRET_KEY;
-const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.wealthybrainiac.com").replace(
+const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.dunriteglobal.com").replace(
   /\/$/,
   "",
 );
@@ -65,7 +65,7 @@ function isPlaceholder(url) {
 async function createPaymentLink({ name, amountCents, interval, successPath }) {
   const product = await stripe("/products", {
     name,
-    "metadata[source]": "wealthy-brainiac",
+    "metadata[source]": "dunrite-global",
   });
 
   const priceBody = {
@@ -131,7 +131,7 @@ async function main() {
       if (guide.type !== "paid" || !isPlaceholder(guide.checkoutUrl)) continue;
       const cents = Math.round(guide.price * 100);
       guide.checkoutUrl = await createPaymentLink({
-        name: `Wealthy Brainiac — ${guide.title}`,
+        name: `Dunrite Global — ${guide.title}`,
         amountCents: cents,
         successPath: `/checkout/success?guide=${encodeURIComponent(guide.slug)}`,
       });
@@ -148,7 +148,7 @@ async function main() {
       if (p.type === "service") continue;
       const cents = Math.round(p.price * 100);
       p.checkoutUrl = await createPaymentLink({
-        name: `Wealthy Brainiac — ${p.name}`,
+        name: `Dunrite Global — ${p.name}`,
         amountCents: cents,
         successPath: `/checkout/success?product=${encodeURIComponent(p.slug)}`,
       });
@@ -164,7 +164,7 @@ async function main() {
       if (!isPlaceholder(c.checkoutUrl)) continue;
       const cents = Math.round(c.price * 100);
       c.checkoutUrl = await createPaymentLink({
-        name: `Wealthy Brainiac — ${c.title}`,
+        name: `Dunrite Global — ${c.title}`,
         amountCents: cents,
         successPath: `/checkout/success?course=${encodeURIComponent(c.slug)}`,
       });

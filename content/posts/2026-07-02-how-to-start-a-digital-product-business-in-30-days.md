@@ -4,7 +4,7 @@ description: "Actionable guide on how to start a digital product business in 30 
 date: 2026-07-02
 category: side-income
 tags: [side-income, wealth-building, guides]
-author: Wealthy Brainiac Research Desk
+author: Dunrite Global Research Desk
 featured: false
 affiliateIds: ["fiverr-freelance", "upwork"]
 ---
@@ -56,4 +56,4 @@ Use our [deals page](/deals) to compare vetted partners in **side income**. We r
 
 ## Bottom line
 
-How to Start a Digital Product Business in 30 Days rewards consistency more than intensity. Build the system, automate it, and let compounding do the heavy lifting. For a structured multi-week plan, start with our [free wealth sprint](/newsletter) or explore [Wealth Brainiac Pro](/subscription) for daily research on autopilot.
+How to Start a Digital Product Business in 30 Days rewards consistency more than intensity. Build the system, automate it, and let compounding do the heavy lifting. For a structured multi-week plan, start with our [free wealth sprint](/newsletter) or explore [Dunrite Global Pro](/subscription) for daily research on autopilot.

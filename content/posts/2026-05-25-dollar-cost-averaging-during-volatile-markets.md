@@ -4,7 +4,7 @@ description: "Actionable guide on dollar-cost averaging during volatile markets 
 date: 2026-05-25
 category: investing
 tags: [investing, wealth-building, guides]
-author: Wealthy Brainiac Research Desk
+author: Dunrite Global Research Desk
 featured: false
 affiliateIds: ["fidelity-brokerage", "schwab-brokerage"]
 ---
@@ -56,4 +56,4 @@ Use our [deals page](/deals) to compare vetted partners in **investing**. We ran
 
 ## Bottom line
 
-Dollar-Cost Averaging During Volatile Markets rewards consistency more than intensity. Build the system, automate it, and let compounding do the heavy lifting. For a structured multi-week plan, start with our [free wealth sprint](/newsletter) or explore [Wealth Brainiac Pro](/subscription) for daily research on autopilot.
+Dollar-Cost Averaging During Volatile Markets rewards consistency more than intensity. Build the system, automate it, and let compounding do the heavy lifting. For a structured multi-week plan, start with our [free wealth sprint](/newsletter) or explore [Dunrite Global Pro](/subscription) for daily research on autopilot.

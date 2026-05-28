@@ -4,7 +4,7 @@ description: "Position sizing, custody, and volatility rules that prevent expens
 date: "2026-06-02"
 category: crypto
 tags: [crypto, risk-management, investing]
-author: Wealthy Brainiac Editorial Team
+author: Dunrite Global Editorial Team
 featured: false
 ---
 

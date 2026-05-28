@@ -4,7 +4,7 @@ description: "Actionable guide on mega backdoor roth: who qualifies and how — 
 date: 2026-07-08
 category: retirement
 tags: [retirement, wealth-building, guides]
-author: Wealthy Brainiac Research Desk
+author: Dunrite Global Research Desk
 featured: false
 affiliateIds: ["betterment", "wealthfront"]
 ---
@@ -56,4 +56,4 @@ Use our [deals page](/deals) to compare vetted partners in **retirement**. We ra
 
 ## Bottom line
 
-Mega Backdoor Roth: Who Qualifies and How rewards consistency more than intensity. Build the system, automate it, and let compounding do the heavy lifting. For a structured multi-week plan, start with our [free wealth sprint](/newsletter) or explore [Wealth Brainiac Pro](/subscription) for daily research on autopilot.
+Mega Backdoor Roth: Who Qualifies and How rewards consistency more than intensity. Build the system, automate it, and let compounding do the heavy lifting. For a structured multi-week plan, start with our [free wealth sprint](/newsletter) or explore [Dunrite Global Pro](/subscription) for daily research on autopilot.

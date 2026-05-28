@@ -35,9 +35,9 @@ async function subscribeBeehiiv(email: string): Promise<boolean> {
         email,
         reactivate_existing: true,
         send_welcome_email: true,
-        utm_source: "wealthybrainiac",
+        utm_source: "dunriteglobal",
         utm_medium: "newsletter",
-        referring_site: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.wealthybrainiac.com",
+        referring_site: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.dunriteglobal.com",
       }),
     },
   );
@@ -54,7 +54,7 @@ async function forwardWebhook(email: string): Promise<boolean> {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         email,
-        source: "wealthybrainiac-newsletter",
+        source: "dunriteglobal-newsletter",
         subscribedAt: new Date().toISOString(),
       }),
     });

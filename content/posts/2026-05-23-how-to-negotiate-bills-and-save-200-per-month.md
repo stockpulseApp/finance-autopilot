@@ -4,7 +4,7 @@ description: "Actionable guide on how to negotiate bills and save $200+ per mont
 date: 2026-05-23
 category: personal-finance
 tags: [personal-finance, wealth-building, guides]
-author: Wealthy Brainiac Research Desk
+author: Dunrite Global Research Desk
 featured: false
 affiliateIds: ["ynab", "monarch-money"]
 ---
@@ -56,4 +56,4 @@ Use our [deals page](/deals) to compare vetted partners in **personal finance**.
 
 ## Bottom line
 
-How to Negotiate Bills and Save $200+ Per Month rewards consistency more than intensity. Build the system, automate it, and let compounding do the heavy lifting. For a structured multi-week plan, start with our [free wealth sprint](/newsletter) or explore [Wealth Brainiac Pro](/subscription) for daily research on autopilot.
+How to Negotiate Bills and Save $200+ Per Month rewards consistency more than intensity. Build the system, automate it, and let compounding do the heavy lifting. For a structured multi-week plan, start with our [free wealth sprint](/newsletter) or explore [Dunrite Global Pro](/subscription) for daily research on autopilot.

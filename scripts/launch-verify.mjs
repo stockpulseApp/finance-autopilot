@@ -65,7 +65,7 @@ function main() {
   const errors = [];
   const warnings = [];
 
-  console.log("\nWealthy Brainiac — Launch verification\n");
+  console.log("\nDunrite Global — Launch verification\n");
 
   console.log("Environment (.env.local):");
   if (hasReal(env.NEXT_PUBLIC_SITE_URL)) ok(`SITE_URL=${env.NEXT_PUBLIC_SITE_URL}`);

@@ -70,7 +70,7 @@ async function generateArticle({ category, topic, researchBlock, guideCta }) {
     ? `End with a section "## Go deeper" that honestly teases the FREE guide at /guides/${guideCta.freeSlug} and the premium ${guideCta.paidTitle} ($${guideCta.paidPrice}) at /guides/${guideCta.paidSlug} — explain what extra worksheets/checklists the paid guide includes. No hype.`
     : "";
 
-  const system = `You are a staff financial journalist at Wealthy Brainiac (investigative personal finance desk).
+  const system = `You are a staff financial journalist at Dunrite Global (investigative personal finance desk).
 
 VOICE: Confident, specific, humane — like NerdWallet meets The Hustle. Write for smart adults who hate fluff.
 
@@ -164,7 +164,7 @@ function buildFrontmatter({ meta, category, affiliateIds }) {
     `date: "${todayISO()}"`,
     `category: ${category}`,
     `tags: [research, ${category}]`,
-    `author: Wealthy Brainiac Research Desk`,
+    `author: Dunrite Global Research Desk`,
     `featured: true`,
     `affiliateIds: [${affiliateIds.join(", ")}]`,
     sourcesYaml,

@@ -1,6 +1,6 @@
-# Wealthy Brainiac — Launch checklist (your last steps)
+# Dunrite Global — Launch checklist (your last steps)
 
-**Quick start:** open **[https://wealthybrainiac.com/setup](https://wealthybrainiac.com/setup)** (or run `npm run open:setup` on Windows) to launch all signup tabs.
+**Quick start:** open **[https://dunriteglobal.com/setup](https://dunriteglobal.com/setup)** (or run `npm run open:setup` on Windows) to launch all signup tabs.
 
 The site is built to earn from **affiliate commissions**, **digital guide/course sales**, and **Pro subscriptions**. Everything below is what only you can do (accounts, DNS, API keys).
 
@@ -42,8 +42,8 @@ In [Vercel](https://vercel.com) → your project → **Settings → Environment 
 
 | Variable | Required |
 |----------|----------|
-| `NEXT_PUBLIC_SITE_URL` | `https://www.wealthybrainiac.com` |
-| `NEXT_PUBLIC_SITE_NAME` | `Wealthy Brainiac` |
+| `NEXT_PUBLIC_SITE_URL` | `https://www.dunriteglobal.com` |
+| `NEXT_PUBLIC_SITE_NAME` | `Dunrite Global` |
 | `ANTHROPIC_API_KEY` | Yes (daily blog bot) |
 | `TAVILY_API_KEY` | Recommended (citations / Money Pulse) |
 | `STRIPE_SECRET_KEY` | Yes |
@@ -56,7 +56,7 @@ Redeploy after saving.
 
 ---
 
-## 3. Domain — wealthybrainiac.com (~10 min)
+## 3. Domain — dunriteglobal.com (~10 min)
 
 DNS at **Bluehost** (or your registrar):
 
@@ -65,7 +65,7 @@ DNS at **Bluehost** (or your registrar):
 | A | `@` | `76.76.21.21` |
 | CNAME | `www` | `cname.vercel-dns.com` |
 
-In Vercel → **Domains**, add `wealthybrainiac.com` and `www.wealthybrainiac.com`.
+In Vercel → **Domains**, add `dunriteglobal.com` and `www.dunriteglobal.com`.
 
 ---
 

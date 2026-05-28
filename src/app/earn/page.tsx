@@ -5,7 +5,7 @@ import { getAffiliatePrograms } from "@/lib/affiliates";
 export const metadata = {
   title: "Affiliate program setup",
   description:
-    "Join partner programs and paste your tracking links so Wealthy Brainiac pays you on every click.",
+    "Join partner programs and paste your tracking links so Dunrite Global pays you on every click.",
 };
 
 export default function EarnPage() {

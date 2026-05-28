@@ -19,14 +19,14 @@ export function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 lg:px-6">
         <Link href="/" className="flex items-center gap-2 no-underline hover:no-underline">
           <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-[var(--primary)] text-lg font-black text-white">
-            W
+            D
           </span>
           <div className="leading-tight">
             <span className="block text-lg font-extrabold tracking-tight text-[var(--primary)]">
               {site.name}
             </span>
-            <span className="hidden text-[10px] font-semibold uppercase text-[var(--muted)] sm:block">
-              Free wealth education
+            <span className="hidden text-[10px] font-semibold text-[var(--muted)] sm:block">
+              {site.tagline}
             </span>
           </div>
         </Link>

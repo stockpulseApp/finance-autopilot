@@ -18,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),
-    { url: `${base}/wealthy-brainiac`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/dunrite-global`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/wealth-building-guide`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/deals`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/courses`, changeFrequency: "weekly", priority: 0.8 },

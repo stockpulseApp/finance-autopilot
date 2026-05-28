@@ -18,8 +18,7 @@ export const metadata: Metadata = {
     default: `${site.name} — Compare Money Tools & Deals`,
     template: `%s | ${site.name}`,
   },
-  description:
-    "Compare investing apps, credit cards, courses, and wealth tools. Expert guides and vetted deals — save money like you shop travel deals.",
+  description: site.description,
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? site.url),
   openGraph: {
     type: "website",

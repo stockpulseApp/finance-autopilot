@@ -4,7 +4,7 @@ description: "Actionable guide on how to pay off $30k of debt in 24 months — f
 date: 2026-06-20
 category: debt
 tags: [debt, wealth-building, guides]
-author: Wealthy Brainiac Research Desk
+author: Dunrite Global Research Desk
 featured: false
 affiliateIds: ["sofi-refinance", "national-debt-relief"]
 ---
@@ -56,4 +56,4 @@ Use our [deals page](/deals) to compare vetted partners in **debt**. We rank off
 
 ## Bottom line
 
-How to Pay Off $30k of Debt in 24 Months rewards consistency more than intensity. Build the system, automate it, and let compounding do the heavy lifting. For a structured multi-week plan, start with our [free wealth sprint](/newsletter) or explore [Wealth Brainiac Pro](/subscription) for daily research on autopilot.
+How to Pay Off $30k of Debt in 24 Months rewards consistency more than intensity. Build the system, automate it, and let compounding do the heavy lifting. For a structured multi-week plan, start with our [free wealth sprint](/newsletter) or explore [Dunrite Global Pro](/subscription) for daily research on autopilot.
