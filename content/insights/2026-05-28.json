@@ -6,31 +6,46 @@
     {
       "category": "investing",
       "topic": "stock market and index investing this week",
-      "headline": "Fed on hold at 3.5%–3.75% while markets price fewer cuts",
-      "summary": "The FOMC left the federal funds rate unchanged; futures now lean toward possible hikes later in 2026 if inflation stays sticky. Long-term investors should expect volatility, not a quick pivot to easy money.",
-      "editorial": "April FOMC minutes show officials still balancing inflation risk against growth. Market-implied paths moved up modestly — participants see limited easing this year, with some probability of hikes into early 2027 ([FOMC minutes, April 2026](https://www.federalreserve.gov/monetarypolicy/fomcminutes20260429.htm)).\n\nFor index-fund savers, the lesson is unchanged: your edge is contribution rate and asset mix, not guessing the next meeting. If you're building a first portfolio, start with our free [30-Day Wealth Sprint](/guides/30-day-wealth-sprint) then the [Index Fund Starter Kit](/guides/index-fund-starter-kit) preview.",
+      "headline": "S&P 500 Notches Eight-Week Winning Streak as Tech Rallies Mask Rising Inflation Concerns",
+      "summary": "U.S. equity markets extended their resilience last week, with the S&P 500 securing its longest consecutive winning streak since late 2023 and hovering within 0.4% of record highs. Asian markets mirrored the enthusiasm as Japanese and South Korean exchanges hit fresh records on Wall Street's tech-driven momentum. Yet beneath the surface optimism, investors face mounting headwinds from spiking bond yields and inflation data that continues drifting further from the Federal Reserve's 2% target.",
+      "editorial": "The current market rally presents a peculiar paradox that should give investors pause. While the [S&P 500 has climbed for eight straight weeks](https://www.cnbc.com/2026/05/23/bulls-push-sp-500-back-near-records-what-drove-the-market-last-week.html) since bottoming on March 30 during Iran conflict fears, the [disconnect between soaring stock valuations and deteriorating consumer sentiment](https://www.wsj.com/economy/consumers/stock-market-consumer-sentiment-af088e87) has reached unprecedented levels. Markets have essentially shrugged off negative catalysts—from surging oil prices to persistent geopolitical uncertainty—by fixating on robust corporate earnings and artificial intelligence enthusiasm. [Asian markets joined the party](https://www.investing.com/news/stock-market-news/asia-stocks-japan-skorea-hit-records-on-wall-st-tech-rally-iran-fears-persist-4711171), with Japanese and South Korean indices scaling record highs despite lingering Iran peace deal uncertainties.\n\nThe celebration may prove premature as fundamental challenges reassert themselves. [Reuters warns that high-flying equities could face turbulence](https://www.reuters.com/business/wall-st-week-ahead-soaring-stocks-could-face-rocky-patch-earnings-wind-down-2026-05-22/) as the earnings season winds down and investors confront an increasingly tricky backdrop. Thursday's personal consumption expenditures data is [expected to show core inflation accelerating to 3.4%](https://www.cnbc.com/2026/05/22/stock-market-next-week-outlook-for-may-25-29-2026.html) from 3.2% the prior month—moving precisely the wrong direction from the Fed's comfort zone. Rising bond yields create a natural headwind for equity valuations, particularly for growth-oriented tech stocks that have powered this rally. Investors riding this momentum should prepare contingency plans for when market sentiment catches up with economic reality.",
       "socialHighlights": [
         {
-          "text": "Commentary around Kevin Warsh's swearing-in as Fed chair highlights tension between political pressure for lower rates and futures markets that still price a higher-for-longer path.",
-          "source": "CNBC / market desk",
-          "url": "https://www.cnbc.com/2026/05/22/trump-kevin-warsh-fed-chair-interest-rates.html"
+          "text": "The BlackRock Investment Institute's weekly commentary highlighted the tension between record equity valuations and elevated bond yields, noting that historical correlations between these asset classes show significant stress at current levels.",
+          "source": "BlackRock Investment Institute",
+          "url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary"
+        },
+        {
+          "text": "J.P. Morgan's weekly market recap emphasized that style box returns across the Russell indexes showed broad-based strength, but cautioned that earnings momentum may be peaking at precisely the wrong time given macro uncertainties.",
+          "source": "J.P. Morgan Asset Management",
+          "url": "https://am.jpmorgan.com/us/en/asset-management/adv/insights/market-insights/market-updates/weekly-market-recap"
         }
       ],
       "sources": [
         {
-          "title": "FOMC Minutes — April 2026",
-          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260429.htm",
-          "outlet": "Federal Reserve"
+          "title": "Bulls push the S&P 500 back near records — here's what drove the market last week",
+          "url": "https://www.cnbc.com/2026/05/23/bulls-push-sp-500-back-near-records-what-drove-the-market-last-week.html",
+          "outlet": "CNBC"
         },
         {
-          "title": "Fed Leaves Rates Unchanged to Start 2026",
-          "url": "https://www.jpmorgan.com/insights/markets-and-economy/economy/fed-meeting-january-2026",
-          "outlet": "J.P. Morgan"
+          "title": "Asia stocks: Japan, S.Korea hit records on Wall St tech rally; Iran fears persist",
+          "url": "https://www.investing.com/news/stock-market-news/asia-stocks-japan-skorea-hit-records-on-wall-st-tech-rally-iran-fears-persist-4711171",
+          "outlet": "Investing.com"
         },
         {
-          "title": "Kevin Warsh takes oath as Fed chair",
-          "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm",
-          "outlet": "Federal Reserve"
+          "title": "Wall St Week Ahead Soaring stocks could face rocky patch as earnings wind down, yields perk up",
+          "url": "https://www.reuters.com/business/wall-st-week-ahead-soaring-stocks-could-face-rocky-patch-earnings-wind-down-2026-05-22/",
+          "outlet": "Reuters"
+        },
+        {
+          "title": "The Stock Market Has Never Been So Good When People Have Felt So Bad",
+          "url": "https://www.wsj.com/economy/consumers/stock-market-consumer-sentiment-af088e87",
+          "outlet": "Wall Street Journal"
+        },
+        {
+          "title": "The unofficial start to summer could be tough for stocks. Here's what's ahead",
+          "url": "https://www.cnbc.com/2026/05/22/stock-market-next-week-outlook-for-may-25-29-2026.html",
+          "outlet": "CNBC"
         }
       ],
       "researchedAt": "2026-05-28"
@@ -38,20 +53,51 @@
     {
       "category": "personal-finance",
       "topic": "inflation consumer spending household budgets",
-      "headline": "Sticky inflation keeps emergency funds and cash yields relevant",
-      "summary": "With inflation above target for years, policymakers warn they could hike if price pressures persist — households should prioritize liquid buffers before chasing risk assets.",
-      "editorial": "Fed Governor Lisa Cook's recent remarks underscore that disinflation is not guaranteed; officials are open to raising rates if expectations slip ([American Banker](https://www.americanbanker.com/news/feds-cook-prepared-to-raise-rates-if-inflation-persists)).\n\nThat makes **cash reserves** and **high-yield savings** part of strategy, not a failure. Use our [Emergency Fund Blueprint](/guides/emergency-fund-blueprint) to size targets and automate transfers after payday.",
-      "socialHighlights": [],
-      "sources": [
+      "headline": "Consumer Spending Limps Forward as Inflation Hits Three-Year High, Squeezing Middle-Income Households",
+      "summary": "U.S. consumer spending increased a meager 0.1% in real terms during April as inflation accelerated to 3.8%—the highest rate since 2023—with core PCE rising 3.3% year-over-year. Middle-income families face an even harsher reality, experiencing 4.4% inflation when adjusted for their specific purchasing patterns, while personal income remained essentially flat and households absorb an extra $188 in fuel costs since late February.",
+      "editorial": "The divergence between tepid spending growth and accelerating price pressures reveals an economy running on fumes rather than fundamentals. According to [official BEA data](https://www.bea.gov/news/2026/personal-income-and-outlays-april-2026), personal income barely budged in April even as the [PCE price index jumped to 3.8%](https://www.bloomberg.com/news/articles/2026-05-28/us-consumer-spending-barely-rises-as-inflation-accelerates)—a toxic combination that erodes purchasing power precisely when households need it most. The [Primerica Household Budget Index](https://markets.ft.com/data/announce/detail?dockey=600-202605280000BIZWIRE_USPRX____20260527_BW431413-1) demonstrates how aggregate statistics mask deeper pain: middle-income Americans face 4.4% inflation versus the 3.8% headline figure, with necessity costs (food, utilities, gas, healthcare) climbing even faster.\n\nWhat's propping up consumption appears increasingly artificial and temporary. [Retailers report](https://www.greenwichtime.com/business/article/america-in-focus-mortgage-rate-rises-while-wall-22272416.php) that shoppers remain active thanks largely to generous tax refunds, but economists widely expect spending to contract once that windfall evaporates. [CBS News analysis](https://www.cbsnews.com/news/walmart-retail-sales-consumer-spending-economy/) highlights the critical tension: consumer spending drives two-thirds of economic activity, yet wealthier households are doing the heavy lifting while middle and lower-income families strain under [rising fuel costs](https://www.cbsnews.com/news/walmart-retail-sales-consumer-spending-economy/) and essentials inflation. Research from the [Penn Wharton Budget Model](https://budgetmodel.wharton.upenn.edu/p/2021-12-15-consumption-under-inflation-what-are-the-costs) shows lower-income households bear disproportionate burdens during inflationary periods, and with [retailers facing margin pressure](https://internetretailing.net/guest-post-falling-inflation-masks-retailer-price-pain-how-can-profitability-be-sustained/) from supply chain costs, the path forward looks increasingly treacherous for both businesses and budget-conscious consumers.",
+      "socialHighlights": [
         {
-          "title": "Fed's Cook 'prepared to raise rates' if inflation persists",
-          "url": "https://www.americanbanker.com/news/feds-cook-prepared-to-raise-rates-if-inflation-persists",
-          "outlet": "American Banker"
+          "text": "TD Economics notes consumer resilience exceeds expectations despite K-shaped dynamics, now projecting 2.8% real spending growth for the year versus earlier 2.0% estimates, though warns that widening gaps between consumer groups remain a concern.",
+          "source": "TD Economics",
+          "url": "https://economics.td.com/us-k-shaped-consumer-spending"
         },
         {
-          "title": "FOMC Minutes — April 2026",
-          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260429.htm",
-          "outlet": "Federal Reserve"
+          "text": "U.S. Bank emphasizes that consumer spending remains the clearest signal of economic health because it shows how households respond to changing conditions in real time, making up the largest share of economic output.",
+          "source": "U.S. Bank",
+          "url": "https://www.usbank.com/investing/financial-perspectives/market-news/consumer-spending.html"
+        },
+        {
+          "text": "Burke research shows consumers initially traded down to counter rising costs, but as inflation persisted, broader behavioral shifts emerged including less frequent purchases, shifting from restaurants to home cooking, and greater acceptance of value brands.",
+          "source": "Burke",
+          "url": "https://www.burke.com/beyondmeasure/inflations-impact-on-consumers"
+        }
+      ],
+      "sources": [
+        {
+          "title": "US Consumer Spending Edges Up as Inflation Accelerates",
+          "url": "https://www.bloomberg.com/news/articles/2026-05-28/us-consumer-spending-barely-rises-as-inflation-accelerates",
+          "outlet": "Bloomberg"
+        },
+        {
+          "title": "Consumers are still spending, but cracks are starting to show",
+          "url": "https://www.cbsnews.com/news/walmart-retail-sales-consumer-spending-economy/",
+          "outlet": "CBS News"
+        },
+        {
+          "title": "PRIMERICA HOUSEHOLD BUDGET INDEX™: Rising Gas Prices Limit Purchasing Power",
+          "url": "https://markets.ft.com/data/announce/detail?dockey=600-202605280000BIZWIRE_USPRX____20260527_BW431413-1",
+          "outlet": "Financial Times"
+        },
+        {
+          "title": "Personal Income and Outlays, April 2026",
+          "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-april-2026",
+          "outlet": "U.S. Bureau of Economic Analysis"
+        },
+        {
+          "title": "America In Focus: mortgage rate rises while Wall Street looks to continue its winning ways",
+          "url": "https://www.greenwichtime.com/business/article/america-in-focus-mortgage-rate-rises-while-wall-22272416.php",
+          "outlet": "Greenwich Time"
         }
       ],
       "researchedAt": "2026-05-28"
@@ -59,15 +105,56 @@
     {
       "category": "credit-cards",
       "topic": "credit card rewards interest rates Fed",
-      "headline": "Higher-for-longer rates keep APR math brutal on revolving debt",
-      "summary": "While the fed funds range sits at 3.5%–3.75%, many card APRs remain far higher. Paying down revolving balances still beats optimizing rewards.",
-      "editorial": "When policy rates pause but card APRs stay elevated, the highest-return 'investment' for many households is still avalanche payments on revolving credit. Rewards only matter after you stop paying interest.\n\nOur free sprint includes a subscription audit and minimum-payment calendar; the paid [750+ Credit Score Playbook](/guides/credit-score-750-playbook) covers utilization and dispute workflows when you're ready.",
-      "socialHighlights": [],
+      "headline": "Credit Card Rewards Come at a Steep Price as Interest Rate Margins Hit Record Highs",
+      "summary": "While credit card rewards programs appear generous, cardholders collectively pay for these perks through interest rates that have nearly doubled over the past decade. With average APRs reaching 22.8% in 2023—the highest since 1994—and credit card companies spending nearly $68 billion annually on rewards, the mathematics reveal that only cardholders who pay in full monthly actually benefit from these programs.",
+      "editorial": "The credit card ecosystem has created a paradoxical wealth transfer where responsible cardholders earn rewards effectively subsidized by those carrying balances. [Research from the Federal Reserve](https://www.federalreserve.gov/econres/feds/files/2023007pap.pdf) reveals that banks offer lower APRs on rewards cards to prime customers while charging subprime borrowers only slightly less, creating a system where [interest rate margins have reached all-time highs](https://www.consumerfinance.gov/about-us/blog/credit-card-interest-rate-margins-at-all-time-high) even as the six largest card issuers collectively spent $67.9 billion on rewards in 2023. The [CNBC analysis](https://www.cnbc.com/select/what-type-of-credit-card-rewards-should-i-earn/) highlights cards like the Wells Fargo Active Cash offering 2% unlimited cash back with no annual fee, but the [AP News report](https://apnews.com/article/credit-cards-airline-rewards-summer-travel-346954509f124b97e20c5efc6f378c93) cautions that with average interest rates between 21-24%, even a $1,000 balance quickly erases any rewards value.\n\nThe underlying economics expose a troubling reality: credit card rewards function as a regressive transfer from lower-income consumers to wealthier ones. [Wharton research](https://knowledge.wharton.upenn.edu/article/why-is-your-credit-card-rate-so-high) shows credit card issuers enjoy an 18% spread over the Fed funds rate—dramatically higher than the 2.25% spread on commercial loans or 4.21% on even the riskiest corporate bonds. [NerdWallet's analysis](https://www.nerdwallet.com/credit-cards/studies/data-debt-rewards) demonstrates that for cardholders carrying balances, a generous $500 sign-up bonus gets wiped out by interest charges in just 13 months with $500 monthly payments on $1,000 spending. As [discussions of a potential 10% interest rate cap](https://www.nerdwallet.com/credit-cards/news/credit-card-trends-2026) circulate in Congress, the industry faces a reckoning that could fundamentally reshape the rewards paradigm—likely meaning diminished perks for those who currently benefit most from the system.",
+      "socialHighlights": [
+        {
+          "text": "The Federal Reserve found that consumers collectively carry over $1 trillion in credit card debt, and rate cuts could bring \"much-needed financial relief\" to struggling cardholders facing sustained high APRs.",
+          "source": "Experian",
+          "url": "https://www.experian.com/blogs/ask-experian/how-do-fed-rate-cuts-impact-credit-cards"
+        },
+        {
+          "text": "The Federal Reserve Bank of New York noted that in 2023, the six largest card banks spent a staggering $67.9 billion on rewards programs, leading to the hypothesis that \"high interest rates are necessary to recoup the high cost of rewards.\"",
+          "source": "Liberty Street Economics",
+          "url": "https://libertystreeteconomics.newyorkfed.org/2025/03/why-are-credit-card-rates-so-high"
+        },
+        {
+          "text": "Research shows that store credit cards carry APRs approximately 6 percentage points higher than general-purpose cards, with private label card rates averaging 27.7% in 2022, according to CFPB analysis.",
+          "source": "NerdWallet",
+          "url": "https://www.nerdwallet.com/credit-cards/learn/credit-card-data"
+        }
+      ],
       "sources": [
         {
-          "title": "FOMC Minutes — April 2026",
-          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260429.htm",
-          "outlet": "Federal Reserve"
+          "title": "What type of credit card rewards should I earn?",
+          "url": "https://www.cnbc.com/select/what-type-of-credit-card-rewards-should-i-earn/",
+          "outlet": "CNBC"
+        },
+        {
+          "title": "Your credit card could help cut the cost of your summer vacation",
+          "url": "https://www.cnbc.com/amp/select/credit-card-perks-cut-cost-summer-vacation/",
+          "outlet": "CNBC"
+        },
+        {
+          "title": "Airline miles may not go as far as the Iran war drives up fuel costs and summer fares",
+          "url": "https://apnews.com/article/credit-cards-airline-rewards-summer-travel-346954509f124b97e20c5efc6f378c93",
+          "outlet": "AP News"
+        },
+        {
+          "title": "Why Is Your Credit Card Rate So High?",
+          "url": "https://knowledge.wharton.upenn.edu/article/why-is-your-credit-card-rate-so-high",
+          "outlet": "Knowledge at Wharton"
+        },
+        {
+          "title": "Credit card interest rate margins at all-time high",
+          "url": "https://www.consumerfinance.gov/about-us/blog/credit-card-interest-rate-margins-at-all-time-high",
+          "outlet": "Consumer Financial Protection Bureau"
+        },
+        {
+          "title": "If You're in Credit Card Debt, Forget About Rewards",
+          "url": "https://www.nerdwallet.com/credit-cards/studies/data-debt-rewards",
+          "outlet": "NerdWallet"
         }
       ],
       "researchedAt": "2026-05-28"
@@ -75,26 +162,56 @@
     {
       "category": "real-estate",
       "topic": "mortgage rates housing market rentals",
-      "headline": "Politics vs. markets on mortgage rates",
-      "summary": "Public rhetoric favors lower borrowing costs, but futures markets are not pricing aggressive cuts in 2026. Buyers should stress-test payments, not headlines.",
-      "editorial": "Recent coverage notes political pressure for lower rates while traders still expect the Fed on hold through much of 2026 ([CNBC](https://www.cnbc.com/2026/05/22/trump-kevin-warsh-fed-chair-interest-rates.html)). For renters and buyers, run the numbers on your actual offer rate and reserve fund — see our [Rental Deal Analyzer](/guides/rental-deal-analyzer) preview when evaluating investment property.",
+      "headline": "Mortgage Rates Surge Past 6.5% as Housing Market Activity Hits 12-Year Low",
+      "summary": "Mortgage rates have climbed to 6.53%, a nine-month high, despite geopolitical developments that typically ease market tensions. The rising rates have triggered a sharp contraction in housing market activity, with purchase loan volumes plunging to their lowest level since 2014 and refinancing applications dropping 18% as affordability reaches critical levels.",
+      "editorial": "The housing market is experiencing a painful squeeze as [mortgage rates hit 6.53%](https://www.realtor.com/news/trends/mortgage-interest-rates-now-may-28-2026/), defying expectations that a looming Iran peace deal might ease financial pressures. This rate surge has created a devastating ripple effect: [home purchase loans have plummeted to a 12-year low](https://www.realtor.com/news/trends/home-purchase-loans-12-year-low-attom-report-q1-2026/), and [refinancing applications dropped 18%](https://www.realtor.com/news/trends/mortgage-applications-purchase-refinance-today-may-27-2026/) in a single reporting period. The crisis in affordability is pushing annual home sales well below the pre-pandemic norm of 5 million units, with current activity suggesting Americans are essentially locked out of the market at these rate levels.\n\nYet there are emerging bright spots for buyers willing to navigate these choppy waters. [Listing prices are beginning to fall](https://www.realtor.com/news/real-estate-news/housing-market-update-mortgage-inventory-may-22-2026/) as sellers adjust to the new reality of diminished buyer demand, creating potential opportunities for those with sufficient liquidity or income. The market dynamics suggest that while [rates above 6.5% continue to drag on sales](https://www.bankrate.com/mortgages/mortgage-rates), the combination of reduced competition and motivated sellers could actually favor well-positioned buyers. Investment property financing remains particularly challenging, with [rental property mortgage rates fluctuating more dramatically](https://localfirstbank.com/article/how-to-get-a-mortgage-for-a-rental-property) than primary residence loans as lenders demand proof that borrowers can carry both mortgages simultaneously—a safety measure that further restricts market participation.",
       "socialHighlights": [
         {
-          "text": "Discussion tied Fed leadership changes to housing affordability narratives — with markets still cautious on near-term rate cuts.",
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/05/22/trump-kevin-warsh-fed-chair-interest-rates.html"
+          "text": "Lenders are becoming increasingly cautious about rental property mortgages, requiring borrowers to demonstrate they can cover both primary residence and investment property payments simultaneously as a safety net against rental income failures.",
+          "source": "First Bank",
+          "url": "https://localfirstbank.com/article/how-to-get-a-mortgage-for-a-rental-property"
+        },
+        {
+          "text": "Annual home sales volumes have fallen dramatically from the pandemic-era peak of 6 million units, now trending well below the typical pre-COVID baseline of 5 million homes per year.",
+          "source": "Bankrate",
+          "url": "https://www.bankrate.com/mortgages/mortgage-rates"
+        },
+        {
+          "text": "Investment property loans can offer faster approval times and higher ROI potential than other investments, with some private and hard money loans funded within just a few business days.",
+          "source": "Forbes Advisor",
+          "url": "https://www.forbes.com/advisor/mortgages/current-investment-property-mortgage-rates"
         }
       ],
       "sources": [
         {
-          "title": "Trump swears Kevin Warsh in as Fed chair",
-          "url": "https://www.cnbc.com/2026/05/22/trump-kevin-warsh-fed-chair-interest-rates.html",
-          "outlet": "CNBC"
+          "title": "Listing Prices Are Falling, but Resurgent Mortgage Rates Have Buyers Spooked",
+          "url": "https://www.realtor.com/news/real-estate-news/housing-market-update-mortgage-inventory-may-22-2026/",
+          "outlet": "Realtor.com"
         },
         {
-          "title": "FOMC Minutes — April 2026",
-          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260429.htm",
-          "outlet": "Federal Reserve"
+          "title": "Mortgage Rates Hit 6.53% Despite Looming Iran Peace Deal",
+          "url": "https://www.realtor.com/news/trends/mortgage-interest-rates-now-may-28-2026/",
+          "outlet": "Realtor.com"
+        },
+        {
+          "title": "Mortgage Applications for Refinancing Drop 18% as Interest Rates Rise",
+          "url": "https://www.realtor.com/news/trends/mortgage-applications-purchase-refinance-today-may-27-2026/",
+          "outlet": "Realtor.com"
+        },
+        {
+          "title": "Home Purchase Loans Plunge to 12-Year Low as High Mortgage Rates Crush Affordability",
+          "url": "https://www.realtor.com/news/trends/home-purchase-loans-12-year-low-attom-report-q1-2026/",
+          "outlet": "Realtor.com"
+        },
+        {
+          "title": "Why Mortgage Rates Just Hit a 9-Month High—and What It Means for Buyers and Sellers",
+          "url": "https://www.realtor.com/news/trends/mortgage-rates-9-month-high-iran-war-housing-market/",
+          "outlet": "Realtor.com"
+        },
+        {
+          "title": "Current Mortgage Rates: Compare Today's Rates",
+          "url": "https://www.bankrate.com/mortgages/mortgage-rates",
+          "outlet": "Bankrate"
         }
       ],
       "researchedAt": "2026-05-28"
