@@ -1,0 +1,49 @@
+{
+  "courses": [
+    {
+      "slug": "wealth-foundation",
+      "title": "Wealth Foundation: Budget to Invest in 30 Days",
+      "price": 97,
+      "currency": "USD",
+      "level": "Beginner",
+      "modules": 8,
+      "description": "A step-by-step system to automate savings, kill high-interest debt, and start investing with confidence.",
+      "outcomes": [
+        "Build a budget you won't quit",
+        "Set up automatic saving and investing",
+        "Pick your first index fund portfolio"
+      ],
+      "stripePriceId": "price_REPLACE_ME"
+    },
+    {
+      "slug": "real-estate-starter",
+      "title": "Real Estate Starter: Analyze Your First Deal",
+      "price": 147,
+      "currency": "USD",
+      "level": "Intermediate",
+      "modules": 10,
+      "description": "Learn cash flow, cap rate, and due diligence — with spreadsheets and checklists included.",
+      "outcomes": [
+        "Run cash-flow analysis on any rental",
+        "Spot red flags before you offer",
+        "Decide rent vs buy with numbers"
+      ],
+      "stripePriceId": "price_REPLACE_ME"
+    },
+    {
+      "slug": "credit-mastery",
+      "title": "Credit Mastery: 750+ Score Playbook",
+      "price": 67,
+      "currency": "USD",
+      "level": "Beginner",
+      "modules": 6,
+      "description": "Optimize utilization, disputes, and card strategy without carrying balances.",
+      "outcomes": [
+        "Understand what actually moves your score",
+        "Design a card lineup for your goals",
+        "Avoid fees and interest traps"
+      ],
+      "stripePriceId": "price_REPLACE_ME"
+    }
+  ]
+}

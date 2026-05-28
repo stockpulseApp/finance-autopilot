@@ -1,0 +1,68 @@
+{
+  "rotation": [
+    {
+      "category": "personal-finance",
+      "prompts": [
+        "How to build a zero-based budget that actually sticks",
+        "Emergency fund sizing: rules of thumb vs your real life",
+        "High-yield savings vs money market accounts in 2026"
+      ]
+    },
+    {
+      "category": "investing",
+      "prompts": [
+        "Index funds vs ETFs for beginners",
+        "Dollar-cost averaging when markets feel scary",
+        "Roth IRA vs traditional IRA: who wins and why"
+      ]
+    },
+    {
+      "category": "real-estate",
+      "prompts": [
+        "House hacking explained for first-time buyers",
+        "Rental property cash flow: numbers that matter",
+        "When renting beats buying (and vice versa)"
+      ]
+    },
+    {
+      "category": "credit-cards",
+      "prompts": [
+        "How to use credit cards for rewards without debt",
+        "Balance transfer cards: traps and smart moves",
+        "Building credit from scratch in 12 months"
+      ]
+    },
+    {
+      "category": "debt",
+      "prompts": [
+        "Debt avalanche vs snowball with real examples",
+        "Student loan repayment strategies that save interest",
+        "When debt consolidation helps — and when it hurts"
+      ]
+    },
+    {
+      "category": "taxes",
+      "prompts": [
+        "Tax-advantaged accounts ranked for wealth building",
+        "Estimated taxes for freelancers: a simple system",
+        "Capital gains basics every investor should know"
+      ]
+    },
+    {
+      "category": "side-income",
+      "prompts": [
+        "Side hustles that scale without trading all your time",
+        "Freelance pricing: how to charge what you're worth",
+        "Passive income myths vs realistic streams"
+      ]
+    },
+    {
+      "category": "retirement",
+      "prompts": [
+        "401(k) match math: don't leave free money",
+        "FIRE variants explained: lean, barista, coast",
+        "Social Security timing: early vs delayed benefits"
+      ]
+    }
+  ]
+}

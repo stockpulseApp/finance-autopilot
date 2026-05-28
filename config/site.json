@@ -1,0 +1,24 @@
+{
+  "name": "Finance Autopilot",
+  "tagline": "Daily education on saving, investing, real estate, credit, and building wealth — on autopilot.",
+  "description": "Expert guides on personal finance, investing, real estate, credit cards, taxes, and wealth building. New articles every day.",
+  "url": "https://financeautopilot.com",
+  "author": "Finance Autopilot Team",
+  "categories": [
+    "personal-finance",
+    "investing",
+    "real-estate",
+    "credit-cards",
+    "debt",
+    "taxes",
+    "side-income",
+    "retirement",
+    "insurance",
+    "mindset"
+  ],
+  "social": {
+    "twitter": "",
+    "youtube": "",
+    "newsletter": "/newsletter"
+  }
+}
