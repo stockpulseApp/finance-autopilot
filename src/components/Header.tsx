@@ -2,8 +2,9 @@ import Link from "next/link";
 import site from "../../config/site.json";
 
 const nav = [
+  { href: "/start-here", label: "Start Here" },
   { href: "/blog", label: "Blog" },
-  { href: "/categories", label: "Topics" },
+  { href: "/products", label: "Products" },
   { href: "/deals", label: "Deals" },
   { href: "/courses", label: "Courses" },
   { href: "/tools", label: "Tools" },
@@ -32,7 +33,7 @@ export function Header() {
           href="/newsletter"
           className="rounded-lg bg-[var(--accent)] px-3 py-2 text-sm font-semibold text-black no-underline hover:bg-[var(--accent-dim)] hover:text-white hover:no-underline"
         >
-          Free wealth guide
+          30-Day Wealth Sprint
         </Link>
       </div>
     </header>

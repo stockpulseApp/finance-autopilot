@@ -1,0 +1,20 @@
+{
+  "brandVoice": {
+    "positioning": "High-performance personal finance for ambitious builders.",
+    "tone": ["authoritative", "clear", "actionable", "optimistic"],
+    "contentPromise": "Every piece should help the reader make or save money within 24 hours."
+  },
+  "funnel": {
+    "leadMagnet": "30-Day Wealth Sprint",
+    "tripwire": "Money OS Templates Pack",
+    "coreOffer": "Wealth Operating System Course",
+    "highTicket": "Portfolio & Cashflow Strategy Intensive"
+  },
+  "socialPillars": [
+    "Money systems",
+    "Investing frameworks",
+    "Real estate playbooks",
+    "Credit optimization",
+    "Income acceleration"
+  ]
+}

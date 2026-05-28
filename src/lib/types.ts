@@ -32,3 +32,14 @@ export type Course = {
   outcomes: string[];
   stripePriceId: string;
 };
+
+export type DigitalProduct = {
+  slug: string;
+  name: string;
+  type: "template" | "course" | "service";
+  price: number;
+  headline: string;
+  description: string;
+  delivery: string;
+  checkoutUrl: string;
+};

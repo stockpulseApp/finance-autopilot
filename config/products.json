@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "slug": "money-os-template-pack",
+      "name": "Money OS Template Pack",
+      "type": "template",
+      "price": 29,
+      "headline": "Plug-and-play budget, debt, and investing trackers.",
+      "description": "Notion + Google Sheets system for daily money control.",
+      "delivery": "Instant download",
+      "checkoutUrl": "https://gumroad.com/l/REPLACE_ME"
+    },
+    {
+      "slug": "wealth-operating-system",
+      "name": "Wealth Operating System",
+      "type": "course",
+      "price": 197,
+      "headline": "Automate saving, investing, and cashflow growth.",
+      "description": "8-week implementation system to build your personal money machine.",
+      "delivery": "Course portal",
+      "checkoutUrl": "https://checkout.stripe.com/pay/REPLACE_ME"
+    },
+    {
+      "slug": "portfolio-cashflow-intensive",
+      "name": "Portfolio & Cashflow Intensive",
+      "type": "service",
+      "price": 999,
+      "headline": "1:1 strategy session for high-leverage money decisions.",
+      "description": "Deep dive into investments, debt, taxes, and monthly execution plan.",
+      "delivery": "Private call",
+      "checkoutUrl": "mailto:you@stockpulsemoney.com"
+    }
+  ]
+}

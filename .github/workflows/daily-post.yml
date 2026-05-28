@@ -19,16 +19,17 @@ jobs:
           node-version: "22"
           cache: npm
 
-      - name: Generate post
+      - name: Generate post + social assets
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ANTHROPIC_MODEL: claude-sonnet-4-20250514
-        run: node scripts/generate-daily-post.mjs
+          SOCIAL_REPURPOSE_MODEL: claude-sonnet-4-20250514
+        run: node scripts/daily-growth-pipeline.mjs
 
       - name: Commit and push
         run: |
           git config user.name "finance-autopilot-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add content/posts/
-          git diff --staged --quiet || git commit -m "chore: daily blog post $(date -u +%Y-%m-%d)"
+          git add content/posts/ content/social/
+          git diff --staged --quiet || git commit -m "chore: daily growth content $(date -u +%Y-%m-%d)"
           git push

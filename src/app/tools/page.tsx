@@ -4,18 +4,18 @@ const tools = [
   {
     slug: "compound-interest",
     title: "Compound Interest Calculator",
-    description: "See how monthly contributions grow over time.",
+    description: "See how monthly contributions grow over time."
   },
   {
     slug: "mortgage-payment",
     title: "Mortgage Payment Estimator",
-    description: "Estimate PITI and compare loan terms.",
+    description: "Estimate principal, interest, taxes, and insurance."
   },
   {
     slug: "debt-payoff",
     title: "Debt Payoff Calculator",
-    description: "Avalanche vs snowball timelines.",
-  },
+    description: "Compare avalanche vs snowball payoff timelines."
+  }
 ];
 
 export const metadata = { title: "Free Tools" };
@@ -23,10 +23,9 @@ export const metadata = { title: "Free Tools" };
 export default function ToolsPage() {
   return (
     <div>
-      <h1 className="text-3xl font-bold">Free financial tools</h1>
+      <h1 className="text-3xl font-bold">Free money tools</h1>
       <p className="mt-2 text-[var(--muted)]">
-        Calculators drive SEO traffic and pair well with affiliate offers (brokers, lenders,
-        cards).
+        High-intent calculators to grow SEO traffic, email signups, and affiliate conversions.
       </p>
       <div className="mt-10 grid gap-6 md:grid-cols-3">
         {tools.map((t) => (

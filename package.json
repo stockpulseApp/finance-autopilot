@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "generate:post": "node scripts/generate-daily-post.mjs",
-    "generate:post:dry": "node scripts/generate-daily-post.mjs --dry-run"
+    "generate:post:dry": "node scripts/generate-daily-post.mjs --dry-run",
+    "repurpose:social": "node scripts/repurpose-social.mjs",
+    "pipeline:daily": "node scripts/daily-growth-pipeline.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
