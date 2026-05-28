@@ -6,3 +6,6 @@ out
 .DS_Store
 *.log
 .vercel
+
+trippulse.db
+*.db
