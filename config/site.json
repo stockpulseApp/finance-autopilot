@@ -1,9 +1,9 @@
 {
-  "name": "StockPulse Money",
+  "name": "Wealthy Brainiac",
   "tagline": "Build wealth with elite money strategies, automated daily.",
-  "description": "StockPulse Money delivers high-conviction guides on investing, real estate, credit, taxes, and income systems with daily AI-assisted publishing and monetization tools.",
+  "description": "Wealthy Brainiac delivers high-conviction guides on investing, real estate, credit, taxes, and income systems with daily AI-assisted publishing and monetization tools.",
   "url": "https://wealthybrainiac.com",
-  "author": "StockPulse Money Editorial Team",
+  "author": "Wealthy Brainiac Editorial Team",
   "categories": [
     "personal-finance",
     "investing",
@@ -17,8 +17,8 @@
     "mindset"
   ],
   "social": {
-    "twitter": "https://x.com/stockpulsemoney",
-    "youtube": "https://youtube.com/@stockpulsemoney",
+    "twitter": "",
+    "youtube": "",
     "newsletter": "/newsletter"
   }
 }
