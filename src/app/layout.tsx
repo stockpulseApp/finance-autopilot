@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { StickyOfferBar } from "@/components/StickyOfferBar";
+import { StructuredData } from "@/components/StructuredData";
 import site from "../../config/site.json";
 import "./globals.css";
 
@@ -25,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <StructuredData />
         <Header />
         <main className="mx-auto min-h-[70vh] max-w-6xl px-4 py-10 pb-24 md:pb-10">{children}</main>
         <StickyOfferBar />

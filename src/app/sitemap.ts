@@ -9,6 +9,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: base, changeFrequency: "daily", priority: 1 },
     { url: `${base}/blog`, changeFrequency: "daily", priority: 0.9 },
+    { url: `${base}/wealthy-brainiac`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/wealth-building-guide`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/deals`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/courses`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/tools`, changeFrequency: "monthly", priority: 0.7 },
