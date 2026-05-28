@@ -1,63 +1,56 @@
 import Link from "next/link";
-import { PostCard } from "@/components/PostCard";
-import { CategoryCtaRibbon } from "@/components/CategoryCtaRibbon";
-import { SectionHeading } from "@/components/ui/SectionHeading";
+import { CategoryTile } from "@/components/marketplace/CategoryTile";
+import { GuideOfferCard } from "@/components/marketplace/GuideOfferCard";
 import { CATEGORY_META } from "@/lib/categories";
 import { getAllPosts } from "@/lib/posts";
 import site from "../../../config/site.json";
 
-export const metadata = { title: "Topics" };
+export const metadata = { title: "Browse Money Goals" };
 
 export default function CategoriesPage() {
   const posts = getAllPosts();
-  const byCategory = site.categories.map((cat) => ({
-    cat,
-    meta: CATEGORY_META[cat],
-    posts: posts.filter((p) => p.category === cat),
-  }));
 
   return (
-    <div className="space-y-16">
-      <div className="rounded-3xl border border-[var(--border)] bg-gradient-to-br from-[var(--card)] to-violet-950/20 p-8 md:p-12">
-        <SectionHeading
-          eyebrow="Topic library"
-          title="Browse by wealth pillar"
-          description="Every category is a complete playbook library — investing, property, credit, crypto, taxes, income, and more."
-        />
+    <div className="space-y-12">
+      <div className="rounded-2xl bg-[var(--primary)] px-6 py-10 text-white">
+        <h1 className="text-3xl font-extrabold">Where do you want to go financially?</h1>
+        <p className="mt-2 max-w-xl text-blue-100">
+          Pick a destination — each topic has free guides and partner deals to compare.
+        </p>
       </div>
 
-      {byCategory.map(({ cat, meta, posts: catPosts }) => (
-        <section key={cat} id={cat}>
-          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-            <div>
-              <h2 className="font-display text-2xl font-semibold md:text-3xl">
-                {meta?.label ?? cat.replace(/-/g, " ")}
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {site.categories.map((slug) => (
+          <CategoryTile
+            key={slug}
+            slug={slug}
+            label={CATEGORY_META[slug]?.label ?? slug}
+            dealCount={`${posts.filter((p) => p.category === slug).length} guides`}
+          />
+        ))}
+      </div>
+
+      {site.categories.map((cat) => {
+        const catPosts = posts.filter((p) => p.category === cat);
+        if (catPosts.length === 0) return null;
+        return (
+          <section key={cat} className="rounded-2xl border border-[var(--border)] bg-white p-6">
+            <div className="flex items-center justify-between">
+              <h2 className="text-xl font-extrabold">
+                {CATEGORY_META[cat]?.label ?? cat}
               </h2>
-              {meta?.description && (
-                <p className="mt-2 max-w-xl text-[var(--muted)]">{meta.description}</p>
-              )}
+              <Link href={`/categories/${cat}`} className="text-sm font-bold text-[var(--primary)] no-underline">
+                View all →
+              </Link>
             </div>
-            <Link
-              href={`/categories/${cat}`}
-              className="text-sm font-semibold text-[var(--accent)] no-underline"
-            >
-              View all →
-            </Link>
-          </div>
-          <CategoryCtaRibbon category={cat} />
-          {catPosts.length === 0 ? (
-            <p className="mt-6 rounded-2xl border border-dashed border-[var(--border)] p-8 text-center text-sm text-[var(--muted)]">
-              Guides publishing soon — check back or run the content pipeline.
-            </p>
-          ) : (
-            <div className="mt-6 grid gap-6 md:grid-cols-2">
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {catPosts.slice(0, 4).map((p) => (
-                <PostCard key={p.slug} post={p} />
+                <GuideOfferCard key={p.slug} post={p} />
               ))}
             </div>
-          )}
-        </section>
-      ))}
+          </section>
+        );
+      })}
     </div>
   );
 }

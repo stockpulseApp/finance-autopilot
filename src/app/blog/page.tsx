@@ -1,44 +1,46 @@
 import Link from "next/link";
 import { PostCard } from "@/components/PostCard";
-import { SectionHeading } from "@/components/ui/SectionHeading";
+import { TrustStrip } from "@/components/marketplace/TrustStrip";
 import { getAllPosts } from "@/lib/posts";
 
-export const metadata = { title: "Guides & Playbooks" };
+export const metadata = { title: "Free Money Guides" };
 
 export default function BlogPage() {
   const posts = getAllPosts();
 
   return (
-    <div className="space-y-12">
-      <div className="rounded-3xl border border-[var(--border)] bg-gradient-to-br from-[var(--card)] to-emerald-950/30 p-8 md:p-12">
-        <SectionHeading
-          eyebrow="Knowledge base"
-          title="All wealth guides"
-          description="Investing, real estate, credit, crypto, taxes, and income — in-depth playbooks published on autopilot and refined by our editorial team."
-        />
-        <div className="mt-8 flex flex-wrap gap-4">
-          <Link href="/start-here" className="btn-primary">
-            New here? Start the roadmap
+    <div className="space-y-8">
+      <div className="rounded-2xl border border-[var(--border)] bg-white p-8 shadow-sm md:p-10">
+        <h1 className="text-3xl font-extrabold text-[var(--primary)]">Free expert guides</h1>
+        <p className="mt-3 max-w-2xl text-[var(--muted)]">
+          In-depth playbooks on investing, property, credit, and income — read free, then
+          compare tools on our deals page when you&apos;re ready to act.
+        </p>
+        <div className="mt-6 flex flex-wrap gap-3">
+          <Link href="/deals" className="btn-deal">
+            Compare deals
           </Link>
-          <Link href="/categories" className="btn-secondary">
-            Browse by topic
+          <Link href="/categories" className="btn-outline">
+            Browse topics
           </Link>
         </div>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <TrustStrip />
+
+      <p className="text-sm font-semibold text-[var(--muted)]">
+        {posts.length} guides available
+      </p>
+
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {posts.map((post) => (
           <PostCard key={post.slug} post={post} />
         ))}
       </div>
 
       {posts.length === 0 && (
-        <p className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-8 text-center text-[var(--muted)]">
-          No posts yet. Run{" "}
-          <code className="rounded bg-black/40 px-2 py-1 text-[var(--accent)]">
-            npm run generate:post
-          </code>{" "}
-          after setting ANTHROPIC_API_KEY.
+        <p className="rounded-xl border border-dashed border-[var(--border)] bg-white p-8 text-center text-[var(--muted)]">
+          No guides yet. Run npm run generate:post after setting ANTHROPIC_API_KEY.
         </p>
       )}
     </div>

@@ -5,17 +5,20 @@ import { useState } from "react";
 
 export function MobileNav({
   items,
+  variant = "marketplace",
 }: {
   items: { href: string; label: string }[];
+  variant?: "marketplace" | "dark";
 }) {
   const [open, setOpen] = useState(false);
+  const ctaClass = variant === "marketplace" ? "btn-deal w-full text-center" : "btn-primary w-full text-center";
 
   return (
     <div className="lg:hidden">
       <button
         type="button"
         onClick={() => setOpen(!open)}
-        className="flex h-10 w-10 items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--card)] text-[var(--foreground)]"
+        className="flex h-10 w-10 items-center justify-center rounded-lg border border-[var(--border)] bg-white text-[var(--foreground)]"
         aria-expanded={open}
         aria-label={open ? "Close menu" : "Open menu"}
       >
@@ -33,30 +36,26 @@ export function MobileNav({
       {open && (
         <>
           <div
-            className="fixed inset-0 top-[65px] z-40 bg-black/60 backdrop-blur-sm"
+            className="fixed inset-0 top-[57px] z-40 bg-black/40"
             onClick={() => setOpen(false)}
             aria-hidden
           />
-          <nav className="fixed right-4 top-[76px] z-50 w-[min(280px,calc(100vw-2rem))] rounded-2xl border border-[var(--border)] bg-[var(--card-elevated)] p-4 shadow-2xl">
-            <ul className="flex flex-col gap-1">
+          <nav className="fixed right-3 top-[68px] z-50 w-[min(300px,calc(100vw-1.5rem))] rounded-xl border border-[var(--border)] bg-white p-3 shadow-xl">
+            <ul className="flex flex-col gap-0.5">
               {items.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
                     onClick={() => setOpen(false)}
-                    className="block rounded-lg px-4 py-3 text-sm font-medium text-[var(--foreground)] no-underline hover:bg-white/5"
+                    className="block rounded-lg px-4 py-3 text-sm font-semibold text-[var(--foreground)] no-underline hover:bg-[var(--primary-light)]"
                   >
                     {item.label}
                   </Link>
                 </li>
               ))}
               <li className="mt-2 border-t border-[var(--border)] pt-2">
-                <Link
-                  href="/newsletter"
-                  onClick={() => setOpen(false)}
-                  className="btn-primary w-full text-center text-sm"
-                >
-                  Free wealth sprint
+                <Link href="/newsletter" onClick={() => setOpen(false)} className={ctaClass}>
+                  Free deals alert
                 </Link>
               </li>
             </ul>

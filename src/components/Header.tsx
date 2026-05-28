@@ -3,29 +3,30 @@ import site from "../../config/site.json";
 import { MobileNav } from "./MobileNav";
 
 const nav = [
-  { href: "/start-here", label: "Start Here" },
-  { href: "/blog", label: "Guides" },
-  { href: "/categories", label: "Topics" },
-  { href: "/products", label: "Products" },
-  { href: "/courses", label: "Courses" },
   { href: "/deals", label: "Deals" },
+  { href: "/categories", label: "Destinations" },
+  { href: "/blog", label: "Guides" },
+  { href: "/products", label: "Packages" },
+  { href: "/courses", label: "Courses" },
   { href: "/tools", label: "Tools" },
 ];
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-[var(--border)]/80 bg-[var(--background)]/85 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 lg:px-6">
-        <Link
-          href="/"
-          className="group flex items-center gap-2 no-underline hover:no-underline"
-        >
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-emerald-400 to-emerald-600 text-sm font-black text-[#042f1a] shadow-lg shadow-emerald-500/25">
-            WB
+    <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-white shadow-sm">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 lg:px-6">
+        <Link href="/" className="flex items-center gap-2 no-underline hover:no-underline">
+          <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-[var(--primary)] text-lg font-black text-white">
+            W
           </span>
-          <span className="font-display text-lg font-semibold tracking-tight text-[var(--foreground)]">
-            {site.name}
-          </span>
+          <div className="leading-tight">
+            <span className="block text-lg font-extrabold tracking-tight text-[var(--primary)]">
+              {site.name}
+            </span>
+            <span className="hidden text-[10px] font-semibold uppercase text-[var(--muted)] sm:block">
+              Compare &amp; save on wealth tools
+            </span>
+          </div>
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">
@@ -33,18 +34,24 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="rounded-lg px-3 py-2 text-sm font-medium text-[var(--muted)] no-underline transition-colors hover:bg-white/5 hover:text-[var(--foreground)]"
+              className="rounded-md px-3 py-2 text-sm font-semibold text-[var(--foreground)] no-underline hover:bg-[var(--primary-light)] hover:text-[var(--primary)]"
             >
               {item.label}
             </Link>
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
-          <Link href="/newsletter" className="btn-primary hidden text-sm sm:inline-flex">
-            Free wealth sprint
+        <div className="flex items-center gap-2">
+          <Link
+            href="/deals"
+            className="hidden rounded-md bg-[var(--primary-light)] px-3 py-2 text-sm font-bold text-[var(--primary)] no-underline sm:inline-block"
+          >
+            Compare deals
           </Link>
-          <MobileNav items={nav} />
+          <Link href="/newsletter" className="btn-deal hidden text-sm sm:inline-flex">
+            Free deals alert
+          </Link>
+          <MobileNav items={nav} variant="marketplace" />
         </div>
       </div>
     </header>

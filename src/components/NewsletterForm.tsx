@@ -29,7 +29,7 @@ export function NewsletterForm({ compact = false }: { compact?: boolean }) {
   }
 
   return (
-    <form onSubmit={onSubmit} className={compact ? "flex gap-2" : "space-y-3"}>
+    <form onSubmit={onSubmit} className={compact ? "flex flex-col gap-2 sm:flex-row" : "space-y-3"}>
       <input
         type="email"
         required
@@ -41,12 +41,12 @@ export function NewsletterForm({ compact = false }: { compact?: boolean }) {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="btn-primary shrink-0 disabled:opacity-60 disabled:transform-none"
+        className="btn-deal shrink-0 disabled:opacity-60"
       >
-        {status === "loading" ? "Joining…" : "Get free guides"}
+        {status === "loading" ? "Joining…" : "Get deal alerts"}
       </button>
       {status === "ok" && (
-        <div className="text-sm text-[var(--accent)] space-y-1">
+        <div className="text-sm text-[var(--success)] space-y-1">
           <p>You&apos;re in — check your inbox.</p>
           {leadMagnetUrl && (
             <a href={leadMagnetUrl} className="underline">
