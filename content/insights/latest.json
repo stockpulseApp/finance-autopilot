@@ -1,0 +1,103 @@
+{
+  "date": "2026-05-28",
+  "title": "Money Pulse · 2026-05-28",
+  "intro": "What journalists, analysts, and people on X are saying about money this week — summarized by our desk with links to originals.",
+  "sections": [
+    {
+      "category": "investing",
+      "topic": "stock market and index investing this week",
+      "headline": "Fed on hold at 3.5%–3.75% while markets price fewer cuts",
+      "summary": "The FOMC left the federal funds rate unchanged; futures now lean toward possible hikes later in 2026 if inflation stays sticky. Long-term investors should expect volatility, not a quick pivot to easy money.",
+      "editorial": "April FOMC minutes show officials still balancing inflation risk against growth. Market-implied paths moved up modestly — participants see limited easing this year, with some probability of hikes into early 2027 ([FOMC minutes, April 2026](https://www.federalreserve.gov/monetarypolicy/fomcminutes20260429.htm)).\n\nFor index-fund savers, the lesson is unchanged: your edge is contribution rate and asset mix, not guessing the next meeting. If you're building a first portfolio, start with our free [30-Day Wealth Sprint](/guides/30-day-wealth-sprint) then the [Index Fund Starter Kit](/guides/index-fund-starter-kit) preview.",
+      "socialHighlights": [
+        {
+          "text": "Commentary around Kevin Warsh's swearing-in as Fed chair highlights tension between political pressure for lower rates and futures markets that still price a higher-for-longer path.",
+          "source": "CNBC / market desk",
+          "url": "https://www.cnbc.com/2026/05/22/trump-kevin-warsh-fed-chair-interest-rates.html"
+        }
+      ],
+      "sources": [
+        {
+          "title": "FOMC Minutes — April 2026",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260429.htm",
+          "outlet": "Federal Reserve"
+        },
+        {
+          "title": "Fed Leaves Rates Unchanged to Start 2026",
+          "url": "https://www.jpmorgan.com/insights/markets-and-economy/economy/fed-meeting-january-2026",
+          "outlet": "J.P. Morgan"
+        },
+        {
+          "title": "Kevin Warsh takes oath as Fed chair",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm",
+          "outlet": "Federal Reserve"
+        }
+      ],
+      "researchedAt": "2026-05-28"
+    },
+    {
+      "category": "personal-finance",
+      "topic": "inflation consumer spending household budgets",
+      "headline": "Sticky inflation keeps emergency funds and cash yields relevant",
+      "summary": "With inflation above target for years, policymakers warn they could hike if price pressures persist — households should prioritize liquid buffers before chasing risk assets.",
+      "editorial": "Fed Governor Lisa Cook's recent remarks underscore that disinflation is not guaranteed; officials are open to raising rates if expectations slip ([American Banker](https://www.americanbanker.com/news/feds-cook-prepared-to-raise-rates-if-inflation-persists)).\n\nThat makes **cash reserves** and **high-yield savings** part of strategy, not a failure. Use our [Emergency Fund Blueprint](/guides/emergency-fund-blueprint) to size targets and automate transfers after payday.",
+      "socialHighlights": [],
+      "sources": [
+        {
+          "title": "Fed's Cook 'prepared to raise rates' if inflation persists",
+          "url": "https://www.americanbanker.com/news/feds-cook-prepared-to-raise-rates-if-inflation-persists",
+          "outlet": "American Banker"
+        },
+        {
+          "title": "FOMC Minutes — April 2026",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260429.htm",
+          "outlet": "Federal Reserve"
+        }
+      ],
+      "researchedAt": "2026-05-28"
+    },
+    {
+      "category": "credit-cards",
+      "topic": "credit card rewards interest rates Fed",
+      "headline": "Higher-for-longer rates keep APR math brutal on revolving debt",
+      "summary": "While the fed funds range sits at 3.5%–3.75%, many card APRs remain far higher. Paying down revolving balances still beats optimizing rewards.",
+      "editorial": "When policy rates pause but card APRs stay elevated, the highest-return 'investment' for many households is still avalanche payments on revolving credit. Rewards only matter after you stop paying interest.\n\nOur free sprint includes a subscription audit and minimum-payment calendar; the paid [750+ Credit Score Playbook](/guides/credit-score-750-playbook) covers utilization and dispute workflows when you're ready.",
+      "socialHighlights": [],
+      "sources": [
+        {
+          "title": "FOMC Minutes — April 2026",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260429.htm",
+          "outlet": "Federal Reserve"
+        }
+      ],
+      "researchedAt": "2026-05-28"
+    },
+    {
+      "category": "real-estate",
+      "topic": "mortgage rates housing market rentals",
+      "headline": "Politics vs. markets on mortgage rates",
+      "summary": "Public rhetoric favors lower borrowing costs, but futures markets are not pricing aggressive cuts in 2026. Buyers should stress-test payments, not headlines.",
+      "editorial": "Recent coverage notes political pressure for lower rates while traders still expect the Fed on hold through much of 2026 ([CNBC](https://www.cnbc.com/2026/05/22/trump-kevin-warsh-fed-chair-interest-rates.html)). For renters and buyers, run the numbers on your actual offer rate and reserve fund — see our [Rental Deal Analyzer](/guides/rental-deal-analyzer) preview when evaluating investment property.",
+      "socialHighlights": [
+        {
+          "text": "Discussion tied Fed leadership changes to housing affordability narratives — with markets still cautious on near-term rate cuts.",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/05/22/trump-kevin-warsh-fed-chair-interest-rates.html"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Trump swears Kevin Warsh in as Fed chair",
+          "url": "https://www.cnbc.com/2026/05/22/trump-kevin-warsh-fed-chair-interest-rates.html",
+          "outlet": "CNBC"
+        },
+        {
+          "title": "FOMC Minutes — April 2026",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260429.htm",
+          "outlet": "Federal Reserve"
+        }
+      ],
+      "researchedAt": "2026-05-28"
+    }
+  ]
+}

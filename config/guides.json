@@ -7,7 +7,7 @@
       "price": 0,
       "pages": 24,
       "description": "Daily actions to stabilize cash, kill debt, and start investing.",
-      "downloadUrl": "/lead-magnets/wealth-sprint-checklist.txt",
+      "downloadUrl": "/guides/30-day-wealth-sprint",
       "category": "personal-finance"
     },
     {
@@ -17,7 +17,7 @@
       "price": 0,
       "pages": 12,
       "description": "How much to save, where to park it, and automation setup.",
-      "downloadUrl": "/newsletter",
+      "downloadUrl": "/guides/emergency-fund-blueprint",
       "category": "personal-finance"
     },
     {
@@ -57,7 +57,7 @@
       "price": 0,
       "pages": 18,
       "description": "Wallet setup, backup phrases, and scam avoidance for self-custody.",
-      "downloadUrl": "/newsletter",
+      "downloadUrl": "/guides/crypto-custody-checklist",
       "category": "crypto"
     },
     {

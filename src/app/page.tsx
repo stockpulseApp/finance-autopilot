@@ -3,6 +3,8 @@ import { EditorialHero } from "@/components/editorial/EditorialHero";
 import { FeaturedStory } from "@/components/editorial/FeaturedStory";
 import { ArticleCard } from "@/components/editorial/ArticleCard";
 import { WhyVisit } from "@/components/editorial/WhyVisit";
+import { HomeGuideStrip } from "@/components/editorial/HomeGuideStrip";
+import { HomePulseTeaser } from "@/components/editorial/HomePulseTeaser";
 import { DealOfferCard } from "@/components/marketplace/DealOfferCard";
 import { CategoryTile } from "@/components/marketplace/CategoryTile";
 import { getEnrichedPosts } from "@/lib/posts";
@@ -57,6 +59,10 @@ export default function HomePage() {
       </section>
 
       <WhyVisit />
+
+      <HomePulseTeaser />
+
+      <HomeGuideStrip />
 
       <section>
         <h2 className="text-2xl font-extrabold">Explore by topic</h2>

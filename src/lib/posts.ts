@@ -49,6 +49,24 @@ export function getPostBySlug(slug: string): Post | null {
     affiliateIds: Array.isArray(data.affiliateIds)
       ? data.affiliateIds.map(String)
       : undefined,
+    sources: Array.isArray(data.sources)
+      ? (data.sources as { title?: string; url?: string; outlet?: string }[]).map(
+          (s) => ({
+            title: String(s.title ?? ""),
+            url: String(s.url ?? ""),
+            outlet: String(s.outlet ?? ""),
+          }),
+        )
+      : undefined,
+    socialQuotes: Array.isArray(data.socialQuotes)
+      ? (data.socialQuotes as { paraphrase?: string; url?: string; attribution?: string }[]).map(
+          (q) => ({
+            paraphrase: String(q.paraphrase ?? ""),
+            url: String(q.url ?? ""),
+            attribution: String(q.attribution ?? ""),
+          }),
+        )
+      : undefined,
     content,
   };
 }

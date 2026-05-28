@@ -7,6 +7,7 @@ import { DealOfferCard } from "@/components/marketplace/DealOfferCard";
 import { NewsletterForm } from "@/components/NewsletterForm";
 import { getCategoryImage } from "@/lib/marketplace-images";
 import { getCategoryMeta } from "@/lib/categories";
+import { ArticleSources } from "@/components/editorial/ArticleSources";
 import { getEnrichedPosts, getEnrichedPostBySlug } from "@/lib/posts";
 import { getAffiliatesByIds, affiliateDisclosure } from "@/lib/affiliates";
 
@@ -76,6 +77,7 @@ export default async function PostPage({
       <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_300px]">
         <div className="min-w-0 rounded-2xl border border-[var(--border)] bg-white p-6 md:p-10 lg:p-12">
           <MarkdownContent content={post.content} />
+          <ArticleSources sources={post.sources} socialQuotes={post.socialQuotes} />
         </div>
 
         <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">

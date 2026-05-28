@@ -1,3 +1,15 @@
+export type PostSource = {
+  title: string;
+  url: string;
+  outlet: string;
+};
+
+export type SocialQuote = {
+  paraphrase: string;
+  url: string;
+  attribution: string;
+};
+
 export type Post = {
   slug: string;
   title: string;
@@ -8,6 +20,8 @@ export type Post = {
   author: string;
   featured?: boolean;
   affiliateIds?: string[];
+  sources?: PostSource[];
+  socialQuotes?: SocialQuote[];
   content: string;
 };
 

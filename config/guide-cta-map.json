@@ -1,0 +1,44 @@
+{
+  "personal-finance": {
+    "freeSlug": "30-day-wealth-sprint",
+    "paidSlug": "index-fund-starter-kit",
+    "paidTitle": "Index Fund Starter Kit",
+    "paidPrice": 27
+  },
+  "investing": {
+    "freeSlug": "emergency-fund-blueprint",
+    "paidSlug": "index-fund-starter-kit",
+    "paidTitle": "Index Fund Starter Kit",
+    "paidPrice": 27
+  },
+  "credit-cards": {
+    "freeSlug": "30-day-wealth-sprint",
+    "paidSlug": "credit-score-750-playbook",
+    "paidTitle": "750+ Credit Score Playbook",
+    "paidPrice": 19
+  },
+  "real-estate": {
+    "freeSlug": "emergency-fund-blueprint",
+    "paidSlug": "rental-deal-analyzer",
+    "paidTitle": "Rental Deal Analyzer Guide",
+    "paidPrice": 37
+  },
+  "crypto": {
+    "freeSlug": "crypto-custody-checklist",
+    "paidSlug": "index-fund-starter-kit",
+    "paidTitle": "Index Fund Starter Kit",
+    "paidPrice": 27
+  },
+  "taxes": {
+    "freeSlug": "30-day-wealth-sprint",
+    "paidSlug": "tax-advantaged-accounts-guide",
+    "paidTitle": "Tax-Advantaged Accounts Guide",
+    "paidPrice": 24
+  },
+  "side-income": {
+    "freeSlug": "30-day-wealth-sprint",
+    "paidSlug": "side-income-launch-map",
+    "paidTitle": "Side Income Launch Map",
+    "paidPrice": 29
+  }
+}

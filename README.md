@@ -9,7 +9,9 @@ Automation-first finance media + product business: daily AI-assisted blog publis
 | Feature | Status |
 |--------|--------|
 | Next.js blog (MDX-ready markdown posts) | Ready |
-| Daily post generator (`scripts/generate-daily-post.mjs`) | Ready — uses **Claude** (Anthropic API) |
+| Daily post generator (`scripts/generate-daily-post.mjs`) | Ready — **Claude** + optional **Tavily** (news, X, outlets) |
+| Weekly Money Pulse (`/insights`, `scripts/generate-insights.mjs`) | Ready — Sundays in daily pipeline |
+| Full guide readers (`/guides/[slug]`) | Ready — markdown in `content/guide-pages/` |
 | Social repurposing (`scripts/repurpose-social.mjs`) | Ready — creates X thread, video script, email teaser |
 | Daily growth pipeline (`scripts/daily-growth-pipeline.mjs`) | Ready — blog + social in one command |
 | GitHub Action (cron daily publish + repurpose) | Ready |
@@ -37,7 +39,8 @@ Automation-first finance media + product business: daily AI-assisted blog publis
 3. **Configure `.env.local`**
 
    - `ANTHROPIC_API_KEY` — for daily article generation ([Anthropic Console](https://console.anthropic.com/))
-   - `ANTHROPIC_MODEL` — optional (`claude-sonnet-4-20250514` default; use Haiku to save cost)
+   - `TAVILY_API_KEY` — live web research for posts + Money Pulse ([Tavily](https://tavily.com/))
+   - `ANTHROPIC_MODEL` — optional (`claude-sonnet-4-5-20250929` default; use Haiku to save cost)
    - `NEXT_PUBLIC_SITE_URL` — your production domain
    - `CONVERTKIT_API_KEY` + `CONVERTKIT_FORM_ID` — email list
    - `STRIPE_*` — course sales
@@ -57,6 +60,7 @@ Automation-first finance media + product business: daily AI-assisted blog publis
    npm run repurpose:social
    # or run both:
    npm run pipeline:daily
+   npm run generate:insights
    npm run revenue:check
    ```
 
@@ -65,8 +69,8 @@ Automation-first finance media + product business: daily AI-assisted blog publis
 ### Option A — GitHub Actions (recommended)
 
 1. Push this repo to GitHub.
-2. Add secret `ANTHROPIC_API_KEY` in repo Settings → Secrets.
-3. Workflow `.github/workflows/daily-post.yml` runs daily, generates blog + social assets, commits to repo, and triggers Vercel rebuild.
+2. Add secrets `ANTHROPIC_API_KEY` and `TAVILY_API_KEY` in repo Settings → Secrets.
+3. Workflow `.github/workflows/daily-post.yml` runs daily, generates blog + social assets, commits insights on Sundays, and triggers Vercel rebuild.
 
 ## Revenue activation checklist (required)
 

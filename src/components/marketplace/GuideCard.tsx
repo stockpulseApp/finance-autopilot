@@ -33,12 +33,16 @@ export function GuideCard({ guide }: { guide: Guide }) {
         <h3 className="mt-2 text-lg font-bold">{guide.title}</h3>
         <p className="mt-2 flex-1 text-sm text-[var(--muted)]">{guide.description}</p>
         {isFree ? (
-          <Link
-            href={guide.downloadUrl ?? "/newsletter"}
-            className="btn-outline mt-4 text-center"
-          >
-            Download free
-          </Link>
+          <div className="mt-4 flex flex-col gap-2">
+            <Link href={`/guides/${guide.slug}`} className="btn-deal text-center no-underline">
+              Read free guide
+            </Link>
+            {guide.downloadUrl && guide.downloadUrl.startsWith("/lead-magnets") && (
+              <a href={guide.downloadUrl} className="btn-outline text-center text-sm" download>
+                Download checklist
+              </a>
+            )}
+          </div>
         ) : paidExternal ? (
           <a
             href={paidHref}
@@ -49,9 +53,14 @@ export function GuideCard({ guide }: { guide: Guide }) {
             Get guide — ${guide.price}
           </a>
         ) : (
-          <Link href={paidHref} className="btn-deal mt-4 text-center no-underline">
-            {paidHref.includes("newsletter") ? "Join waitlist" : "Get guide"} — ${guide.price}
-          </Link>
+          <div className="mt-4 flex flex-col gap-2">
+            <Link href={`/guides/${guide.slug}`} className="btn-outline text-center no-underline">
+              Read preview
+            </Link>
+            <Link href={paidHref} className="btn-deal text-center no-underline">
+              {paidHref.includes("newsletter") ? "Join waitlist" : "Get guide"} — ${guide.price}
+            </Link>
+          </div>
         )}
       </div>
     </article>

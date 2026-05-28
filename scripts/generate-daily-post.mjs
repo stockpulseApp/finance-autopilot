@@ -1,25 +1,27 @@
 #!/usr/bin/env node
 /**
- * Daily blog generator — uses Anthropic Claude API.
+ * Research-backed daily journalism — news, X discourse, original analysis.
  *
- * Usage:
- *   ANTHROPIC_API_KEY=sk-ant-... node scripts/generate-daily-post.mjs
- *   node scripts/generate-daily-post.mjs --dry-run
+ * Env: ANTHROPIC_API_KEY (required), TAVILY_API_KEY (recommended for live sources)
  */
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { loadEnvLocal } from "./lib/load-env.mjs";
+import { researchTopic, formatResearchForPrompt } from "./lib/tavily-research.mjs";
+
+loadEnvLocal();
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
 const POSTS_DIR = path.join(ROOT, "content", "posts");
 const TOPICS_PATH = path.join(ROOT, "config", "topics.json");
 const AFFILIATES_PATH = path.join(ROOT, "config", "affiliates.json");
+const CTA_MAP_PATH = path.join(ROOT, "config", "guide-cta-map.json");
 
 const dryRun = process.argv.includes("--dry-run");
 const apiKey = process.env.ANTHROPIC_API_KEY;
-const model =
-  process.env.ANTHROPIC_MODEL || "claude-sonnet-4-5-20250929";
+const model = process.env.ANTHROPIC_MODEL || "claude-sonnet-4-5-20250929";
 
 function todayISO() {
   return new Date().toISOString().slice(0, 10);
@@ -50,22 +52,56 @@ function pickAffiliateIds() {
   return shuffled.slice(0, 2).map((p) => p.id);
 }
 
-async function generateArticle({ category, topic }) {
+function getGuideCta(category) {
+  try {
+    const map = JSON.parse(fs.readFileSync(CTA_MAP_PATH, "utf8"));
+    return map[category] ?? map["personal-finance"];
+  } catch {
+    return null;
+  }
+}
+
+async function generateArticle({ category, topic, researchBlock, guideCta }) {
   if (!apiKey) {
-    throw new Error(
-      "ANTHROPIC_API_KEY is required (set in .env.local or GitHub Actions secrets)"
-    );
+    throw new Error("ANTHROPIC_API_KEY is required");
   }
 
-  const system = `You are a senior personal finance writer for "Finance Autopilot".
-Write clear, accurate, educational articles. Not financial advice — include practical steps.
-Use markdown: ## headings, bullet lists, tables when helpful. 1200-1800 words.
-No hype, no guaranteed returns, no get-rich-quick language.`;
+  const ctaBlock = guideCta
+    ? `End with a section "## Go deeper" that honestly teases the FREE guide at /guides/${guideCta.freeSlug} and the premium ${guideCta.paidTitle} ($${guideCta.paidPrice}) at /guides/${guideCta.paidSlug} — explain what extra worksheets/checklists the paid guide includes. No hype.`
+    : "";
 
-  const user = `Write a complete blog article about: "${topic}"
-Category: ${category}
-Include: intro, actionable sections, common mistakes, bottom line.
-Return ONLY the article body in markdown (no frontmatter).`;
+  const system = `You are a staff financial journalist at Wealthy Brainiac (investigative personal finance desk).
+
+VOICE: Confident, specific, humane — like NerdWallet meets The Hustle. Write for smart adults who hate fluff.
+
+RULES:
+- 1,800–2,400 words of ORIGINAL analysis. Never plagiarize — synthesize and add value.
+- Use real numbers, worked examples, and at least one fictional but realistic case study (name + salary + decision).
+- Cite external sources with markdown links [Outlet: headline](url) from the research brief only. If no research, do not fake URLs.
+- Include section "## On X & social" — 2–4 bullet points paraphrasing discourse from research (each with link). If no social research, omit section.
+- Include "## Sources & further reading" — bullet list of 4–8 links from research.
+- Include "## Key takeaways" — 5 bullets.
+- No guaranteed returns, no get-rich-quick, not personalized financial advice. Say when to consult a CPA/CFP.
+- Ban phrases: "in today's fast-paced world", "game-changer", "dive in", "let's explore", "without further ado".
+${ctaBlock}`;
+
+  const user = `TOPIC: ${topic}
+CATEGORY: ${category}
+
+RESEARCH BRIEF (use for attribution — do not invent sources):
+${researchBlock}
+
+Return TWO parts separated by exactly the line ---JSON---:
+
+PART 1: Full article markdown body (start with # title line, then ## sections). No frontmatter.
+
+PART 2: JSON metadata:
+{
+  "title": "compelling headline under 70 chars",
+  "description": "complete 150-160 char meta description that sells the click",
+  "sources": [{"title":"","url":"","outlet":""}],
+  "socialQuotes": [{"paraphrase":"","url":"","attribution":""}]
+}`;
 
   const res = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
@@ -76,49 +112,71 @@ Return ONLY the article body in markdown (no frontmatter).`;
     },
     body: JSON.stringify({
       model,
-      max_tokens: 4096,
+      max_tokens: 8192,
       system,
       messages: [{ role: "user", content: user }],
     }),
   });
 
   if (!res.ok) {
-    const err = await res.text();
-    throw new Error(`Anthropic API error ${res.status}: ${err}`);
+    throw new Error(`Anthropic API error ${res.status}: ${await res.text()}`);
   }
 
   const json = await res.json();
-  const block = json.content?.find((b) => b.type === "text");
-  if (!block?.text) {
-    throw new Error("Unexpected Anthropic response: no text content");
+  const text = json.content?.find((b) => b.type === "text")?.text?.trim();
+  if (!text) throw new Error("No text in response");
+
+  const [bodyPart, metaPart] = text.split("---JSON---");
+  let meta = { title: topic, description: "", sources: [], socialQuotes: [] };
+  if (metaPart) {
+    try {
+      const match = metaPart.match(/\{[\s\S]*\}/);
+      if (match) meta = JSON.parse(match[0]);
+    } catch {
+      console.warn("Could not parse metadata JSON, using defaults");
+    }
   }
-  return block.text.trim();
+
+  let body = (bodyPart ?? text).trim();
+  if (body.startsWith("# ")) {
+    meta.title = body.split("\n")[0].replace(/^#\s*/, "").trim();
+    body = body.split("\n").slice(1).join("\n").trim();
+  }
+
+  return { body, meta };
 }
 
-function buildFrontmatter({ title, description, category, affiliateIds }) {
-  const lines = [
+function buildFrontmatter({ meta, category, affiliateIds }) {
+  const sourcesYaml =
+    meta.sources?.length > 0
+      ? `sources:\n${meta.sources.map((s) => `  - title: "${(s.title ?? "").replace(/"/g, '\\"')}"\n    url: "${s.url ?? ""}"\n    outlet: "${(s.outlet ?? "").replace(/"/g, '\\"')}"`).join("\n")}`
+      : "sources: []";
+
+  const socialYaml =
+    meta.socialQuotes?.length > 0
+      ? `socialQuotes:\n${meta.socialQuotes.map((q) => `  - paraphrase: "${(q.paraphrase ?? "").replace(/"/g, '\\"')}"\n    url: "${q.url ?? ""}"\n    attribution: "${(q.attribution ?? "").replace(/"/g, '\\"')}"`).join("\n")}`
+      : "socialQuotes: []";
+
+  return [
     "---",
-    `title: "${title.replace(/"/g, '\\"')}"`,
-    `description: "${description.replace(/"/g, '\\"')}"`,
+    `title: "${(meta.title ?? "").replace(/"/g, '\\"')}"`,
+    `description: "${(meta.description ?? "").replace(/"/g, '\\"')}"`,
     `date: "${todayISO()}"`,
     `category: ${category}`,
-    `tags: [automated, ${category}]`,
-    `author: Finance Autopilot Team`,
-    `featured: false`,
+    `tags: [research, ${category}]`,
+    `author: Wealthy Brainiac Research Desk`,
+    `featured: true`,
     `affiliateIds: [${affiliateIds.join(", ")}]`,
+    sourcesYaml,
+    socialYaml,
     "---",
-  ];
-  return lines.join("\n");
-}
-
-function deriveTitle(topic) {
-  return topic.length > 80 ? topic.slice(0, 77) + "…" : topic;
+  ].join("\n");
 }
 
 async function main() {
   const { category, topic } = pickTopic();
   const affiliateIds = pickAffiliateIds();
-  const title = deriveTitle(topic);
+  const guideCta = getGuideCta(category);
   const slug = `${todayISO()}-${slugify(topic)}`;
   const filePath = path.join(POSTS_DIR, `${slug}.md`);
 
@@ -127,16 +185,22 @@ async function main() {
     return;
   }
 
-  console.log(`Generating with Claude (${model}): ${title} [${category}]`);
-  const body = await generateArticle({ category, topic });
-  const description =
-    body.split("\n").find((l) => l.trim() && !l.startsWith("#"))?.slice(0, 160) ??
-    title;
-  const content = `${buildFrontmatter({ title, description, category, affiliateIds })}\n\n${body}\n`;
+  console.log(`Researching: ${topic}`);
+  const research = await researchTopic(topic, category);
+  const researchBlock = formatResearchForPrompt(research);
+
+  console.log(`Writing (${model}): ${topic}`);
+  const { body, meta } = await generateArticle({
+    category,
+    topic,
+    researchBlock,
+    guideCta,
+  });
+
+  const content = `${buildFrontmatter({ meta, category, affiliateIds })}\n\n# ${meta.title}\n\n${body}\n`;
 
   if (dryRun) {
-    console.log("--- DRY RUN ---\n");
-    console.log(content.slice(0, 800) + "\n...");
+    console.log(content.slice(0, 1200) + "\n...");
     return;
   }
 
