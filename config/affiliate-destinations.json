@@ -1,0 +1,164 @@
+{
+  "programs": {
+    "chase-sapphire-preferred": {
+      "destination": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred",
+      "signup": "https://www.cardratings.com/bestcards/chase-sapphire-preferred-credit-card.php"
+    },
+    "chase-freedom-unlimited": {
+      "destination": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited",
+      "signup": "https://www.cardratings.com/bestcards/chase-freedom-unlimited-credit-card.php"
+    },
+    "amex-gold": {
+      "destination": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+      "signup": "https://www.americanexpress.com/en-us/business/partner-network/"
+    },
+    "citi-double-cash": {
+      "destination": "https://www.citi.com/credit-cards/citi-double-cash-credit-card",
+      "signup": "https://www.cardratings.com/bestcards/citi-double-cash-card.php"
+    },
+    "capital-one-venture": {
+      "destination": "https://www.capitalone.com/credit-cards/venture/",
+      "signup": "https://www.capitalone.com/affiliate-program/"
+    },
+    "fidelity-brokerage": {
+      "destination": "https://www.fidelity.com/open-account/overview",
+      "signup": "https://www.fidelity.com/customer-service/affiliate-program"
+    },
+    "schwab-brokerage": {
+      "destination": "https://www.schwab.com/open-an-account",
+      "signup": "https://www.schwab.com/affiliate"
+    },
+    "vanguard": {
+      "destination": "https://investor.vanguard.com/investor-resources-education/retirement/invest-online",
+      "signup": "https://investor.vanguard.com/investor-resources-education/retirement/invest-online"
+    },
+    "m1-finance": {
+      "destination": "https://www.m1.com/",
+      "signup": "https://www.m1.com/referral-program"
+    },
+    "robinhood": {
+      "destination": "https://robinhood.com/signup",
+      "signup": "https://affiliates.robinhood.com/"
+    },
+    "etrade": {
+      "destination": "https://us.etrade.com/home/welcome-back",
+      "signup": "https://www.etrade.com/partner"
+    },
+    "fundrise": {
+      "destination": "https://fundrise.com/",
+      "signup": "https://fundrise.com/affiliate"
+    },
+    "roofstock": {
+      "destination": "https://www.roofstock.com/",
+      "signup": "https://www.roofstock.com/affiliate"
+    },
+    "airbnb-host": {
+      "destination": "https://www.airbnb.com/host/homes",
+      "signup": "https://www.airbnb.com/affiliates"
+    },
+    "lendingtree-mortgage": {
+      "destination": "https://www.lendingtree.com/home/mortgage/",
+      "signup": "https://www.lendingtree.com/affiliates/"
+    },
+    "ynab": {
+      "destination": "https://www.ynab.com/",
+      "signup": "https://www.ynab.com/partners"
+    },
+    "monarch-money": {
+      "destination": "https://www.monarchmoney.com/",
+      "signup": "https://www.monarchmoney.com/partners"
+    },
+    "empower-dashboard": {
+      "destination": "https://www.empower.com/personal-investing",
+      "signup": "https://www.empower.com/personal-investing/affiliate"
+    },
+    "mint-alternative": {
+      "destination": "https://copilot.money/",
+      "signup": "https://copilot.money/affiliates"
+    },
+    "coinbase": {
+      "destination": "https://www.coinbase.com/",
+      "signup": "https://www.coinbase.com/affiliates"
+    },
+    "kraken": {
+      "destination": "https://www.kraken.com/",
+      "signup": "https://www.kraken.com/affiliates"
+    },
+    "ledger-wallet": {
+      "destination": "https://shop.ledger.com/",
+      "signup": "https://www.ledger.com/affiliates"
+    },
+    "gemini-credit": {
+      "destination": "https://www.gemini.com/credit-card",
+      "signup": "https://www.gemini.com/affiliates"
+    },
+    "policygenius": {
+      "destination": "https://www.policygenius.com/",
+      "signup": "https://www.policygenius.com/affiliates"
+    },
+    "lemonade-insurance": {
+      "destination": "https://www.lemonade.com/",
+      "signup": "https://www.lemonade.com/partners"
+    },
+    "haven-life": {
+      "destination": "https://www.havenlife.com/",
+      "signup": "https://www.havenlife.com/affiliate"
+    },
+    "sofi-refinance": {
+      "destination": "https://www.sofi.com/refinance-student-loans/",
+      "signup": "https://www.sofi.com/affiliate-program/"
+    },
+    "national-debt-relief": {
+      "destination": "https://www.nationaldebtrelief.com/",
+      "signup": "https://www.nationaldebtrelief.com/affiliates/"
+    },
+    "upstart-loans": {
+      "destination": "https://www.upstart.com/personal-loans",
+      "signup": "https://www.upstart.com/affiliates"
+    },
+    "turbotax": {
+      "destination": "https://turbotax.intuit.com/",
+      "signup": "https://partnernetwork.intuit.com/"
+    },
+    "hr-block": {
+      "destination": "https://www.hrblock.com/",
+      "signup": "https://www.hrblock.com/affiliates/"
+    },
+    "taxact": {
+      "destination": "https://www.taxact.com/",
+      "signup": "https://www.taxact.com/affiliates"
+    },
+    "fiverr-freelance": {
+      "destination": "https://www.fiverr.com/",
+      "signup": "https://www.fiverr.com/affiliates"
+    },
+    "upwork": {
+      "destination": "https://www.upwork.com/",
+      "signup": "https://www.upwork.com/affiliates"
+    },
+    "shopify-store": {
+      "destination": "https://www.shopify.com/",
+      "signup": "https://www.shopify.com/affiliates"
+    },
+    "amazon-associates": {
+      "destination": "https://affiliate-program.amazon.com/",
+      "signup": "https://affiliate-program.amazon.com/"
+    },
+    "betterment": {
+      "destination": "https://www.betterment.com/",
+      "signup": "https://www.betterment.com/affiliate"
+    },
+    "wealthfront": {
+      "destination": "https://www.wealthfront.com/",
+      "signup": "https://www.wealthfront.com/affiliate"
+    },
+    "target-date-funds": {
+      "destination": "https://investor.vanguard.com/investment-products/mutual-funds/target-retirement",
+      "signup": "https://investor.vanguard.com/investment-products/mutual-funds/target-retirement"
+    },
+    "headspace-money": {
+      "destination": "https://www.headspace.com/",
+      "signup": "https://www.headspace.com/affiliates"
+    }
+  }
+}

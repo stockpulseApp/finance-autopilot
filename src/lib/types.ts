@@ -18,6 +18,7 @@ export type AffiliateProgram = {
   description: string;
   cta: string;
   url: string;
+  affiliateSignupUrl?: string;
   featured?: boolean;
 };
 

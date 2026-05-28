@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PageHero } from "@/components/marketplace/PageHero";
+import { isValidStripePaymentLink, resolvePurchaseHref } from "@/lib/checkout";
 import { getSubscriptionMeta, getSubscriptionPlans } from "@/lib/subscription";
 
 export const metadata = {
@@ -25,7 +26,15 @@ export default function SubscriptionPage() {
       </PageHero>
 
       <section className="grid gap-8 lg:grid-cols-3">
-        {plans.map((plan) => (
+        {plans.map((plan) => {
+          const checkoutHref = resolvePurchaseHref({
+            checkoutUrl: plan.checkoutUrl,
+            slug: plan.id,
+            kind: "subscription",
+          });
+          const stripeReady = isValidStripePaymentLink(plan.checkoutUrl);
+
+          return (
           <article
             key={plan.id}
             className={`marketplace-card flex flex-col p-6 ${
@@ -50,19 +59,23 @@ export default function SubscriptionPage() {
                 </li>
               ))}
             </ul>
-            <a
-              href={plan.checkoutUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-deal mt-6 w-full text-center"
-            >
-              Subscribe now
-            </a>
-            <p className="mt-2 text-center text-xs text-[var(--muted)]">
-              Replace checkout URL in config/subscription.json with your Stripe Payment Link
-            </p>
+            {stripeReady ? (
+              <a
+                href={checkoutHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-deal mt-6 w-full text-center"
+              >
+                Subscribe now
+              </a>
+            ) : (
+              <Link href={checkoutHref} className="btn-deal mt-6 w-full text-center no-underline">
+                Join Pro waitlist
+              </Link>
+            )}
           </article>
-        ))}
+          );
+        })}
       </section>
 
       <section className="rounded-2xl border border-[var(--border)] bg-white p-8">

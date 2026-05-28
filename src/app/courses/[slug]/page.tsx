@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { resolvePurchaseHref, isValidStripePaymentLink } from "@/lib/checkout";
 import { getCourseBySlug, getCourses } from "@/lib/courses";
 import { PageHero } from "@/components/marketplace/PageHero";
 import { getCategoryImage } from "@/lib/marketplace-images";
@@ -74,10 +75,9 @@ export default async function CourseDetailPage({
         <aside className="rounded-xl border border-[var(--border)] bg-white p-6 shadow-sm h-fit sticky top-24">
           <p className="text-sm text-[var(--muted)]">One-time purchase</p>
           <p className="mt-1 text-4xl font-extrabold text-[var(--foreground)]">${course.price}</p>
-          {course.checkoutUrl?.startsWith("https://buy.stripe.com/") &&
-          !course.checkoutUrl.includes("PLACEHOLDER") ? (
+          {isValidStripePaymentLink(course.checkoutUrl) ? (
             <a
-              href={course.checkoutUrl}
+              href={course.checkoutUrl!}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 block w-full rounded-lg bg-[var(--cta)] px-6 py-3 text-center font-semibold text-white no-underline hover:opacity-90"
@@ -85,15 +85,16 @@ export default async function CourseDetailPage({
               Buy now
             </a>
           ) : (
-            <form action="/api/checkout" method="POST" className="mt-6">
-              <input type="hidden" name="courseSlug" value={course.slug} />
-              <button
-                type="submit"
-                className="w-full rounded-lg bg-[var(--cta)] px-6 py-3 font-semibold text-white hover:opacity-90"
-              >
-                Buy now
-              </button>
-            </form>
+            <Link
+              href={resolvePurchaseHref({
+                checkoutUrl: course.checkoutUrl,
+                slug: course.slug,
+                kind: "course",
+              })}
+              className="mt-6 block w-full rounded-lg bg-[var(--cta)] px-6 py-3 text-center font-semibold text-white no-underline hover:opacity-90"
+            >
+              Join course waitlist
+            </Link>
           )}
           <p className="mt-4 text-xs text-[var(--muted)]">
             Secure checkout via Stripe. Instant access after payment.

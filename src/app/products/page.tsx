@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { PageHero } from "@/components/marketplace/PageHero";
 import { ProductOfferCard } from "@/components/marketplace/ProductOfferCard";
+import { resolvePurchaseHref } from "@/lib/checkout";
 import { getProducts } from "@/lib/products";
 
 export const metadata = { title: "Digital Products & Templates" };
@@ -31,7 +32,12 @@ export default function ProductsPage() {
               price: product.price,
               cta: "Buy now",
             }}
-            href={product.checkoutUrl ?? `/api/product-checkout?productSlug=${product.slug}`}
+            href={resolvePurchaseHref({
+              checkoutUrl: product.checkoutUrl,
+              stripePriceId: product.stripePriceId,
+              slug: product.slug,
+              kind: "product",
+            })}
             reviews={180 + product.price}
             rating={4.6 + (product.price % 3) * 0.1}
           />

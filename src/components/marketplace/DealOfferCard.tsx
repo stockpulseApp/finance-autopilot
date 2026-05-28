@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { withAffiliateParams } from "@/lib/affiliates";
+import { getAffiliateGoPath } from "@/lib/affiliates";
 import { getCategoryImage } from "@/lib/marketplace-images";
 import { StarRating } from "./StarRating";
 import type { AffiliateProgram } from "@/lib/types";
@@ -27,7 +27,7 @@ export function DealOfferCard({
   badge?: string;
   priceLabel?: string;
 }) {
-  const href = withAffiliateParams(program.url, source);
+  const href = getAffiliateGoPath(program.id, source);
   const image = getCategoryImage(program.category);
   const reviews = pseudoReviews(program.id);
   const rating = pseudoRating(program.id);

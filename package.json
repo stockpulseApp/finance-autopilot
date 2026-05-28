@@ -13,6 +13,7 @@
     "repurpose:social": "node scripts/repurpose-social.mjs",
     "pipeline:daily": "node scripts/daily-growth-pipeline.mjs",
     "seed:platform": "node scripts/seed-full-platform.mjs",
+    "sync:affiliates": "node scripts/sync-affiliate-urls.mjs",
     "revenue:check": "node scripts/revenue-readiness-check.mjs"
   },
   "dependencies": {

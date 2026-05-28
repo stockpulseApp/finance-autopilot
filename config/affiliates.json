@@ -8,7 +8,8 @@
       "description": "Premium travel rewards card with 60k+ point welcome offers for qualified applicants.",
       "cta": "Compare offer",
       "featured": true,
-      "url": "https://example.com/go/chase-sapphire-preferred?ref=wealthybrainiac"
+      "url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred",
+      "affiliateSignupUrl": "https://www.cardratings.com/bestcards/chase-sapphire-preferred-credit-card.php"
     },
     {
       "id": "chase-freedom-unlimited",
@@ -17,7 +18,8 @@
       "description": "Flat cash back on every purchase with no annual fee.",
       "cta": "See rates",
       "featured": false,
-      "url": "https://example.com/go/chase-freedom-unlimited?ref=wealthybrainiac"
+      "url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited",
+      "affiliateSignupUrl": "https://www.cardratings.com/bestcards/chase-freedom-unlimited-credit-card.php"
     },
     {
       "id": "amex-gold",
@@ -26,7 +28,8 @@
       "description": "Dining and grocery rewards powerhouse for everyday spend.",
       "cta": "View offer",
       "featured": true,
-      "url": "https://example.com/go/amex-gold?ref=wealthybrainiac"
+      "url": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+      "affiliateSignupUrl": "https://www.americanexpress.com/en-us/business/partner-network/"
     },
     {
       "id": "citi-double-cash",
@@ -35,7 +38,8 @@
       "description": "2% cash back on all purchases — simple and effective.",
       "cta": "Apply now",
       "featured": false,
-      "url": "https://example.com/go/citi-double-cash?ref=wealthybrainiac"
+      "url": "https://www.citi.com/credit-cards/citi-double-cash-credit-card",
+      "affiliateSignupUrl": "https://www.cardratings.com/bestcards/citi-double-cash-card.php"
     },
     {
       "id": "capital-one-venture",
@@ -44,7 +48,8 @@
       "description": "Flexible travel miles with easy redemption options.",
       "cta": "Compare",
       "featured": false,
-      "url": "https://example.com/go/capital-one-venture?ref=wealthybrainiac"
+      "url": "https://www.capitalone.com/credit-cards/venture/",
+      "affiliateSignupUrl": "https://www.capitalone.com/affiliate-program/"
     },
     {
       "id": "fidelity-brokerage",
@@ -53,7 +58,8 @@
       "description": "Zero-fee index funds, IRAs, and industry-leading research tools.",
       "cta": "Open account",
       "featured": true,
-      "url": "https://example.com/go/fidelity-brokerage?ref=wealthybrainiac"
+      "url": "https://www.fidelity.com/open-account/overview",
+      "affiliateSignupUrl": "https://www.fidelity.com/customer-service/affiliate-program"
     },
     {
       "id": "schwab-brokerage",
@@ -62,7 +68,8 @@
       "description": "Commission-free stocks and ETFs with excellent customer service.",
       "cta": "Start investing",
       "featured": true,
-      "url": "https://example.com/go/schwab-brokerage?ref=wealthybrainiac"
+      "url": "https://www.schwab.com/open-an-account",
+      "affiliateSignupUrl": "https://www.schwab.com/affiliate"
     },
     {
       "id": "vanguard",
@@ -71,7 +78,8 @@
       "description": "Low-cost index funds built for long-term wealth builders.",
       "cta": "Open account",
       "featured": false,
-      "url": "https://example.com/go/vanguard?ref=wealthybrainiac"
+      "url": "https://investor.vanguard.com/investor-resources-education/retirement/invest-online",
+      "affiliateSignupUrl": "https://investor.vanguard.com/investor-resources-education/retirement/invest-online"
     },
     {
       "id": "m1-finance",
@@ -80,7 +88,8 @@
       "description": "Automated pie investing with fractional shares and borrowing.",
       "cta": "Get started",
       "featured": false,
-      "url": "https://example.com/go/m1-finance?ref=wealthybrainiac"
+      "url": "https://www.m1.com/",
+      "affiliateSignupUrl": "https://www.m1.com/referral-program"
     },
     {
       "id": "robinhood",
@@ -89,7 +98,8 @@
       "description": "Mobile-first trading with fractional shares and options.",
       "cta": "Sign up",
       "featured": false,
-      "url": "https://example.com/go/robinhood?ref=wealthybrainiac"
+      "url": "https://robinhood.com/signup",
+      "affiliateSignupUrl": "https://affiliates.robinhood.com/"
     },
     {
       "id": "etrade",
@@ -98,7 +108,8 @@
       "description": "Full-service brokerage with powerful trading platforms.",
       "cta": "Compare",
       "featured": false,
-      "url": "https://example.com/go/etrade?ref=wealthybrainiac"
+      "url": "https://us.etrade.com/home/welcome-back",
+      "affiliateSignupUrl": "https://www.etrade.com/partner"
     },
     {
       "id": "fundrise",
@@ -107,7 +118,8 @@
       "description": "Fractional real estate investing starting at low minimums.",
       "cta": "Learn more",
       "featured": true,
-      "url": "https://example.com/go/fundrise?ref=wealthybrainiac"
+      "url": "https://fundrise.com/",
+      "affiliateSignupUrl": "https://fundrise.com/affiliate"
     },
     {
       "id": "roofstock",
@@ -116,7 +128,8 @@
       "description": "Buy cash-flowing rental properties with vetted data.",
       "cta": "Browse rentals",
       "featured": false,
-      "url": "https://example.com/go/roofstock?ref=wealthybrainiac"
+      "url": "https://www.roofstock.com/",
+      "affiliateSignupUrl": "https://www.roofstock.com/affiliate"
     },
     {
       "id": "airbnb-host",
@@ -125,7 +138,8 @@
       "description": "Monetize spare space or build a short-term rental business.",
       "cta": "Start hosting",
       "featured": false,
-      "url": "https://example.com/go/airbnb-host?ref=wealthybrainiac"
+      "url": "https://www.airbnb.com/host/homes",
+      "affiliateSignupUrl": "https://www.airbnb.com/affiliates"
     },
     {
       "id": "lendingtree-mortgage",
@@ -134,7 +148,8 @@
       "description": "Compare mortgage rates from multiple lenders in minutes.",
       "cta": "Get quotes",
       "featured": false,
-      "url": "https://example.com/go/lendingtree-mortgage?ref=wealthybrainiac"
+      "url": "https://www.lendingtree.com/home/mortgage/",
+      "affiliateSignupUrl": "https://www.lendingtree.com/affiliates/"
     },
     {
       "id": "ynab",
@@ -143,7 +158,8 @@
       "description": "Zero-based budgeting app that gives every dollar a job.",
       "cta": "Try free",
       "featured": true,
-      "url": "https://example.com/go/ynab?ref=wealthybrainiac"
+      "url": "https://www.ynab.com/",
+      "affiliateSignupUrl": "https://www.ynab.com/partners"
     },
     {
       "id": "monarch-money",
@@ -152,7 +168,8 @@
       "description": "Modern net worth tracking and collaborative budgeting.",
       "cta": "Start trial",
       "featured": false,
-      "url": "https://example.com/go/monarch-money?ref=wealthybrainiac"
+      "url": "https://www.monarchmoney.com/",
+      "affiliateSignupUrl": "https://www.monarchmoney.com/partners"
     },
     {
       "id": "empower-dashboard",
@@ -161,7 +178,8 @@
       "description": "Free net worth dashboard and retirement planning tools.",
       "cta": "Link accounts",
       "featured": false,
-      "url": "https://example.com/go/empower-dashboard?ref=wealthybrainiac"
+      "url": "https://www.empower.com/personal-investing",
+      "affiliateSignupUrl": "https://www.empower.com/personal-investing/affiliate"
     },
     {
       "id": "mint-alternative",
@@ -170,7 +188,8 @@
       "description": "AI-powered spending insights for Apple ecosystem users.",
       "cta": "Try app",
       "featured": false,
-      "url": "https://example.com/go/mint-alternative?ref=wealthybrainiac"
+      "url": "https://copilot.money/",
+      "affiliateSignupUrl": "https://copilot.money/affiliates"
     },
     {
       "id": "coinbase",
@@ -179,7 +198,8 @@
       "description": "Beginner-friendly crypto exchange with recurring buys.",
       "cta": "Create account",
       "featured": true,
-      "url": "https://example.com/go/coinbase?ref=wealthybrainiac"
+      "url": "https://www.coinbase.com/",
+      "affiliateSignupUrl": "https://www.coinbase.com/affiliates"
     },
     {
       "id": "kraken",
@@ -188,7 +208,8 @@
       "description": "Established exchange with strong security track record.",
       "cta": "Sign up",
       "featured": false,
-      "url": "https://example.com/go/kraken?ref=wealthybrainiac"
+      "url": "https://www.kraken.com/",
+      "affiliateSignupUrl": "https://www.kraken.com/affiliates"
     },
     {
       "id": "ledger-wallet",
@@ -197,7 +218,8 @@
       "description": "Cold storage for long-term crypto self-custody.",
       "cta": "Shop wallets",
       "featured": false,
-      "url": "https://example.com/go/ledger-wallet?ref=wealthybrainiac"
+      "url": "https://shop.ledger.com/",
+      "affiliateSignupUrl": "https://www.ledger.com/affiliates"
     },
     {
       "id": "gemini-credit",
@@ -206,7 +228,8 @@
       "description": "Earn crypto rewards on everyday purchases.",
       "cta": "View card",
       "featured": false,
-      "url": "https://example.com/go/gemini-credit?ref=wealthybrainiac"
+      "url": "https://www.gemini.com/credit-card",
+      "affiliateSignupUrl": "https://www.gemini.com/affiliates"
     },
     {
       "id": "policygenius",
@@ -215,7 +238,8 @@
       "description": "Compare term life insurance quotes from top carriers.",
       "cta": "Get quotes",
       "featured": true,
-      "url": "https://example.com/go/policygenius?ref=wealthybrainiac"
+      "url": "https://www.policygenius.com/",
+      "affiliateSignupUrl": "https://www.policygenius.com/affiliates"
     },
     {
       "id": "lemonade-insurance",
@@ -224,7 +248,8 @@
       "description": "Fast renters and home insurance with digital claims.",
       "cta": "Get price",
       "featured": false,
-      "url": "https://example.com/go/lemonade-insurance?ref=wealthybrainiac"
+      "url": "https://www.lemonade.com/",
+      "affiliateSignupUrl": "https://www.lemonade.com/partners"
     },
     {
       "id": "haven-life",
@@ -233,7 +258,8 @@
       "description": "Online term life insurance backed by MassMutual.",
       "cta": "Check rate",
       "featured": false,
-      "url": "https://example.com/go/haven-life?ref=wealthybrainiac"
+      "url": "https://www.havenlife.com/",
+      "affiliateSignupUrl": "https://www.havenlife.com/affiliate"
     },
     {
       "id": "sofi-refinance",
@@ -242,7 +268,8 @@
       "description": "Lower your student loan rate with member benefits.",
       "cta": "Check rate",
       "featured": true,
-      "url": "https://example.com/go/sofi-refinance?ref=wealthybrainiac"
+      "url": "https://www.sofi.com/refinance-student-loans/",
+      "affiliateSignupUrl": "https://www.sofi.com/affiliate-program/"
     },
     {
       "id": "national-debt-relief",
@@ -251,7 +278,8 @@
       "description": "Debt settlement program for overwhelming unsecured debt.",
       "cta": "Free consult",
       "featured": false,
-      "url": "https://example.com/go/national-debt-relief?ref=wealthybrainiac"
+      "url": "https://www.nationaldebtrelief.com/",
+      "affiliateSignupUrl": "https://www.nationaldebtrelief.com/affiliates/"
     },
     {
       "id": "upstart-loans",
@@ -260,7 +288,8 @@
       "description": "AI-powered personal loans for consolidation.",
       "cta": "Check rate",
       "featured": false,
-      "url": "https://example.com/go/upstart-loans?ref=wealthybrainiac"
+      "url": "https://www.upstart.com/personal-loans",
+      "affiliateSignupUrl": "https://www.upstart.com/affiliates"
     },
     {
       "id": "turbotax",
@@ -269,7 +298,8 @@
       "description": "File federal and state returns with guided support.",
       "cta": "Start return",
       "featured": true,
-      "url": "https://example.com/go/turbotax?ref=wealthybrainiac"
+      "url": "https://turbotax.intuit.com/",
+      "affiliateSignupUrl": "https://partnernetwork.intuit.com/"
     },
     {
       "id": "hr-block",
@@ -278,7 +308,8 @@
       "description": "Online and in-person tax prep with audit support.",
       "cta": "Compare plans",
       "featured": false,
-      "url": "https://example.com/go/hr-block?ref=wealthybrainiac"
+      "url": "https://www.hrblock.com/",
+      "affiliateSignupUrl": "https://www.hrblock.com/affiliates/"
     },
     {
       "id": "taxact",
@@ -287,7 +318,8 @@
       "description": "Affordable DIY tax software for simple to moderate returns.",
       "cta": "See pricing",
       "featured": false,
-      "url": "https://example.com/go/taxact?ref=wealthybrainiac"
+      "url": "https://www.taxact.com/",
+      "affiliateSignupUrl": "https://www.taxact.com/affiliates"
     },
     {
       "id": "fiverr-freelance",
@@ -296,7 +328,8 @@
       "description": "Sell digital services and skills on a global marketplace.",
       "cta": "Start selling",
       "featured": false,
-      "url": "https://example.com/go/fiverr-freelance?ref=wealthybrainiac"
+      "url": "https://www.fiverr.com/",
+      "affiliateSignupUrl": "https://www.fiverr.com/affiliates"
     },
     {
       "id": "upwork",
@@ -305,7 +338,8 @@
       "description": "Freelance contracts for writing, dev, design, and ops.",
       "cta": "Create profile",
       "featured": true,
-      "url": "https://example.com/go/upwork?ref=wealthybrainiac"
+      "url": "https://www.upwork.com/",
+      "affiliateSignupUrl": "https://www.upwork.com/affiliates"
     },
     {
       "id": "shopify-store",
@@ -314,7 +348,8 @@
       "description": "Launch an e-commerce store with payments built in.",
       "cta": "Start trial",
       "featured": false,
-      "url": "https://example.com/go/shopify-store?ref=wealthybrainiac"
+      "url": "https://www.shopify.com/",
+      "affiliateSignupUrl": "https://www.shopify.com/affiliates"
     },
     {
       "id": "amazon-associates",
@@ -323,7 +358,8 @@
       "description": "Earn commissions promoting products you recommend.",
       "cta": "Join program",
       "featured": false,
-      "url": "https://example.com/go/amazon-associates?ref=wealthybrainiac"
+      "url": "https://affiliate-program.amazon.com/",
+      "affiliateSignupUrl": "https://affiliate-program.amazon.com/"
     },
     {
       "id": "betterment",
@@ -332,7 +368,8 @@
       "description": "Robo-advisor for IRAs and taxable automated investing.",
       "cta": "Open IRA",
       "featured": true,
-      "url": "https://example.com/go/betterment?ref=wealthybrainiac"
+      "url": "https://www.betterment.com/",
+      "affiliateSignupUrl": "https://www.betterment.com/affiliate"
     },
     {
       "id": "wealthfront",
@@ -341,7 +378,8 @@
       "description": "Automated investing plus high-yield cash account.",
       "cta": "Get started",
       "featured": false,
-      "url": "https://example.com/go/wealthfront?ref=wealthybrainiac"
+      "url": "https://www.wealthfront.com/",
+      "affiliateSignupUrl": "https://www.wealthfront.com/affiliate"
     },
     {
       "id": "target-date-funds",
@@ -350,7 +388,8 @@
       "description": "Set-and-forget retirement funds by target year.",
       "cta": "Learn more",
       "featured": false,
-      "url": "https://example.com/go/target-date-funds?ref=wealthybrainiac"
+      "url": "https://investor.vanguard.com/investment-products/mutual-funds/target-retirement",
+      "affiliateSignupUrl": "https://investor.vanguard.com/investment-products/mutual-funds/target-retirement"
     },
     {
       "id": "headspace-money",
@@ -359,7 +398,8 @@
       "description": "Mindset routines paired with money habit stacking.",
       "cta": "Try free",
       "featured": false,
-      "url": "https://example.com/go/headspace-money?ref=wealthybrainiac"
+      "url": "https://www.headspace.com/",
+      "affiliateSignupUrl": "https://www.headspace.com/affiliates"
     }
   ]
 }

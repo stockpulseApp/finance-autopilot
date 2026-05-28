@@ -2,10 +2,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { getCategoryImage } from "@/lib/marketplace-images";
 import type { Guide } from "@/lib/guides";
+import { isValidStripePaymentLink, resolvePurchaseHref } from "@/lib/checkout";
 
 export function GuideCard({ guide }: { guide: Guide }) {
   const image = getCategoryImage(guide.category);
   const isFree = guide.type === "free";
+  const paidHref = resolvePurchaseHref({
+    checkoutUrl: guide.checkoutUrl,
+    slug: guide.slug,
+    kind: "guide",
+  });
+  const paidExternal = isValidStripePaymentLink(guide.checkoutUrl);
 
   return (
     <article className="marketplace-card flex h-full flex-col">
@@ -32,15 +39,19 @@ export function GuideCard({ guide }: { guide: Guide }) {
           >
             Download free
           </Link>
-        ) : (
+        ) : paidExternal ? (
           <a
-            href={guide.checkoutUrl ?? "/products"}
+            href={paidHref}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-deal mt-4 text-center"
           >
             Get guide — ${guide.price}
           </a>
+        ) : (
+          <Link href={paidHref} className="btn-deal mt-4 text-center no-underline">
+            {paidHref.includes("newsletter") ? "Join waitlist" : "Get guide"} — ${guide.price}
+          </Link>
         )}
       </div>
     </article>

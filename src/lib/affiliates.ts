@@ -1,10 +1,36 @@
 import affiliatesConfig from "../../config/affiliates.json";
+import overridesConfig from "../../config/affiliate-overrides.json";
 import type { AffiliateProgram } from "./types";
+import { isBrokenLink } from "./checkout";
 
 export const affiliateDisclosure: string = affiliatesConfig.disclosure;
 
+const overrides = overridesConfig.overrides as Record<string, string>;
+
 export function getAffiliatePrograms(): AffiliateProgram[] {
   return affiliatesConfig.programs as AffiliateProgram[];
+}
+
+/** Outbound URL for visitors — override > destination > never example.com */
+export function getAffiliateOutboundUrl(
+  program: AffiliateProgram,
+  source = "site",
+): string {
+  const override = overrides[program.id]?.trim();
+  const base =
+    override && !isBrokenLink(override)
+      ? override
+      : isBrokenLink(program.url)
+        ? program.affiliateSignupUrl ?? program.url
+        : program.url;
+
+  return withAffiliateParams(base, source);
+}
+
+/** Short internal link that redirects with tracking (use in UI) */
+export function getAffiliateGoPath(programId: string, source = "site"): string {
+  const q = new URLSearchParams({ source });
+  return `/go/${programId}?${q.toString()}`;
 }
 
 export function getFeaturedAffiliates(): AffiliateProgram[] {
@@ -27,11 +53,15 @@ export function getAffiliatesByIds(ids: string[]): AffiliateProgram[] {
 export function withAffiliateParams(url: string, source: string): string {
   try {
     const u = new URL(url);
-    u.searchParams.set("utm_source", "finance-autopilot");
+    u.searchParams.set("utm_source", "wealthybrainiac");
     u.searchParams.set("utm_medium", "affiliate");
     u.searchParams.set("utm_campaign", source);
     return u.toString();
   } catch {
     return url;
   }
+}
+
+export function getAffiliateProgramById(id: string): AffiliateProgram | undefined {
+  return getAffiliatePrograms().find((p) => p.id === id);
 }
