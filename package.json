@@ -9,6 +9,7 @@
     "lint": "next lint",
     "generate:post": "node scripts/generate-daily-post.mjs",
     "generate:post:dry": "node scripts/generate-daily-post.mjs --dry-run",
+    "generate:clusters": "node scripts/generate-content-clusters.mjs",
     "repurpose:social": "node scripts/repurpose-social.mjs",
     "pipeline:daily": "node scripts/daily-growth-pipeline.mjs",
     "revenue:check": "node scripts/revenue-readiness-check.mjs"
