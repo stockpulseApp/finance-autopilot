@@ -21,6 +21,7 @@ export default function EarnPage() {
         title="Monetization setup"
         subtitle="Every deal on this site should earn you money. Join these partner programs, then paste your tracking URLs into config/affiliate-overrides.json."
         category="side-income"
+        heroContext="earn"
       />
 
       <div className="marketplace-card space-y-4 p-6 text-sm text-[var(--muted)]">

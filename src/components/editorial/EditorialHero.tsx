@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { HERO_IMAGE } from "@/lib/marketplace-images";
+import { getHeroImage } from "@/lib/marketplace-images";
 import site from "../../../config/site.json";
 
 const topics = [
@@ -16,7 +16,7 @@ export function EditorialHero() {
   return (
     <section className="relative overflow-hidden rounded-2xl bg-[var(--primary-dark)] shadow-lg">
       <div className="absolute inset-0 opacity-25">
-        <Image src={HERO_IMAGE} alt="" fill className="object-cover" priority />
+        <Image src={getHeroImage("home")} alt="" fill className="object-cover" priority />
       </div>
       <div className="absolute inset-0 bg-gradient-to-br from-[var(--primary-dark)] via-[var(--primary)]/90 to-[var(--primary)]/70" />
 

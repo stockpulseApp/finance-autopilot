@@ -43,6 +43,7 @@ export default async function CategoryPage({
         title={meta?.label ?? category}
         subtitle={meta?.description ?? ""}
         category={category}
+        imageSeed={`category-landing-${category}`}
       >
         <p className="text-sm text-blue-100">
           {posts.length} guides in this topic

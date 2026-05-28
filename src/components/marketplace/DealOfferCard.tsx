@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { getAffiliateGoPath } from "@/lib/affiliates";
-import { getCategoryImage } from "@/lib/marketplace-images";
+import { getVisualImage } from "@/lib/marketplace-images";
 import { StarRating } from "./StarRating";
 import type { AffiliateProgram } from "@/lib/types";
 
@@ -28,18 +28,18 @@ export function DealOfferCard({
   priceLabel?: string;
 }) {
   const href = getAffiliateGoPath(program.id, source);
-  const image = getCategoryImage(program.category);
+  const image = getVisualImage(program.id, program.category);
   const reviews = pseudoReviews(program.id);
   const rating = pseudoRating(program.id);
 
   return (
-    <article className="marketplace-card flex h-full min-w-[280px] max-w-[320px] flex-col shrink-0 md:min-w-0 md:max-w-none">
+    <article className="marketplace-card group flex h-full min-w-[280px] max-w-[320px] shrink-0 flex-col md:min-w-0 md:max-w-none">
       <div className="relative h-44 w-full bg-[var(--primary-light)]">
         <Image
           src={image}
-          alt=""
+          alt={`${program.name} offer`}
           fill
-          className="object-cover"
+          className="object-cover transition duration-500 group-hover:scale-105"
           sizes="(max-width: 768px) 320px, 33vw"
         />
         {badge && (

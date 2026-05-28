@@ -15,6 +15,7 @@ export default function ProductsPage() {
         title="Digital products & template packs"
         subtitle={`${products.length} instant-download systems — budgets, investing, real estate, tax, and more.`}
         category="personal-finance"
+        heroContext="products"
       >
         <Link href="/subscription" className="btn-deal">
           Get all templates with Pro

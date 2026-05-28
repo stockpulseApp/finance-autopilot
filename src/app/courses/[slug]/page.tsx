@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { resolvePurchaseHref, isValidStripePaymentLink } from "@/lib/checkout";
 import { getCourseBySlug, getCourses } from "@/lib/courses";
 import { PageHero } from "@/components/marketplace/PageHero";
-import { getCategoryImage } from "@/lib/marketplace-images";
+import { getImageAlt, getVisualImage } from "@/lib/marketplace-images";
 
 export async function generateStaticParams() {
   return getCourses().map((c) => ({ slug: c.slug }));
@@ -40,7 +40,9 @@ export default async function CourseDetailPage({
     "fire-masterclass": "retirement",
     "insurance-essentials": "insurance",
   };
-  const image = getCategoryImage(categoryBySlug[course.slug] ?? "investing");
+  const category = categoryBySlug[course.slug] ?? "investing";
+  const image = getVisualImage(course.slug, category);
+  const imageAlt = getImageAlt(course.slug, course.title, category);
 
   return (
     <div className="space-y-10">
@@ -68,7 +70,7 @@ export default async function CourseDetailPage({
             </ul>
           </div>
           <div className="relative h-56 overflow-hidden rounded-xl md:h-72">
-            <Image src={image} alt="" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 66vw" />
+            <Image src={image} alt={imageAlt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 66vw" />
           </div>
         </div>
 

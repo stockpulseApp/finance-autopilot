@@ -1,5 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
+import { getCategoryMeta } from "@/lib/categories";
 import { getGuides } from "@/lib/guides";
+import { getImageAlt, getVisualImage } from "@/lib/marketplace-images";
 
 const FEATURED_SLUGS = [
   "30-day-wealth-sprint",
@@ -25,25 +28,43 @@ export function HomeGuideStrip() {
         </Link>
       </div>
       <ul className="mt-6 grid gap-4 md:grid-cols-3">
-        {guides.map((g) => (
-          <li key={g.slug} className="rounded-xl border border-[var(--border)] p-5">
-            <span
-              className={`rounded px-2 py-0.5 text-xs font-bold ${
-                g.type === "free" ? "bg-[#e6f4ea] text-[var(--success)]" : "badge-hot"
-              }`}
+        {guides.map((g) => {
+          const cat = getCategoryMeta(g.category);
+          const image = getVisualImage(g.slug, g.category);
+          return (
+            <li
+              key={g.slug}
+              className="group overflow-hidden rounded-xl border border-[var(--border)]"
             >
-              {g.type === "free" ? "Free" : `$${g.price}`}
-            </span>
-            <h3 className="mt-2 font-bold">{g.title}</h3>
-            <p className="mt-1 text-sm text-[var(--muted)] line-clamp-2">{g.description}</p>
-            <Link
-              href={`/guides/${g.slug}`}
-              className="mt-3 inline-block text-sm font-bold text-[var(--primary)] no-underline"
-            >
-              {g.type === "free" ? "Read free →" : "Read preview →"}
-            </Link>
-          </li>
-        ))}
+              <div className="relative h-36 w-full">
+                <Image
+                  src={image}
+                  alt={getImageAlt(g.slug, g.title, cat.label)}
+                  fill
+                  className="object-cover transition duration-500 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <span
+                  className={`absolute left-3 top-3 rounded px-2 py-0.5 text-xs font-bold ${
+                    g.type === "free" ? "bg-[#e6f4ea] text-[var(--success)]" : "badge-hot"
+                  }`}
+                >
+                  {g.type === "free" ? "Free" : `$${g.price}`}
+                </span>
+              </div>
+              <div className="p-5">
+                <h3 className="font-bold">{g.title}</h3>
+                <p className="mt-1 text-sm text-[var(--muted)] line-clamp-2">{g.description}</p>
+                <Link
+                  href={`/guides/${g.slug}`}
+                  className="mt-3 inline-block text-sm font-bold text-[var(--primary)] no-underline"
+                >
+                  {g.type === "free" ? "Read free →" : "Read preview →"}
+                </Link>
+              </div>
+            </li>
+          );
+        })}
       </ul>
     </section>
   );

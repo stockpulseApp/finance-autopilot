@@ -24,6 +24,7 @@ export default async function BuyProductPage({
         title={product.name}
         subtitle={product.headline}
         category="personal-finance"
+        imageSeed={product.slug}
       />
       <div className="marketplace-card p-6">
         <p className="text-3xl font-extrabold text-[var(--primary)]">${product.price}</p>

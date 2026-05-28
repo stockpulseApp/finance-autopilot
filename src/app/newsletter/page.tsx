@@ -11,6 +11,7 @@ export default function NewsletterPage() {
         title="Free deal alerts & wealth sprint"
         subtitle="Weekly partner deals, new guides, and instant access to our 30-day checklist — the same urgency as flash travel sales, for your wallet."
         category="personal-finance"
+        heroContext="newsletter"
       />
 
       <div className="mx-auto max-w-lg rounded-2xl border border-[var(--border)] bg-white p-8 shadow-sm">

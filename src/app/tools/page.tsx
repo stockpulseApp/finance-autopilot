@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { PageHero } from "@/components/marketplace/PageHero";
-import { getCategoryImage } from "@/lib/marketplace-images";
+import { getVisualImage } from "@/lib/marketplace-images";
 
 const tools = [
   {
@@ -33,6 +33,7 @@ export default function ToolsPage() {
         title="Free money tools"
         subtitle="High-intent calculators that help you plan — and point you to the best deals and guides."
         category="personal-finance"
+        heroContext="tools"
       />
       <div className="grid gap-6 md:grid-cols-3">
         {tools.map((t) => (
@@ -43,7 +44,7 @@ export default function ToolsPage() {
           >
             <div className="relative h-40 w-full">
               <Image
-                src={getCategoryImage(t.category)}
+                src={getVisualImage(t.slug, t.category)}
                 alt=""
                 fill
                 className="object-cover transition group-hover:scale-105"

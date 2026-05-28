@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getCategoryImage } from "@/lib/marketplace-images";
+import { getImageAlt, getVisualImage } from "@/lib/marketplace-images";
 import { getCategoryMeta } from "@/lib/categories";
 import type { Post } from "@/lib/types";
 
@@ -12,14 +12,21 @@ export function ArticleCard({
   variant?: "default" | "compact" | "horizontal";
 }) {
   const cat = getCategoryMeta(post.category);
-  const image = getCategoryImage(post.category);
+  const image = getVisualImage(post.slug, post.category);
+  const imageAlt = getImageAlt(post.slug, post.title, cat.label);
   const href = `/blog/${post.slug}`;
 
   if (variant === "horizontal") {
     return (
       <article className="group flex gap-5 rounded-xl border border-[var(--border)] bg-white p-4 shadow-sm transition hover:shadow-md md:gap-6 md:p-5">
         <div className="relative h-24 w-28 shrink-0 overflow-hidden rounded-lg md:h-32 md:w-40">
-          <Image src={image} alt="" fill className="object-cover" sizes="160px" />
+          <Image
+            src={image}
+            alt={imageAlt}
+            fill
+            className="object-cover transition duration-300 group-hover:scale-105"
+            sizes="160px"
+          />
         </div>
         <div className="min-w-0 flex-1">
           <p className="text-xs font-bold uppercase text-[var(--primary)]">{cat.label}</p>
@@ -58,7 +65,13 @@ export function ArticleCard({
   return (
     <article className="flex h-full flex-col overflow-hidden rounded-xl border border-[var(--border)] bg-white shadow-sm transition hover:shadow-md">
       <div className="relative h-48 w-full">
-        <Image src={image} alt="" fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
+        <Image
+          src={image}
+          alt={imageAlt}
+          fill
+          className="object-cover transition duration-500 group-hover:scale-105"
+          sizes="(max-width: 768px) 100vw, 33vw"
+        />
         <span className="absolute left-3 top-3 rounded bg-white px-2 py-0.5 text-xs font-bold text-[var(--primary)]">
           {cat.label}
         </span>

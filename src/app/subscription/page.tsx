@@ -19,6 +19,7 @@ export default function SubscriptionPage() {
         title={meta.name}
         subtitle={meta.tagline}
         category="investing"
+        heroContext="subscription"
       >
         <p className="text-sm text-blue-100">
           Automated daily blog publishing + member perks. Cancel anytime.

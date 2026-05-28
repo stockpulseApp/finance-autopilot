@@ -1,7 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 import { DealOfferCard } from "@/components/marketplace/DealOfferCard";
 import { TrustStrip } from "@/components/marketplace/TrustStrip";
 import { affiliateDisclosure, getAffiliatePrograms } from "@/lib/affiliates";
+import { getHeroImage } from "@/lib/marketplace-images";
 
 export const metadata = { title: "Compare Money Deals" };
 
@@ -10,7 +12,12 @@ export default function DealsPage() {
 
   return (
     <div className="space-y-8">
-      <div className="rounded-2xl bg-[var(--primary)] px-6 py-10 text-white md:px-10">
+      <div className="relative overflow-hidden rounded-2xl bg-[var(--primary)] px-6 py-10 text-white md:px-10">
+        <div className="absolute inset-0 opacity-30">
+          <Image src={getHeroImage("deals")} alt="" fill className="object-cover" />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[var(--primary-dark)]/95 to-[var(--primary)]/80" />
+        <div className="relative">
         <h1 className="text-3xl font-extrabold md:text-4xl">Compare money deals</h1>
         <p className="mt-3 max-w-2xl text-blue-100">
           Compare brokers, cards, and apps after you&apos;ve read the guides — so you
@@ -20,6 +27,7 @@ export default function DealsPage() {
           ← Back to free money guides
         </Link>
         <p className="mt-4 text-xs text-blue-200">{affiliateDisclosure}</p>
+        </div>
       </div>
 
       <TrustStrip />

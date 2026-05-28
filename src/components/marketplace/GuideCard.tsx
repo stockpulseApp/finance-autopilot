@@ -1,11 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getCategoryImage } from "@/lib/marketplace-images";
+import { getImageAlt, getVisualImage } from "@/lib/marketplace-images";
+import { getCategoryMeta } from "@/lib/categories";
 import type { Guide } from "@/lib/guides";
 import { isValidStripePaymentLink, resolvePurchaseHref } from "@/lib/checkout";
 
 export function GuideCard({ guide }: { guide: Guide }) {
-  const image = getCategoryImage(guide.category);
+  const cat = getCategoryMeta(guide.category);
+  const image = getVisualImage(guide.slug, guide.category);
+  const imageAlt = getImageAlt(guide.slug, guide.title, cat.label);
   const isFree = guide.type === "free";
   const paidHref = resolvePurchaseHref({
     checkoutUrl: guide.checkoutUrl,
@@ -15,9 +18,15 @@ export function GuideCard({ guide }: { guide: Guide }) {
   const paidExternal = isValidStripePaymentLink(guide.checkoutUrl);
 
   return (
-    <article className="marketplace-card flex h-full flex-col">
+    <article className="marketplace-card group flex h-full flex-col">
       <div className="relative h-44 w-full">
-        <Image src={image} alt="" fill className="object-cover" sizes="320px" />
+        <Image
+          src={image}
+          alt={imageAlt}
+          fill
+          className="object-cover transition duration-500 group-hover:scale-105"
+          sizes="320px"
+        />
         <span
           className={`absolute left-3 top-3 rounded px-2 py-0.5 text-xs font-bold ${
             isFree ? "bg-[#e6f4ea] text-[var(--success)]" : "badge-hot"

@@ -33,6 +33,7 @@ export default function StartHerePage() {
         title="Start here: learn first, tools second"
         subtitle="Wealthy Brainiac is a free money school. Read the guides, build the skill, then compare brokers and apps when you know what you need."
         category="personal-finance"
+        heroContext="start"
       >
         <Link href="/blog" className="btn-deal">
           Read your first guide

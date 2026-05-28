@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import Link from "next/link";
+import { PageHero } from "@/components/marketplace/PageHero";
 import { getCategoryMeta } from "@/lib/categories";
 
 type PulseSection = {
@@ -56,12 +57,9 @@ export default function InsightsPage() {
 
   return (
     <div className="space-y-12">
-      <header className="max-w-3xl">
-        <p className="text-sm font-bold uppercase text-[var(--primary)]">Weekly desk brief</p>
-        <h1 className="mt-2 text-3xl font-extrabold md:text-4xl">{pulse.title}</h1>
-        <p className="mt-4 text-lg text-[var(--muted)]">{pulse.intro}</p>
-        <p className="mt-2 text-sm text-[var(--muted)]">Updated {pulse.date}</p>
-      </header>
+      <PageHero title={pulse.title} subtitle={pulse.intro} heroContext="insights">
+        <p className="text-sm text-blue-100">Updated {pulse.date}</p>
+      </PageHero>
 
       <div className="space-y-10">
         {pulse.sections.map((section) => {

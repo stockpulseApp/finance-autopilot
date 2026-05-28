@@ -5,7 +5,7 @@ import { MarkdownContent } from "@/components/MarkdownContent";
 import { ArticleCard } from "@/components/editorial/ArticleCard";
 import { DealOfferCard } from "@/components/marketplace/DealOfferCard";
 import { NewsletterForm } from "@/components/NewsletterForm";
-import { getCategoryImage } from "@/lib/marketplace-images";
+import { getImageAlt, getVisualImage } from "@/lib/marketplace-images";
 import { getCategoryMeta } from "@/lib/categories";
 import { ArticleSources } from "@/components/editorial/ArticleSources";
 import { getEnrichedPosts, getEnrichedPostBySlug } from "@/lib/posts";
@@ -39,7 +39,8 @@ export default async function PostPage({
   if (!post) notFound();
 
   const cat = getCategoryMeta(post.category);
-  const image = getCategoryImage(post.category);
+  const image = getVisualImage(post.slug, post.category);
+  const imageAlt = getImageAlt(post.slug, post.title, cat.label);
   const relatedAffiliates = post.affiliateIds?.length
     ? getAffiliatesByIds(post.affiliateIds)
     : [];
@@ -51,7 +52,7 @@ export default async function PostPage({
     <article className="space-y-10">
       <div className="relative overflow-hidden rounded-2xl">
         <div className="relative h-56 md:h-80">
-          <Image src={image} alt="" fill className="object-cover" priority sizes="100vw" />
+          <Image src={image} alt={imageAlt} fill className="object-cover" priority sizes="100vw" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-black/20" />
         </div>
         <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10">

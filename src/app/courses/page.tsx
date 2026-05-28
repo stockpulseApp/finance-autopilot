@@ -14,6 +14,7 @@ export default function CoursesPage() {
         title="Courses & wealth programs"
         subtitle={`${courses.length} structured programs with modules, outcomes, and instant enrollment.`}
         category="investing"
+        heroContext="courses"
       >
         <Link
           href="/subscription"

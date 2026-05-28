@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getCategoryImage } from "@/lib/marketplace-images";
+import { getImageAlt, getVisualImage } from "@/lib/marketplace-images";
 import { getCategoryMeta } from "@/lib/categories";
 import type { Post } from "@/lib/types";
 
@@ -10,7 +10,8 @@ export function FeaturedStory({
   post: Post & { excerpt: string; readingTime: number };
 }) {
   const cat = getCategoryMeta(post.category);
-  const image = getCategoryImage(post.category);
+  const image = getVisualImage(post.slug, post.category);
+  const imageAlt = getImageAlt(post.slug, post.title, cat.label);
 
   return (
     <section className="overflow-hidden rounded-2xl border border-[var(--border)] bg-white shadow-md">
@@ -18,7 +19,7 @@ export function FeaturedStory({
         <div className="relative min-h-[240px] lg:min-h-[420px]">
           <Image
             src={image}
-            alt=""
+            alt={imageAlt}
             fill
             className="object-cover"
             priority

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { HERO_IMAGE } from "@/lib/marketplace-images";
+import { getHeroImage } from "@/lib/marketplace-images";
 import site from "../../../config/site.json";
 
 const quickGoals = [
@@ -16,7 +16,7 @@ export function SearchHero() {
   return (
     <section className="relative overflow-hidden rounded-2xl bg-[var(--primary)] shadow-lg">
       <div className="absolute inset-0 opacity-30">
-        <Image src={HERO_IMAGE} alt="" fill className="object-cover" priority />
+        <Image src={getHeroImage("search")} alt="" fill className="object-cover" priority />
       </div>
       <div className="absolute inset-0 bg-gradient-to-r from-[var(--primary-dark)]/95 to-[var(--primary)]/80" />
 

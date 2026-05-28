@@ -13,8 +13,9 @@ export default function GuidesPage() {
     <div className="space-y-12">
       <PageHero
         title="Guides & downloadable playbooks"
-        subtitle="Free checklists and premium PDF systems — the same deal-card experience as our partner offers."
+        subtitle="Free on-site playbooks and premium kits — read free, upgrade when you want worksheets and checklists."
         category="personal-finance"
+        heroContext="guides"
       />
 
       <section>

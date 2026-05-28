@@ -1,7 +1,6 @@
 import Link from "next/link";
 import site from "../../../config/site.json";
 import { PageHero } from "@/components/marketplace/PageHero";
-import { HERO_IMAGE } from "@/lib/marketplace-images";
 
 export const metadata = { title: "About" };
 
@@ -11,7 +10,7 @@ export default function AboutPage() {
       <PageHero
         title={`About ${site.name}`}
         subtitle="Daily money guides, partner deals, digital products, and tools — built to help you compare, decide, and act."
-        image={HERO_IMAGE}
+        heroContext="about"
       />
       <div className="grid gap-6 md:grid-cols-2">
         <div className="rounded-xl border border-[var(--border)] bg-white p-6 shadow-sm">

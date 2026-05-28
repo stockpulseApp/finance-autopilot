@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MarkdownContent } from "@/components/MarkdownContent";
 import { GuideUpgrade } from "@/components/editorial/GuideUpgrade";
-import { getCategoryImage } from "@/lib/marketplace-images";
+import { getImageAlt, getVisualImage } from "@/lib/marketplace-images";
 import { getCategoryMeta } from "@/lib/categories";
 import { getGuideBySlug } from "@/lib/guides";
 import { getGuidePage, getGuidePageSlugs } from "@/lib/guide-pages";
@@ -37,14 +37,15 @@ export default async function GuideReaderPage({
   if (!page || !catalog) notFound();
 
   const cat = getCategoryMeta(page.category);
-  const image = getCategoryImage(page.category);
+  const image = getVisualImage(page.slug, page.category);
+  const imageAlt = getImageAlt(page.slug, page.title, cat.label);
   const isFree = page.type === "free";
 
   return (
     <article className="space-y-10">
       <div className="relative overflow-hidden rounded-2xl">
         <div className="relative h-48 md:h-64">
-          <Image src={image} alt="" fill className="object-cover" sizes="100vw" />
+          <Image src={image} alt={imageAlt} fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
         </div>
         <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10">

@@ -18,7 +18,7 @@ export function CategoryTile({
     >
       <Image
         src={getCategoryImage(slug)}
-        alt=""
+        alt={`${label} guides and articles`}
         fill
         className="object-cover transition-transform duration-300 group-hover:scale-105"
         sizes="25vw"
