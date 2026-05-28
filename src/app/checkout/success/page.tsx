@@ -11,7 +11,7 @@ function getUpsell(searchParams: Record<string, string | string[] | undefined>) 
   if (key === "wealth-foundation" || key === "money-os-template-pack") {
     return {
       title: "Suggested next step: Wealth Operating System",
-      href: "/products",
+      href: "/thank-you/wealth-operating-system",
       cta: "Unlock full system",
     };
   }
@@ -19,7 +19,7 @@ function getUpsell(searchParams: Record<string, string | string[] | undefined>) 
   if (key === "real-estate-starter") {
     return {
       title: "Suggested next step: Portfolio & Cashflow Intensive",
-      href: "/products",
+      href: "/thank-you/portfolio-cashflow-intensive",
       cta: "Book intensive",
     };
   }
@@ -27,7 +27,7 @@ function getUpsell(searchParams: Record<string, string | string[] | undefined>) 
   if (key === "credit-mastery") {
     return {
       title: "Suggested next step: Money OS Template Pack",
-      href: "/products",
+      href: "/thank-you/money-os-template-pack",
       cta: "Get templates",
     };
   }

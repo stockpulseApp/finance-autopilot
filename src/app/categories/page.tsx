@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PostCard } from "@/components/PostCard";
+import { CategoryCtaRibbon } from "@/components/CategoryCtaRibbon";
 import { getAllPosts } from "@/lib/posts";
 import site from "../../../config/site.json";
 
@@ -23,6 +24,7 @@ export default function CategoriesPage() {
       {byCategory.map(({ cat, posts: catPosts }) => (
         <section key={cat}>
           <h2 className="text-xl font-bold capitalize">{cat.replace(/-/g, " ")}</h2>
+          <CategoryCtaRibbon category={cat} />
           {catPosts.length === 0 ? (
             <p className="mt-2 text-sm text-[var(--muted)]">Articles coming soon.</p>
           ) : (

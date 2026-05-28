@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { PostCard } from "@/components/PostCard";
+import { CategoryCtaRibbon } from "@/components/CategoryCtaRibbon";
 import { getPostsByCategory } from "@/lib/posts";
 import site from "../../../../config/site.json";
 
@@ -31,6 +32,7 @@ export default async function CategoryPage({
   return (
     <div>
       <h1 className="text-3xl font-bold capitalize">{category.replace(/-/g, " ")}</h1>
+      <CategoryCtaRibbon category={category} />
       <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {posts.map((p) => (
           <PostCard key={p.slug} post={p} />
