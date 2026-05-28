@@ -3,11 +3,11 @@ import site from "../../config/site.json";
 import { MobileNav } from "./MobileNav";
 
 const nav = [
-  { href: "/deals", label: "Deals" },
-  { href: "/categories", label: "Topics" },
   { href: "/blog", label: "Guides" },
+  { href: "/categories", label: "Topics" },
+  { href: "/start-here", label: "Start" },
+  { href: "/deals", label: "Deals" },
   { href: "/guides", label: "Downloads" },
-  { href: "/products", label: "Products" },
   { href: "/courses", label: "Courses" },
   { href: "/subscription", label: "Pro" },
 ];
@@ -25,7 +25,7 @@ export function Header() {
               {site.name}
             </span>
             <span className="hidden text-[10px] font-semibold uppercase text-[var(--muted)] sm:block">
-              Compare &amp; save on wealth tools
+              Free wealth education
             </span>
           </div>
         </Link>
@@ -44,13 +44,13 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <Link
-            href="/deals"
+            href="/blog"
             className="hidden rounded-md bg-[var(--primary-light)] px-3 py-2 text-sm font-bold text-[var(--primary)] no-underline sm:inline-block"
           >
-            Compare deals
+            Read guides
           </Link>
           <Link href="/newsletter" className="btn-deal hidden text-sm sm:inline-flex">
-            Free deals alert
+            Free newsletter
           </Link>
           <MobileNav items={nav} variant="marketplace" />
         </div>

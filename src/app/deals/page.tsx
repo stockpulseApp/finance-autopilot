@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { DealOfferCard } from "@/components/marketplace/DealOfferCard";
 import { TrustStrip } from "@/components/marketplace/TrustStrip";
 import { affiliateDisclosure, getAffiliatePrograms } from "@/lib/affiliates";
@@ -12,9 +13,12 @@ export default function DealsPage() {
       <div className="rounded-2xl bg-[var(--primary)] px-6 py-10 text-white md:px-10">
         <h1 className="text-3xl font-extrabold md:text-4xl">Compare money deals</h1>
         <p className="mt-3 max-w-2xl text-blue-100">
-          Side-by-side offers for cards, brokers, apps, and insurance — sorted so you
-          find the best fit fast, like shopping flights on Expedia.
+          Compare brokers, cards, and apps after you&apos;ve read the guides — so you
+          know what you&apos;re looking for.
         </p>
+        <Link href="/blog" className="mt-4 inline-block text-sm font-bold text-white underline">
+          ← Back to free money guides
+        </Link>
         <p className="mt-4 text-xs text-blue-200">{affiliateDisclosure}</p>
       </div>
 

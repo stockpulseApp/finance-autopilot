@@ -1,11 +1,18 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { enrichPost } from "./post-utils";
 import type { Post } from "./types";
+
+export type EnrichedPost = Post & { readingTime: number; excerpt: string };
 
 const POSTS_DIR = path.join(process.cwd(), "content", "posts");
 
 export function getAllPosts(): Post[] {
+  return getEnrichedPosts();
+}
+
+export function getEnrichedPosts(): EnrichedPost[] {
   if (!fs.existsSync(POSTS_DIR)) return [];
 
   const files = fs
@@ -14,10 +21,13 @@ export function getAllPosts(): Post[] {
     .sort()
     .reverse();
 
-  return files.map((filename) => {
-    const slug = filename.replace(/\.md$/, "");
-    return getPostBySlug(slug)!;
-  });
+  return files
+    .map((filename) => {
+      const slug = filename.replace(/\.md$/, "");
+      return getPostBySlug(slug);
+    })
+    .filter((p): p is Post => p !== null)
+    .map(enrichPost);
 }
 
 export function getPostBySlug(slug: string): Post | null {
@@ -43,12 +53,18 @@ export function getPostBySlug(slug: string): Post | null {
   };
 }
 
-export function getPostsByCategory(category: string): Post[] {
-  return getAllPosts().filter((p) => p.category === category);
+export function getPostsByCategory(category: string): EnrichedPost[] {
+  return getEnrichedPosts().filter((p) => p.category === category);
 }
 
-export function getFeaturedPosts(limit = 3): Post[] {
-  const featured = getAllPosts().filter((p) => p.featured);
+export function getFeaturedPosts(limit = 3): EnrichedPost[] {
+  const all = getEnrichedPosts();
+  const featured = all.filter((p) => p.featured);
   if (featured.length >= limit) return featured.slice(0, limit);
-  return getAllPosts().slice(0, limit);
+  return all.slice(0, limit);
+}
+
+export function getEnrichedPostBySlug(slug: string): EnrichedPost | null {
+  const post = getPostBySlug(slug);
+  return post ? enrichPost(post) : null;
 }

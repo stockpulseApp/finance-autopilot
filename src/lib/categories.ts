@@ -4,12 +4,14 @@ export const CATEGORY_META: Record<
 > = {
   "personal-finance": {
     label: "Personal Finance",
-    description: "Budgets, cash flow, and money systems that scale.",
+    description:
+      "Zero-based budgets, emergency funds, and automation — step-by-step guides with real numbers and weekly habits.",
     accent: "from-emerald-500/20 to-teal-600/5",
   },
   investing: {
     label: "Investing",
-    description: "Index funds, portfolios, and long-term wealth engines.",
+    description:
+      "Index funds, IRA choices, rebalancing, and portfolio design for beginners and long-term builders.",
     accent: "from-sky-500/20 to-blue-600/5",
   },
   crypto: {

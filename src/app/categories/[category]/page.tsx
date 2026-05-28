@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { PageHero } from "@/components/marketplace/PageHero";
-import { GuideOfferCard } from "@/components/marketplace/GuideOfferCard";
+import { ArticleCard } from "@/components/editorial/ArticleCard";
 import { DealOfferCard } from "@/components/marketplace/DealOfferCard";
 import { CATEGORY_META } from "@/lib/categories";
 import { getAffiliatePrograms } from "@/lib/affiliates";
@@ -21,6 +21,7 @@ export async function generateMetadata({
   const meta = CATEGORY_META[category];
   return {
     title: meta?.label ?? category,
+    description: meta?.description,
   };
 }
 
@@ -44,13 +45,37 @@ export default async function CategoryPage({
         category={category}
       >
         <p className="text-sm text-blue-100">
-          {posts.length} guides · {deals.length} partner deals
+          {posts.length} guides in this topic
+          {deals.length > 0 ? ` · ${deals.length} tools to compare when ready` : ""}
         </p>
       </PageHero>
 
+      <section>
+        <h2 className="text-xl font-extrabold">Guides &amp; strategies</h2>
+        <p className="mt-1 text-sm text-[var(--muted)]">
+          Read the full articles first — each one explains the why and the how.
+        </p>
+        {posts.length === 0 ? (
+          <p className="mt-6 rounded-xl border border-dashed border-[var(--border)] bg-white p-8 text-center text-[var(--muted)]">
+            New guides in this topic publish daily.
+          </p>
+        ) : (
+          <div className="mt-6 space-y-4">
+            {posts.map((p) => (
+              <ArticleCard key={p.slug} post={p} variant="horizontal" />
+            ))}
+          </div>
+        )}
+      </section>
+
       {deals.length > 0 && (
-        <section>
-          <h2 className="text-xl font-extrabold">Top deals in this category</h2>
+        <section className="rounded-2xl border border-[var(--border)] bg-[var(--primary-light)] p-6 md:p-8">
+          <h2 className="text-xl font-extrabold text-[var(--primary)]">
+            Tools to compare
+          </h2>
+          <p className="mt-1 text-sm text-[var(--muted)]">
+            Once you know what you need, these are popular options readers compare.
+          </p>
           <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {deals.map((d) => (
               <DealOfferCard key={d.id} program={d} source={`category-${category}`} />
@@ -58,26 +83,6 @@ export default async function CategoryPage({
           </div>
         </section>
       )}
-
-      <section>
-        <div className="flex items-center justify-between">
-          <h2 className="text-xl font-extrabold">Guides</h2>
-          <Link href="/blog" className="text-sm font-bold text-[var(--primary)] no-underline">
-            All guides →
-          </Link>
-        </div>
-        {posts.length === 0 ? (
-          <p className="mt-6 rounded-xl border border-dashed border-[var(--border)] bg-white p-8 text-center text-[var(--muted)]">
-            New guides publishing daily via our automation pipeline.
-          </p>
-        ) : (
-          <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {posts.map((p) => (
-              <GuideOfferCard key={p.slug} post={p} />
-            ))}
-          </div>
-        )}
-      </section>
     </div>
   );
 }

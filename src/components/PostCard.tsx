@@ -1,6 +1,12 @@
-import { GuideOfferCard } from "@/components/marketplace/GuideOfferCard";
-import type { Post } from "@/lib/types";
+import { ArticleCard } from "@/components/editorial/ArticleCard";
+import type { EnrichedPost } from "@/lib/posts";
 
-export function PostCard({ post }: { post: Post; featured?: boolean }) {
-  return <GuideOfferCard post={post} />;
+export function PostCard({
+  post,
+  variant = "default",
+}: {
+  post: EnrichedPost;
+  variant?: "default" | "compact" | "horizontal";
+}) {
+  return <ArticleCard post={post} variant={variant} />;
 }

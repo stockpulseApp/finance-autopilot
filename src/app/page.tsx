@@ -1,69 +1,70 @@
 import Link from "next/link";
-import { SearchHero } from "@/components/marketplace/SearchHero";
-import { TrustStrip } from "@/components/marketplace/TrustStrip";
+import { EditorialHero } from "@/components/editorial/EditorialHero";
+import { FeaturedStory } from "@/components/editorial/FeaturedStory";
+import { ArticleCard } from "@/components/editorial/ArticleCard";
+import { WhyVisit } from "@/components/editorial/WhyVisit";
 import { DealOfferCard } from "@/components/marketplace/DealOfferCard";
 import { CategoryTile } from "@/components/marketplace/CategoryTile";
-import { GuideOfferCard } from "@/components/marketplace/GuideOfferCard";
-import { ProductOfferCard } from "@/components/marketplace/ProductOfferCard";
-import { getAllPosts } from "@/lib/posts";
-import { getAffiliatePrograms, getFeaturedAffiliates } from "@/lib/affiliates";
-import { getProducts } from "@/lib/products";
-import { getCourses } from "@/lib/courses";
+import { getEnrichedPosts } from "@/lib/posts";
+import { getFeaturedAffiliates } from "@/lib/affiliates";
 import { CATEGORY_META } from "@/lib/categories";
 import site from "../../config/site.json";
 
 export default function HomePage() {
-  const featuredDeals = getFeaturedAffiliates();
-  const allDeals = getAffiliatePrograms();
-  const posts = getAllPosts().slice(0, 12);
-  const products = getProducts();
-  const courses = getCourses().filter((c) => c.checkoutUrl?.startsWith("https://"));
+  const posts = getEnrichedPosts();
+  const featured = posts[0];
+  const latest = posts.slice(1, 7);
+  const deepDives = posts.slice(7, 13);
+  const featuredDeals = getFeaturedAffiliates().slice(0, 3);
 
-  const topCategories = site.categories.slice(0, 8).map((slug) => ({
-    slug,
-    label: CATEGORY_META[slug]?.label ?? slug,
-    dealCount: `${getAllPosts().filter((p) => p.category === slug).length || "New"} guides`,
-  }));
+  const topCategories = site.categories.slice(0, 6).map((slug) => {
+    const count = posts.filter((p) => p.category === slug).length;
+    return {
+      slug,
+      label: CATEGORY_META[slug]?.label ?? slug,
+      dealCount: `${count} in-depth guides`,
+    };
+  });
 
   return (
-    <div className="space-y-10 md:space-y-14">
-      <SearchHero />
-      <TrustStrip />
+    <div className="space-y-12 md:space-y-16">
+      <EditorialHero />
 
-      {/* Today's deals — horizontal rail like Expedia */}
+      {featured && <FeaturedStory post={featured} />}
+
       <section>
-        <div className="mb-4 flex items-end justify-between gap-4">
+        <div className="mb-6 flex items-end justify-between gap-4">
           <div>
-            <h2 className="text-2xl font-extrabold text-[var(--foreground)]">
-              Today&apos;s top money deals
-            </h2>
-            <p className="mt-1 text-sm text-[var(--muted)]">
-              Vetted offers with reader ratings — updated daily
+            <h2 className="text-2xl font-extrabold">Latest guides</h2>
+            <p className="mt-1 text-[var(--muted)]">
+              {posts.length}+ articles — new lessons published daily
             </p>
           </div>
-          <Link href="/deals" className="text-sm font-bold text-[var(--primary)] no-underline">
-            See all deals →
+          <Link href="/blog" className="shrink-0 text-sm font-bold text-[var(--primary)] no-underline">
+            All guides →
           </Link>
         </div>
-        <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-hide lg:grid lg:grid-cols-3 lg:overflow-visible">
-          {featuredDeals.slice(0, 6).map((deal, i) => (
-            <DealOfferCard
-              key={deal.id}
-              program={deal}
-              badge={i === 0 ? "Best value" : i === 1 ? "Popular" : undefined}
-              priceLabel={i === 0 ? "$0 annual fee" : "Free to compare"}
-            />
+        <div className="grid gap-4 lg:grid-cols-2">
+          {latest.slice(0, 2).map((post) => (
+            <ArticleCard key={post.slug} post={post} />
+          ))}
+        </div>
+        <div className="mt-4 space-y-0 rounded-xl border border-[var(--border)] bg-white px-5 md:px-6">
+          {latest.slice(2).map((post) => (
+            <ArticleCard key={post.slug} post={post} variant="compact" />
           ))}
         </div>
       </section>
 
-      {/* Browse destinations — category tiles */}
+      <WhyVisit />
+
       <section>
-        <h2 className="text-2xl font-extrabold">Browse by money goal</h2>
-        <p className="mt-1 text-sm text-[var(--muted)]">
-          Pick your destination — investing, credit, property, income &amp; more
+        <h2 className="text-2xl font-extrabold">Explore by topic</h2>
+        <p className="mt-1 max-w-2xl text-[var(--muted)]">
+          Each topic has full guides with examples, checklists, and frameworks — not just
+          product links.
         </p>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {topCategories.map((cat) => (
             <CategoryTile
               key={cat.slug}
@@ -75,95 +76,56 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Compare all — grid like Trivago results */}
-      <section className="rounded-2xl border border-[var(--border)] bg-white p-6 md:p-8">
+      {deepDives.length > 0 && (
+        <section>
+          <h2 className="text-2xl font-extrabold">More to read this week</h2>
+          <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {deepDives.map((post) => (
+              <ArticleCard key={post.slug} post={post} />
+            ))}
+          </div>
+        </section>
+      )}
+
+      <section className="rounded-2xl border border-[var(--border)] bg-[var(--primary-light)] p-8">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
-            <h2 className="text-2xl font-extrabold">Compare all partner offers</h2>
-            <p className="mt-1 text-sm text-[var(--muted)]">
-              {allDeals.length} tools ranked by category — click to view official offer
+            <h2 className="text-xl font-extrabold text-[var(--primary)]">
+              When you&apos;re ready: compare tools
+            </h2>
+            <p className="mt-2 max-w-xl text-sm text-[var(--muted)]">
+              After you understand the strategy, see vetted brokers, cards, and apps —
+              with transparent disclosures.
             </p>
           </div>
           <Link href="/deals" className="btn-primary-blue shrink-0">
-            Open comparison page
+            Browse partner deals
           </Link>
         </div>
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {allDeals.map((deal) => (
-            <DealOfferCard key={deal.id} program={deal} source="homepage-grid" />
+        <div className="mt-6 grid gap-4 md:grid-cols-3">
+          {featuredDeals.map((deal) => (
+            <DealOfferCard key={deal.id} program={deal} source="homepage-deals" />
           ))}
         </div>
       </section>
 
-      {/* Packages / products — Viator-style */}
-      <section>
-        <h2 className="text-2xl font-extrabold">Wealth packages &amp; courses</h2>
-        <p className="mt-1 text-sm text-[var(--muted)]">
-          Book instant access — templates, systems, and live intensives
-        </p>
-        <div className="mt-6 grid gap-6 md:grid-cols-3">
-          {products.map((p) => (
-            <ProductOfferCard
-              key={p.slug}
-              offer={p}
-              href={p.checkoutUrl ?? `/products`}
-            />
-          ))}
-          {courses.slice(0, 2).map((c) => (
-            <ProductOfferCard
-              key={c.slug}
-              offer={{
-                slug: c.slug,
-                name: c.title,
-                headline: c.description,
-                price: c.price,
-                cta: "Enroll now",
-              }}
-              href={c.checkoutUrl ?? `/courses/${c.slug}`}
-              reviews={210}
-            />
-          ))}
-        </div>
-      </section>
-
-      {/* Free guides rail */}
-      <section>
-        <div className="mb-4 flex items-end justify-between">
-          <div>
-            <h2 className="text-2xl font-extrabold">Free expert guides</h2>
-            <p className="mt-1 text-sm text-[var(--muted)]">
-              No paywall — actionable playbooks like travel tips, but for your money
-            </p>
-          </div>
-          <Link href="/blog" className="text-sm font-bold text-[var(--primary)] no-underline">
-            All guides →
-          </Link>
-        </div>
-        <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-hide lg:grid lg:grid-cols-4 lg:overflow-visible">
-          {posts.map((post) => (
-            <GuideOfferCard key={post.slug} post={post} />
-          ))}
-        </div>
-      </section>
-
-      {/* Bottom CTA band */}
       <section className="rounded-2xl bg-[var(--primary)] px-8 py-10 text-center text-white md:py-14">
         <h2 className="text-2xl font-extrabold md:text-3xl">
-          Never overpay for a money tool again
+          Get smarter about money every week
         </h2>
         <p className="mx-auto mt-3 max-w-lg text-blue-100">
-          Join deal alerts — we surface the best broker, card, and course offers so you
-          compare first, commit second.
+          Join readers who get new guides, deal roundups, and the 30-day wealth sprint
+          checklist — free.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <Link href="/newsletter" className="btn-deal">
-            Get free deal alerts
+            Free newsletter
           </Link>
           <Link
-            href="/start-here"
+            href="/blog"
             className="rounded-lg border-2 border-white px-6 py-3 font-bold text-white no-underline hover:bg-white/10"
           >
-            How it works
+            Browse all {posts.length} guides
           </Link>
         </div>
       </section>
