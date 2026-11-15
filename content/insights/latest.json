@@ -1,215 +1,195 @@
 {
-  "date": "2026-11-08",
-  "title": "Money Pulse · 2026-11-08",
+  "date": "2026-11-15",
+  "title": "Money Pulse · 2026-11-15",
   "intro": "What journalists, analysts, and people on X are saying about money this week — summarized by our desk with links to originals.",
   "sections": [
     {
       "category": "investing",
       "topic": "stock market and index investing this week",
-      "headline": "Markets Wobble Through Election Week as AI Selloff Spreads, December Rate Hike Looms",
-      "summary": "U.S. equities suffered their worst losses since April 2025 during midterm election week, with the Nasdaq plunging 4.5% as concerns over Democratic gains threatening data center development triggered a brutal AI stock selloff. The turbulence comes as a surprisingly strong jobs report—165,000 new positions in October—sets the stage for a potential Federal Reserve rate hike in December, though analysts say Tuesday's CPI data will prove more decisive.",
-      "editorial": "The midterm elections produced an unexpected market casualty: artificial intelligence stocks. What began as sector-specific anxiety about [Democrats' election gains potentially hampering data center construction](https://www.cfr.org/articles/the-midterms-rattled-ai-stocks-heres-what-to-watch-in-the-broader-economy) evolved into Thursday's broad market rout, with leveraged semiconductor vehicles like the Direxion Daily Semiconductor Bull 3X ETF [cratering more than 37%](https://www.cfr.org/articles/the-midterms-rattled-ai-stocks-heres-what-to-watch-in-the-broader-economy) and triggering margin call cascades. The [Nasdaq broke below its 200-day moving average](https://www.investors.com/news/stock-market-suffers-ugly-losses-in-election-week-apple-palantir-led-key-earnings-weekly-review) while the S&P 500 and Dow Jones showed relative resilience, underscoring how concentrated the pain remained in mega-cap technology names that had driven recent gains.\n\nYet the calendar and economic data may matter more than political headlines. [Friday's hotter-than-expected employment numbers](https://www.morningstar.com/markets/smart-investor-7-undervalued-stocks-that-just-raised-dividends)—165,000 jobs versus forecasts—have analysts pricing in a December rate increase, though the upcoming Consumer Price Index release will carry more weight in Fed deliberations. Against this backdrop, [Morningstar strategist Dave Sekera is highlighting undervalued dividend-raisers](https://www.morningstar.com/markets/smart-investor-7-undervalued-stocks-that-just-raised-dividends) as defensive positioning, while [BlackRock maintains its overweight on Spanish equities](https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary) citing attractive valuations and Latin America exposure. The volatility presents a test case for market structure itself: as concentration in passive index products meets algorithmic amplification of sentiment shifts, even sector-specific concerns can metastasize into systemic selling pressure that challenges the stability assumptions underlying modern portfolio construction.",
+      "headline": "Tech Selloff Drags Markets Into Correction Territory Despite Weekly Gains",
+      "summary": "U.S. equity markets experienced sharp volatility as technology stocks led major indexes lower, with the Nasdaq Composite entering correction territory down nearly 12% from October highs. Despite Friday's losses, major indexes managed to post weekly gains amid concerns over AI infrastructure spending and midterm election implications.",
+      "editorial": "Markets are sending mixed signals as investors navigate a turbulent transition period marked by political uncertainty and sector rotation. The [Nasdaq's descent into correction territory](https://finance.yahoo.com/markets/stocks/articles/top-5-stocks-watch-week-162025831.html) reflects deeper anxieties about the sustainability of AI-driven valuations, particularly as [Nvidia's influence alone subtracted nearly a full percentage point](https://www.cbsnews.com/news/nvidia-stock-slide-401k-index-funds) from the S&P 500's weekly performance. Technology stocks bore the brunt of selling pressure, with the [Russell 1000 Growth Index declining 5.0%](https://www.troweprice.com/financial-intermediary/be/en/lp/global-equities/weekly-market-recap.html) while value stocks held relatively firm, suggesting investors are rotating toward defensive positioning ahead of critical inflation data.\n\nThe paradox of weekly gains amid daily volatility underscores the market's fragmented sentiment. While [more S&P 500 components rose than fell during the week](https://www.cbsnews.com/news/nvidia-stock-slide-401k-index-funds), the concentration risk in mega-cap technology names has left passive investors particularly exposed to single-stock turbulence. The [Cboe Volatility Index surged 32% for the week](https://www.jhinvestments.com/weekly-market-recap), climbing 70.7% year-to-date, reflecting persistent uncertainty around data-center spending commitments and the broader artificial intelligence infrastructure buildout. With October inflation data on deck and Treasury yields pushing above 5%, markets face a critical juncture where valuation discipline may finally reassert itself across the technology sector.",
       "socialHighlights": [
         {
-          "text": "Markets Today reported the S&P 500 dropped 1.9% for the week ending October 16, 2026, closing at 7,659.44 as risk-off sentiment in mega-cap technology outweighed early-week gains, while the Nasdaq tumbled 4.5% to 26,140.03.",
-          "source": "@marketsday",
-          "url": "https://x.com/marketsday/status/2111304490334724378"
+          "text": "Standard Investment Bank noted that global equity markets experienced heightened volatility following US midterm elections, with investors reassessing implications for corporate earnings and monitoring key economic releases including inflation data from the US, China, and UK GDP figures.",
+          "source": "@investwithSIB",
+          "url": "https://x.com/investwithSIB/status/2120137062644842926"
         },
         {
-          "text": "WOLF Financial noted a sharp divergence in Asian markets, with China's SSE Composite up approximately 1% for the week while South Korea's KOSPI and Japan's Nikkei 225 both fell more than 10%.",
-          "source": "@WOLF_Financial",
-          "url": "https://x.com/WOLF_Financial/status/2119020187051585911"
-        },
-        {
-          "text": "Markets Today tracked the weekly close showing the S&P 500 declined 43.61 points (0.6%) to 7,580.07, the Dow fell 444.85 points (0.9%) to 51,770.31, and the Nasdaq retreated 518.34 points (2.0%) to 25,437.00.",
+          "text": "Markets Today highlighted that technology shares and semiconductor stocks faced continued selling pressure despite cooler-than-expected producer price index readings, with investors digesting fallout from Nvidia leadership changes and rotation out of high-flying AI names.",
           "source": "@marketsday",
-          "url": "https://x.com/marketsday/status/2116367437944041833"
+          "url": "https://x.com/marketsday/status/2121438306584121358"
         }
       ],
       "sources": [
         {
-          "title": "Smart Investor: 7 Undervalued Stocks That Just Raised Dividends",
-          "url": "https://www.morningstar.com/markets/smart-investor-7-undervalued-stocks-that-just-raised-dividends",
-          "outlet": "Morningstar"
+          "title": "Top 5 stocks to watch this week",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/top-5-stocks-watch-week-162025831.html",
+          "outlet": "Yahoo Finance"
         },
         {
-          "title": "Weekly market commentary",
-          "url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary",
-          "outlet": "BlackRock Investment Institute"
+          "title": "Weekly market recap",
+          "url": "https://www.troweprice.com/financial-intermediary/be/en/lp/global-equities/weekly-market-recap.html",
+          "outlet": "T. Rowe Price"
         },
         {
-          "title": "The Midterms Rattled AI Stocks. Here's What to Watch in the Broader Economy",
-          "url": "https://www.cfr.org/articles/the-midterms-rattled-ai-stocks-heres-what-to-watch-in-the-broader-economy",
-          "outlet": "Council on Foreign Relations"
+          "title": "Never bought Nvidia stock? Its slide could still hit your 401(k)",
+          "url": "https://www.cbsnews.com/news/nvidia-stock-slide-401k-index-funds",
+          "outlet": "CBS News"
         },
         {
-          "title": "Stocks Suffer Ugly Election Week Losses",
-          "url": "https://www.investors.com/news/stock-market-suffers-ugly-losses-in-election-week-apple-palantir-led-key-earnings-weekly-review",
-          "outlet": "Investor's Business Daily"
-        },
-        {
-          "title": "November US Stock Market Outlook: How to Position Your Portfolio for the Remainder of 2026",
-          "url": "https://global.morningstar.com/en-gb/markets/november-us-stock-market-outlook-how-position-your-portfolio-remainder-2026",
-          "outlet": "Morningstar"
+          "title": "Weekly Market Recap",
+          "url": "https://www.jhinvestments.com/weekly-market-recap",
+          "outlet": "Manulife John Hancock Investments"
         }
       ],
-      "researchedAt": "2026-11-08"
+      "researchedAt": "2026-11-15"
     },
     {
       "category": "personal-finance",
       "topic": "inflation consumer spending household budgets",
-      "headline": "American Households Squeezed as Inflation Pushes Essentials to Half of Spending",
-      "summary": "Housing and food now consume nearly half of U.S. household budgets—the highest proportion in 15 years—while inflation remains elevated at 3.7% and total consumer spending reached $16.9 trillion in Q3 2026. Despite this financial strain, holiday retail sales are projected to surpass $1 trillion for the first time, revealing a paradox where spending persists even as consumers report growing pessimism about their personal financial situations.",
-      "editorial": "American families are navigating a fundamentally altered economic landscape where necessities have claimed an unprecedented share of household budgets. [Housing and food now account for nearly half of consumer spending](https://www.detroitnews.com/story/business/personal-finance/2026/11/02/american-spending-housing-and-food/92568178007), with families spending an average of $1,988 more on these two categories than in 2024. This compression of discretionary income comes as [inflation accelerated to 3.7% in September](https://www.cabotwealth.com/daily/stock-market/best-consumer-staples-etfs-inflation), up from 3.4% in August, while total Personal Consumption Expenditures reached $16.9 trillion in Q3 2026. The data reveals a troubling paradox: consumers continue spending despite deteriorating confidence, with [Florida residents showing seven consecutive months of declining assessments of their personal finances](https://www.floridatrend.com/articles/2026/11/03/florida-consumer-sentiment-rises-second-consecutive-month) even as they maintain optimism about future national economic conditions.\n\nThe retail sector exemplifies this cognitive dissonance between behavior and sentiment. The National Retail Federation projects [holiday spending will exceed $1 trillion for the first time](https://azfreenews.com/2026/11/u-s-holiday-retail-sales-projected-to-top-1-trillion-for-first-time), yet retailers are approaching seasonal hiring cautiously amid higher interest rates, persistent inflation, and elevated consumer debt. [Alimentation Couche-Tard reported](https://www.bloomberg.com/news/articles/2026-09-02/circle-k-owner-says-inflation-fuel-costs-curb-consumer-spending?srnd=phx-latinamerica) that while fuel sales hit records as oil prices soared during the Middle East conflict, consumers are simultaneously tightening budgets and visiting stores less frequently. This bifurcation suggests American households are depleting savings buffers and potentially increasing credit reliance to maintain consumption patterns—a strategy that may prove unsustainable if inflation pressures continue mounting, particularly given Federal Reserve warnings about [additional thousands being added to already soaring household bills](https://finance.yahoo.com/economy/articles/fed-inflation-warning-add-thousands-145531432.html).",
+      "headline": "American Households Hit Breaking Point as Debt Surges and Savings Evaporate Under Persistent Inflation",
+      "summary": "Nearly a quarter of Americans with credit records are now behind on debt payments as credit card balances reach a record $1.29 trillion, up nearly 70% from five years ago. With prices averaging 30% higher since 2019 and savings rates dropping below 4%, consumers are increasingly trading down to value brands and discount retailers while depleting financial cushions built during the pandemic.",
+      "editorial": "The latest spending data reveals a consumer economy under severe strain, with households deploying survival strategies rather than thriving. [Bank of America Institute analysis](https://www.businessinsider.com/consumers-still-shopping-spending-looking-for-value-elevated-inflation-2026-11) shows Americans shifting to value-tier merchants at levels not seen since 2021, particularly among millennials facing elevated housing and childcare costs. While [gas prices have fallen below $4 nationally](https://abc7ny.com/post/new-jersey-drivers-sound-off-gas-prices-fall-below-4-nationally/20030969) for the first time in months, grocery and housing costs continue climbing—grocery prices rose 0.4% last month alone, with beef up nearly 1%.\n\nThe financial safety net has largely disintegrated. [Federal Reserve data](https://www.cbsnews.com/news/americans-behind-on-debts-analysis) shows 24% of Americans with credit records are now delinquent on debts, while savings rates have plunged to below 4% of income—well beneath pre-pandemic levels. Ted Rossman of Money Management International warns that household budgets have reached a \"breaking point\" after years of financing daily expenses with debt. Even as [Circle K's parent company reports record fuel sales](https://www.bloomberg.com/news/articles/2026-09-02/circle-k-owner-says-inflation-fuel-costs-curb-consumer-spending), retailers note consumers are visiting stores less frequently, a behavioral shift that signals deeper economic anxiety beyond headline spending figures. The combination of depleted savings, record debt levels, and persistent inflation in essential categories suggests the adaptive mechanisms keeping consumption afloat may be approaching exhaustion.",
       "socialHighlights": [
         {
-          "text": "First Atlantic Federal Credit Union emphasized that coping with inflation requires families to manage budgets closely and create detailed spending plans while tracking every dollar of income and expenses.",
+          "text": "Common Sense Institute research found that spending has risen 30% faster than income among Denver metro households since 2016, with education, housing, healthcare, and energy becoming significantly less affordable.",
+          "source": "Common Sense Institute",
+          "url": "https://commonsenseinstituteus.org/colorado/research/jobs-and-our-economy/denver-metro-household-budget-pressure-inflation-taxes-and-shifting-spending-patterns"
+        },
+        {
+          "text": "First Atlantic Federal Credit Union notes that recent research shows 64% of consumers were living paycheck to paycheck at the beginning of 2022, highlighting the delicate balance families face staying on top of finances.",
           "source": "First Atlantic Federal Credit Union",
           "url": "https://www.fafcu.com/managing-your-household-budget-during-inflation"
         },
         {
-          "text": "TD Economics noted that despite strong household balance sheets, American consumers are increasingly concerned their personal finances face rapid deterioration due to sky-high inflation, tightening credit, and geopolitical anxiety.",
-          "source": "TD Economics",
-          "url": "https://economics.td.com/us-state-of-consumer"
-        },
-        {
-          "text": "Consumer spending experts are sharing money-saving tips as inflation continues to severely impact family budgets, with everyday costs putting pressure on household finances even as economic growth indicators remain positive.",
-          "source": "WPRI12",
-          "url": "https://www.facebook.com/WPRI12/posts/while-economic-growth-is-generally-a-positive-sign-everyday-costs-continue-to-pu/1585902243567988"
+          "text": "A CNET survey found that 93% of US adults are worried about inflation as rising grocery bills, stubborn utility costs, and creeping subscription fees put household budgets under serious pressure.",
+          "source": "CNET",
+          "url": "https://www.cnet.com/tech/services-and-software/best-budgeting-apps"
         }
       ],
       "sources": [
         {
-          "title": "Florida consumer sentiment rises for second consecutive month",
-          "url": "https://www.floridatrend.com/articles/2026/11/03/florida-consumer-sentiment-rises-second-consecutive-month",
-          "outlet": "Florida Trend"
+          "title": "Inflation Is Pushing Consumers to Trade Down and Hunt for Value",
+          "url": "https://www.businessinsider.com/consumers-still-shopping-spending-looking-for-value-elevated-inflation-2026-11",
+          "outlet": "Business Insider"
         },
         {
-          "title": "3 Best Consumer Staples ETFs to Buy as Inflation Rises",
-          "url": "https://www.cabotwealth.com/daily/stock-market/best-consumer-staples-etfs-inflation",
-          "outlet": "Cabot Wealth Network"
+          "title": "Record credit card balances, fewer trips to McDonald's: More signs of strain ahead of the holidays",
+          "url": "https://www.nbcnews.com/business/economy/us-consumers-credit-card-debt-spending-holiday-season-rcna608731",
+          "outlet": "NBC News"
         },
         {
-          "title": "U.S. Holiday Retail Sales Projected To Top $1 Trillion For First Time",
-          "url": "https://azfreenews.com/2026/11/u-s-holiday-retail-sales-projected-to-top-1-trillion-for-first-time",
-          "outlet": "AZ Free News"
-        },
-        {
-          "title": "Half of Americans' spending goes to housing and food, most in 15 years",
-          "url": "https://www.detroitnews.com/story/business/personal-finance/2026/11/02/american-spending-housing-and-food/92568178007",
-          "outlet": "Detroit News"
+          "title": "24% of Americans with a credit record are behind on their debts, new analysis finds",
+          "url": "https://www.cbsnews.com/news/americans-behind-on-debts-analysis",
+          "outlet": "CBS News"
         },
         {
           "title": "Circle K Owner Says Inflation, Fuel Costs Curb Consumer Spending",
-          "url": "https://www.bloomberg.com/news/articles/2026-09-02/circle-k-owner-says-inflation-fuel-costs-curb-consumer-spending?srnd=phx-latinamerica",
+          "url": "https://www.bloomberg.com/news/articles/2026-09-02/circle-k-owner-says-inflation-fuel-costs-curb-consumer-spending",
           "outlet": "Bloomberg"
         },
         {
-          "title": "The Fed's New Inflation Warning Will Add Thousands to Families' Already Soaring Bills",
-          "url": "https://finance.yahoo.com/economy/articles/fed-inflation-warning-add-thousands-145531432.html",
-          "outlet": "Yahoo Finance"
+          "title": "New Jersey drivers sound off as gas prices fall below $4 nationally",
+          "url": "https://abc7ny.com/post/new-jersey-drivers-sound-off-gas-prices-fall-below-4-nationally/20030969",
+          "outlet": "ABC7 New York"
         }
       ],
-      "researchedAt": "2026-11-08"
+      "researchedAt": "2026-11-15"
     },
     {
       "category": "credit-cards",
       "topic": "credit card rewards interest rates Fed",
-      "headline": "Credit Card Interest Rates Near 25% as Demand Surges to Four-Year High",
-      "summary": "Credit card interest rates have climbed to historic highs, with the average APR reaching nearly 25% according to Forbes Advisor, while the Federal Reserve reports demand for new credit cards has hit a four-year peak. The surge in rates—driven by regulatory changes from the 2009 CARD Act, rising delinquencies, and Fed policy—means consumers carrying a $5,000 balance now pay roughly $334 more annually in interest compared to 2021 levels.",
-      "editorial": "The mathematics of high-rate credit card debt have become punishing for American consumers. According to [24/7 Wall St.](https://247wallst.com/personal-finance/2026/11/05/the-fed-finds-disturbing-trend-as-credit-card-demand-hits-4-year-high), a $5,000 balance at today's 21% average APR costs approximately $1,060 annually in interest payments alone—before reducing principal by a single dollar. [Forbes Advisor](https://www.forbes.com/advisor/credit-cards/average-credit-card-interest-rate) reports the weekly average has climbed even higher to 24.88%, while the Federal Reserve's data shows accounts actually incurring interest charges average 22.36% as of August 2026. This represents a dramatic escalation from the 15% rates common in late 2021, effectively imposing what [multiple outlets](https://www.kq2.com/stacker-personal-finance-investing/2026/11/03/as-interest-rates-climb-your-credit-card-debt-becomes-a-silent-wealth-tax) are characterizing as a \"silent wealth tax\" on revolving balances.\n\nThe structural causes of this rate environment trace back further than recent Federal Reserve tightening. As [KQ2](https://www.kq2.com/stacker-personal-finance-investing/2026/11/03/as-interest-rates-climb-your-credit-card-debt-becomes-a-silent-wealth-tax) and [other regional news sources](https://themtnear.com/premium/stacker/stories/as-interest-rates-climb-your-credit-card-debt-becomes-a-silent-wealth-tax,114437) explain, the 2009 CARD Act prohibited issuers from raising rates on existing balances, forcing companies to price risk upfront through higher baseline rates that punish even reliable payers. Rising delinquency rates in 2022-2023 compounded the pressure, creating a feedback loop where defaults drive rates higher for all cardholders. [PYMNTS reports](https://www.pymnts.com/economy/2026/revolving-debt-jumps-as-spending-strains-credit-cards) that 13.2% of consumers paying less frequently cite cash preservation as their primary motivation—a rational response when the alternative means surrendering more than a fifth of borrowed funds annually to interest charges that stake claims on future income.",
+      "headline": "Credit Card Debt Hits $1.28 Trillion as Bipartisan Interest Rate Cap Proposal Gains Momentum",
+      "summary": "American credit card balances surged to $1.28 trillion in Q3 2024, climbing $22 billion from the previous quarter, while average interest rates remain stubbornly high at 22-24%. The mounting debt crisis has prompted an unusual political alliance, with Senator Elizabeth Warren signaling support for President Trump's proposal to cap credit card APRs at 10%—less than half current rates.",
+      "editorial": "The collision of record household debt with political appetite for intervention marks a pivotal moment for consumer credit markets. [Credit card balances increased by $22 billion](https://thehill.com/business/6212089-democrats-push-interest-caps) in the third quarter alone, with Americans now carrying $1.28 trillion in total balances while facing [average interest rates of 22.36%](https://www.newsweek.com/elizabeth-warren-trump-10-percent-credit-card-rate-cap-12684647) on accounts that carry balances—more than double the proposed 10% cap. The Consumer Financial Protection Bureau has documented that [APR margins have reached all-time highs](https://www.consumerfinance.gov/archive/blog/credit-card-interest-rate-margins-at-all-time-high), with rates nearly doubling from 12.9% in 2013 to 22.8% in 2023, suggesting card issuers have widened profit margins even as their own funding costs stabilized.\n\nYet a cap could reshape credit availability in unpredictable ways. Federal Reserve research reveals that [rewards programs redistribute approximately $15.1 billion annually](https://www.federalreserve.gov/econres/feds/files/2023007pap.pdf) from low-FICO borrowers to high-FICO consumers, with interest charges from revolving balances effectively subsidizing perks for those who pay in full. Financial analyst Ted Rossman notes that [debt accumulation typically stems from financial shocks](https://foxbaltimore.com/news/nation-world/credit-card-balances-hit-record-as-demand-for-debt-counseling-climbs-economy-personal-finance-advice-household-debt-credit-counseling)—medical bills, car repairs, or rising daily costs—rather than frivolous spending, pointing to deeper structural issues in household finance. While a rate cap could provide immediate relief to the millions paying double-digit interest, [industry warnings suggest](https://www.newsweek.com/credit-card-cap-winners-and-losers-from-10-interest-rate-limit-12703108) lenders might respond by tightening credit standards, eliminating rewards programs, or adding new fees—potentially creating a two-tiered system where marginal borrowers lose access altogether.",
       "socialHighlights": [
         {
-          "text": "Kevin Gordon noted that credit card interest rates \"have been rolling over but are still staggering\" at 20.97% in November according to Federal Reserve data.",
-          "source": "@KevRGordon",
-          "url": "https://x.com/KevRGordon/status/2009362550027440634"
+          "text": "Federal Reserve research demonstrates that credit card rewards programs create a massive wealth transfer, with high-credit-score consumers benefiting at the expense of lower-FICO borrowers to the tune of $15.1 billion annually.",
+          "source": "Federal Reserve working paper",
+          "url": "https://www.federalreserve.gov/econres/feds/files/2023007pap.pdf"
         },
         {
-          "text": "Finder urged consumers to \"stop setting money on fire,\" highlighting that credit card interest rates are hitting 20% or higher and promoting balance transfer options with extended 0% promotional periods.",
-          "source": "@findercomau",
-          "url": "https://x.com/findercomau/status/2049760830820917525"
-        },
-        {
-          "text": "Yahoo Finance reported on President Trump's pressure campaign to lower credit card interest rates to 10% for one year by January 20, with potential implications for consumer balances and rewards programs.",
-          "source": "@YahooFinance",
-          "url": "https://x.com/YahooFinance/status/2011534049643217326"
+          "text": "Consumer Financial Protection Bureau data shows credit card interest rate margins have reached historic peaks, with APRs climbing from 12.9% in late 2013 to 22.8% in 2023—the highest level since the Fed began tracking in 1994.",
+          "source": "CFPB",
+          "url": "https://www.consumerfinance.gov/archive/blog/credit-card-interest-rate-margins-at-all-time-high"
         }
       ],
       "sources": [
         {
-          "title": "The Fed Finds Disturbing Trend as Credit Card Demand Hits 4-Year High",
-          "url": "https://247wallst.com/personal-finance/2026/11/05/the-fed-finds-disturbing-trend-as-credit-card-demand-hits-4-year-high",
-          "outlet": "24/7 Wall St."
+          "title": "Elizabeth Warren Ready to Help Trump Pass 10% Credit Card Rate Cap",
+          "url": "https://www.newsweek.com/elizabeth-warren-trump-10-percent-credit-card-rate-cap-12684647",
+          "outlet": "Newsweek"
         },
         {
-          "title": "What Is The Average Credit Card Interest Rate This Week? November 2, 2026",
-          "url": "https://www.forbes.com/advisor/credit-cards/average-credit-card-interest-rate",
-          "outlet": "Forbes Advisor"
+          "title": "Credit card debt mounts amid Democrats' push to cap interest rates",
+          "url": "https://thehill.com/business/6212089-democrats-push-interest-caps",
+          "outlet": "The Hill"
         },
         {
-          "title": "As interest rates climb, your credit card debt becomes a silent wealth tax",
-          "url": "https://www.kq2.com/stacker-personal-finance-investing/2026/11/03/as-interest-rates-climb-your-credit-card-debt-becomes-a-silent-wealth-tax",
-          "outlet": "KQ2"
+          "title": "Credit Card Cap: Winners and Losers From 10% Interest Rate Limit",
+          "url": "https://www.newsweek.com/credit-card-cap-winners-and-losers-from-10-interest-rate-limit-12703108",
+          "outlet": "Newsweek"
         },
         {
-          "title": "Revolving Debt Jumps as Spending Strains Credit Cards",
-          "url": "https://www.pymnts.com/economy/2026/revolving-debt-jumps-as-spending-strains-credit-cards",
-          "outlet": "PYMNTS"
+          "title": "Credit card interest rate margins at all-time high",
+          "url": "https://www.consumerfinance.gov/archive/blog/credit-card-interest-rate-margins-at-all-time-high",
+          "outlet": "Consumer Financial Protection Bureau"
+        },
+        {
+          "title": "Who Pays For Your Rewards? Redistribution in the Credit Card Market",
+          "url": "https://www.federalreserve.gov/econres/feds/files/2023007pap.pdf",
+          "outlet": "Federal Reserve"
         }
       ],
-      "researchedAt": "2026-11-08"
+      "researchedAt": "2026-11-15"
     },
     {
       "category": "real-estate",
       "topic": "mortgage rates housing market rentals",
-      "headline": "Housing Market Hits Inflection Point as Home Prices Dip While Rents Reverse Three-Year Slide",
-      "summary": "The U.S. housing market is showing signs of structural strain as home sale prices fell 0.1% year-over-year in October—the first decline in over three years—while rental rates simultaneously rose for the first time in the same period. Mortgage rates hovering above 7% are squeezing demand and ending Zillow's 10-quarter streak of double-digit revenue growth, even as the rental vacancy rate climbs and homeownership rates remain stubbornly flat.",
-      "editorial": "A notable divergence is emerging in America's housing landscape that signals more than just seasonal fluctuation. [Home sale prices declined](https://www.newsweek.com/housing-market-flips-home-prices-fall-rents-rise-first-time-3-years-12648657) for the first time since 2023, with the median hitting $389,601 in late October—a modest 0.1% drop that reflects weakening demand rather than any fundamental affordability improvement. Meanwhile, rents are climbing again after three years of softening, creating a paradox where neither ownership nor renting offers clear relief. The velocity of mortgage rate increases caught even major players off guard: [Zillow missed Q3 revenue forecasts](https://www.realestatenews.com/2026/11/04/zillow-misses-on-revenue-in-q3-bets-on-preferred-program) with $724 million against expected $753 million, ending a remarkable growth streak as CEO Jeremy Wacksman attributed the miss to rates that surged faster than anticipated over the summer.\n\nThe financing environment remains the critical constraint, with [30-year fixed rates now at 7.27%](https://www.housingwire.com/articles/agnt-q3-2026-earnings) and showing no signs of retreating to the sub-6% levels that briefly appeared earlier in the year. This rate regime is producing measurable market distortion: the [rental vacancy rate has risen](https://www.mpamag.com/us/mortgage-industry/market-updates/rental-market-loosens-while-homeownership-holds-steady/595844) even as homeownership rates remain essentially unchanged, suggesting potential renters are trapped in place rather than making the traditional transition to ownership. For mortgage brokers and real estate professionals, the current environment presents a challenging pitch—inventory has climbed above 914,000 units, yet demand continues to crater. The question facing would-be buyers isn't whether rates will improve, but whether waiting in an increasingly expensive rental market makes sense when [buying is cheaper than renting in only 23 of the 50 largest metros](https://www.empower.com/the-currency/life/money/rent-vs-buy-2025-top-50-metros-news), according to recent analysis.",
+      "headline": "Housing Market Fractures: Prices Fall for Fourth Week as Renting Gains $14K Advantage Over Buying",
+      "summary": "U.S. home prices declined for the fourth consecutive week as mortgage rates hover above 7%, marking the first sustained price drops after three years of increases. The income gap between renting and buying has widened to $14,408 annually, pushing rental demand 22% higher year-over-year while home sales stall and sellers pull back from an increasingly frozen market.",
+      "editorial": "The American housing market is experiencing a historic inflection point, with [median home prices falling to $388,613](https://www.investmentnews.com/alternatives/renting-edges-out-buying-as-home-prices-slide-for-fourth-straight-week/268999)—down 0.9% year-over-year through early November—while [mortgage rates entrenched above 7%](https://www.realtor.com/news/trends/mortgage-rates-this-week-november-12-2026) create what amounts to a market standoff. The psychological threshold matters: [pending home sales dropped 17% in October](https://www.prnewswire.com/news-releases/a-house-doesnt-have-to-mean-a-mortgage-renting-requires-14k-less-income-than-buying-302937713.html), the steepest decline since 2023, while [new listings fell 10.3%](https://www.realtor.com/news/trends/mortgage-rates-this-week-november-12-2026) as discouraged sellers realize buyers won't meet their price expectations. Despite modest relief—the median monthly mortgage payment dipped to $2,755 from $2,820—the fundamental affordability crisis persists, effectively pricing millions out of homeownership.\n\nThe rental market tells the inverse story. [Zillow's analysis reveals](https://foxbaltimore.com/news/nation-world/high-mortgage-rates-and-housing-shortage-leave-few-paths-to-affordability-relief) households need an additional $14,408 in annual income to comfortably transition from renting to buying, more than double the $6,463 gap from February when rates briefly dipped below 6%. Regional disparities are extreme: in [San Jose, the income needed to buy ($404,925) is more than double what's required to rent ($190,561)](https://www.rismedia.com/2026/11/12/zillow-rental-market-report-demand-for-single-family-rentals-surges), creating a $214,364 chasm. This has triggered a 22.1% surge in rental demand, with [single-family rentals climbing 24.3%](https://foxbaltimore.com/news/nation-world/high-mortgage-rates-and-housing-shortage-leave-few-paths-to-affordability-relief)—even as [Las Vegas reports a shortage of luxury rentals](https://www.realtor.com/news/trends/las-vegas-nevada-shortage-luxury-rentals-celebrities-athletes-demand) while sitting on record inventory of 11,450 unsold homes. The market appears fundamentally broken: too expensive to buy, increasingly expensive to rent, and frozen in place as both buyers and sellers wait for conditions that may not materialize without significant economic disruption.",
       "socialHighlights": [
         {
-          "text": "The Wall Street Journal highlighted that mortgage rates crossing the 7% threshold represents a key psychological milestone that will fundamentally change buyer and seller behavior in the housing market.",
-          "source": "@WSJ",
-          "url": "https://x.com/WSJ/status/2103656064721793265"
+          "text": "Content creator Graham Stephan notes that mortgage rates have surged to nearly 7.5% while long-term treasury yields have climbed to levels unseen in over 20 years, making borrowing dramatically more expensive for prospective homebuyers.",
+          "source": "Graham Stephan (YouTube)",
+          "url": "https://www.youtube.com/watch?v=BWNOdHB8TKA"
         },
         {
-          "text": "An analyst noted that the current 6.7% mortgage rate against 3.1% inflation creates a +3.6% spread that is actually normal by historical standards, suggesting rates themselves may not be the core housing market problem.",
-          "source": "@nickgerli1",
-          "url": "https://x.com/nickgerli1/status/2095286278837219509"
-        },
-        {
-          "text": "The Atlanta Voice reported that mortgage rates topping 7% are deepening the housing market freeze, with the 7.03% average 30-year fixed rate increasing monthly costs and weakening buyer demand.",
-          "source": "@theatlantavoice",
-          "url": "https://x.com/theatlantavoice/status/2104919223675892028/photo/1"
+          "text": "A news segment highlighted that average 30-year fixed mortgage rates reached 7.26%, the highest since May 2024, driven by rising oil prices and Federal Reserve rate expectations that are further dampening housing market activity.",
+          "source": "News coverage (YouTube)",
+          "url": "https://www.youtube.com/watch?v=ey_7EjdrWr4"
         }
       ],
       "sources": [
         {
-          "title": "Housing Market Flips as Home Prices Fall, Rents Rise for First Time in 3 Years",
-          "url": "https://www.newsweek.com/housing-market-flips-home-prices-fall-rents-rise-first-time-3-years-12648657",
-          "outlet": "Newsweek"
+          "title": "Renting edges out buying as home prices slide for fourth straight week",
+          "url": "https://www.investmentnews.com/alternatives/renting-edges-out-buying-as-home-prices-slide-for-fourth-straight-week/268999",
+          "outlet": "InvestmentNews"
         },
         {
-          "title": "Zillow misses on revenue in Q3, bets on Preferred program",
-          "url": "https://www.realestatenews.com/2026/11/04/zillow-misses-on-revenue-in-q3-bets-on-preferred-program",
-          "outlet": "Real Estate News"
+          "title": "High mortgage rates and housing shortage leave few paths to affordability relief",
+          "url": "https://foxbaltimore.com/news/nation-world/high-mortgage-rates-and-housing-shortage-leave-few-paths-to-affordability-relief",
+          "outlet": "Fox Baltimore"
         },
         {
-          "title": "AGNT says housing market is tough but not broken",
-          "url": "https://www.housingwire.com/articles/agnt-q3-2026-earnings",
-          "outlet": "HousingWire"
+          "title": "Report: Demand Surges for Single-Family Rentals",
+          "url": "https://www.rismedia.com/2026/11/12/zillow-rental-market-report-demand-for-single-family-rentals-surges",
+          "outlet": "RISMedia"
         },
         {
-          "title": "Rental market loosens while homeownership holds steady",
-          "url": "https://www.mpamag.com/us/mortgage-industry/market-updates/rental-market-loosens-while-homeownership-holds-steady/595844",
-          "outlet": "Mortgage Professional America"
+          "title": "Mortgage Rates Fall for Fourth Straight Week Despite Looming Fed Hike",
+          "url": "https://www.realtor.com/news/trends/mortgage-rates-this-week-november-12-2026",
+          "outlet": "Realtor.com"
         },
         {
-          "title": "Rent vs. buy in 2026: Which is cheaper in today's housing market?",
-          "url": "https://www.empower.com/the-currency/life/money/rent-vs-buy-2025-top-50-metros-news",
-          "outlet": "Empower"
+          "title": "Las Vegas Is Running Short on $100K-a-Month Rentals",
+          "url": "https://www.realtor.com/news/trends/las-vegas-nevada-shortage-luxury-rentals-celebrities-athletes-demand",
+          "outlet": "Realtor.com"
         }
       ],
-      "researchedAt": "2026-11-08"
+      "researchedAt": "2026-11-15"
     }
   ]
 }
