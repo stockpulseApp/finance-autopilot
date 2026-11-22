@@ -1,0 +1,210 @@
+{
+  "date": "2026-11-22",
+  "title": "Money Pulse · 2026-11-22",
+  "intro": "What journalists, analysts, and people on X are saying about money this week — summarized by our desk with links to originals.",
+  "sections": [
+    {
+      "category": "investing",
+      "topic": "stock market and index investing this week",
+      "headline": "AI Euphoria Reverses as Stock Market Plunges Into Correction, Anthropic IPO Stumbles",
+      "summary": "U.S. equity markets suffered their worst week since early 2020, with the S&P 500 dropping 8.6% and the Nasdaq falling 10% as investor enthusiasm for artificial intelligence suddenly evaporated. The selloff accelerated after Anthropic's highly anticipated IPO, which soared initially but then tumbled 8.5% in its first full trading day, triggering broader profit-taking across AI-related stocks.",
+      "editorial": "The market's brutal correction reflects a fundamental shift in investor sentiment around artificial intelligence—the very narrative that had propelled valuations to historic heights. [Anthropic's stumble in its debut week](https://finance.yahoo.com/markets/article/a-battered-stock-market-looks-for-the-bottom-what-to-watch-this-week-100000117.html) served as a catalyst for traders to reassess whether AI investments can justify their lofty premiums, with the [Nasdaq turning negative for the year](https://www.youtube.com/watch?v=97bv2qjV3I4) after losing over 1,000 points in a single session. The [S&P 500's seven-day losing streak](https://www.youtube.com/watch?v=oH9c-G1gFH0) marked its longest decline since the pandemic's early days, while the Dow notched its [worst weekly performance since March 2020](https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html).\n\nWhat makes this selloff particularly concerning is its breadth and velocity, suggesting institutional repositioning rather than mere retail panic. While [defensive sectors showed relative strength](https://www.marketwatch.com/investing/index/spx) as investors sought safety, even high-conviction plays like Peabody Energy—which [UBS upgraded to Buy](https://www.investing.com/news/stock-market-news/street-calls-of-the-week-93CH-5042451) citing deep value—couldn't escape the downdraft, hitting fresh 52-week lows. The sharp reversal raises questions about passive investing's role in amplifying volatility, a concern [Carson Block has highlighted](https://www.wsj.com/video/series/wsj-take-on-the-week/why-carson-block-says-ai-and-passive-investing-could-break-the-stock-market/4818BAFF-15AC-4A7A-9466-48FADCDF4110) regarding AI and index funds potentially destabilizing markets. As investors brace for what comes next, the holiday-shortened week ahead may offer little respite if sentiment doesn't stabilize.",
+      "socialHighlights": [
+        {
+          "text": "Markets Today noted that tech stocks led declines as investors digested fallout from Nvidia CEO Jensen Huang's sudden departure and a broader rotation out of high-flying AI and semiconductor names, with the Nasdaq posting a 2.3% weekly gain just before the correction hit.",
+          "source": "Markets Today",
+          "url": "https://x.com/marketsday/status/2121438306584121358"
+        },
+        {
+          "text": "Wealthfront explained how passive investing works through index funds, highlighting the structural shift toward entire market exposure as investors increasingly put money into funds tracking broad indexes rather than individual stocks.",
+          "source": "Wealthfront",
+          "url": "https://x.com/Wealthfront/status/2079598604759810111"
+        }
+      ],
+      "sources": [
+        {
+          "title": "A battered stock market looks for the bottom: What to watch this week",
+          "url": "https://finance.yahoo.com/markets/article/a-battered-stock-market-looks-for-the-bottom-what-to-watch-this-week-100000117.html",
+          "outlet": "Yahoo Finance"
+        },
+        {
+          "title": "Stock market news for Nov. 20, 2026",
+          "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html",
+          "outlet": "CNBC"
+        },
+        {
+          "title": "S&P 500 Index Overview",
+          "url": "https://www.marketwatch.com/investing/index/spx",
+          "outlet": "MarketWatch"
+        },
+        {
+          "title": "Street Calls of the Week",
+          "url": "https://www.investing.com/news/stock-market-news/street-calls-of-the-week-93CH-5042451",
+          "outlet": "Investing.com"
+        },
+        {
+          "title": "Why Carson Block Says AI and Passive Investing Could Break the Stock Market",
+          "url": "https://www.wsj.com/video/series/wsj-take-on-the-week/why-carson-block-says-ai-and-passive-investing-could-break-the-stock-market/4818BAFF-15AC-4A7A-9466-48FADCDF4110",
+          "outlet": "Wall Street Journal"
+        }
+      ],
+      "researchedAt": "2026-11-22"
+    },
+    {
+      "category": "personal-finance",
+      "topic": "inflation consumer spending household budgets",
+      "headline": "Household Budgets Bend But Don't Break as Inflation Reshapes Consumer Strategy",
+      "summary": "American consumers are demonstrating unexpected resilience heading into 2026, maintaining spending levels despite persistent inflation near 4% by deploying strategic adaptations rather than wholesale pullbacks. Households are increasingly turning to fixed-rate financing for predictable expenses, pruning subscription services, and relying on credit cards to bridge income gaps, even as middle-income families join lower-income households at food pantries.",
+      "editorial": "The inflation narrative has evolved from crisis to adaptation. While [US prices continue rising at approximately 4% annually](https://www.globalbrandsmagazine.com/changing-cost-of-lifestyle-how-households-rethink-spending), consumers aren't abandoning lifestyle aspirations—they're recalibrating how to fund them. [Bloomberg reports](https://uk.finance.yahoo.com/news/us-consumers-holding-against-inflation-210000941.html) that inflation-adjusted personal spending rose 0.1% in October, building on two robust quarters of growth. This persistence stems partly from normalized wage growth across income groups, according to [ADP Research's analysis](https://www.adpresearch.com/main-street-macro/consumer-spendings-fragile-footing), though the organization warns this footing remains fragile as many households report feeling financially stretched.\n\nWhat's striking is the sophistication of household responses. Rather than dramatic cuts, families are employing tactical measures: [fixed-rate installment financing](https://www.globalbrandsmagazine.com/changing-cost-of-lifestyle-how-households-rethink-spending) for predictable large expenses, subscription audits to free cash without lifestyle sacrifice, and protecting emergency funds while phasing major projects. Yet vulnerability persists beneath this resilience. The [Federal Reserve's 2026 Community Conditions Survey](https://fedcommunities.org/data/2026-community-conditions-survey-economic-conditions) documents middle-income households increasingly accessing food pantries and relying on fintech loans to cover necessities—a troubling expansion of financial precarity up the income ladder. Meanwhile, [Circle K's parent company reports](https://www.bloomberg.com/news/articles/2026-09-02/circle-k-owner-says-inflation-fuel-costs-curb-consumer-spending?srnd=phx-india) that elevated living costs are driving fewer store visits despite record fuel sales, suggesting consumers are consolidating trips and optimizing every transaction. The question isn't whether households can maintain current spending—it's how long these coping mechanisms can sustain before structural adjustments become unavoidable.",
+      "socialHighlights": [
+        {
+          "text": "Moody's Analytics calculated in July 2022 that the typical American household needed to spend $493 more per month to purchase the same goods and services as the previous year.",
+          "source": "First Atlantic Federal Credit Union",
+          "url": "https://www.fafcu.com/managing-your-household-budget-during-inflation"
+        },
+        {
+          "text": "Research from Common Sense Institute found that spending rose 30% faster than income among Denver metro households since 2016, with real household income falling between 2016 and 2023.",
+          "source": "Common Sense Institute",
+          "url": "https://commonsenseinstituteus.org/colorado/research/jobs-and-our-economy/denver-metro-household-budget-pressure-inflation-taxes-and-shifting-spending-patterns"
+        },
+        {
+          "text": "The Guardian reported that with 8.5% year-over-year price increases, American household spending was projected to rise by $21 billion, forcing many to cut back as the average household spent $61,300.",
+          "source": "The Guardian US",
+          "url": "https://www.facebook.com/GuardianUs/posts/surge-in-prices-is-forcing-many-to-cut-back-on-spending-with-a-projected-21-incr/1552528756900031"
+        }
+      ],
+      "sources": [
+        {
+          "title": "The Changing Cost of Lifestyle: How Households Are Rethinking Everyday Spending",
+          "url": "https://www.globalbrandsmagazine.com/changing-cost-of-lifestyle-how-households-rethink-spending",
+          "outlet": "Global Brands Magazine"
+        },
+        {
+          "title": "US Consumers Are Holding Up Against Inflation Going Into Holiday Season",
+          "url": "https://uk.finance.yahoo.com/news/us-consumers-holding-against-inflation-210000941.html",
+          "outlet": "Bloomberg"
+        },
+        {
+          "title": "Consumer spending's fragile footing",
+          "url": "https://www.adpresearch.com/main-street-macro/consumer-spendings-fragile-footing",
+          "outlet": "ADP Research Institute"
+        },
+        {
+          "title": "2026 Community Conditions Survey: Economic Conditions",
+          "url": "https://fedcommunities.org/data/2026-community-conditions-survey-economic-conditions",
+          "outlet": "Fed Communities"
+        },
+        {
+          "title": "Circle K Owner Says Inflation, Fuel Costs Curb Consumer Spending",
+          "url": "https://www.bloomberg.com/news/articles/2026-09-02/circle-k-owner-says-inflation-fuel-costs-curb-consumer-spending?srnd=phx-india",
+          "outlet": "Bloomberg"
+        }
+      ],
+      "researchedAt": "2026-11-22"
+    },
+    {
+      "category": "credit-cards",
+      "topic": "credit card rewards interest rates Fed",
+      "headline": "Trump Signals Bipartisan Push for 10% Credit Card Rate Cap as Balances Hit $1.29 Trillion",
+      "summary": "President Trump announced Saturday he would collaborate with incoming Democratic lawmakers to cap credit card interest rates at 10%, reviving a campaign promise as American credit card debt reaches record levels. The proposal would dramatically reduce rates from the current median of 22.2%, potentially reshaping the economics of an industry that has seen balances surge 67% since early 2021.",
+      "editorial": "The renewed push for a [10% interest rate cap](https://www.cbsnews.com/news/trump-credit-card-rates-democrats-politics) represents rare bipartisan alignment on consumer finance policy, though it faces formidable obstacles from an industry that has successfully resisted similar reforms. With [credit card balances reaching $1.29 trillion](https://www.foxbusiness.com/politics/trump-opens-door-bipartisan-deal-credit-card-rates-americans-face-record-debt) and the Federal Reserve reporting a $22 billion quarterly increase, lawmakers are responding to genuine affordability concerns. Yet the proposal raises thorny questions about market mechanics: credit cards carry higher rates than mortgages or auto loans precisely because they're unsecured debt, and [Federal Reserve research](https://www.federalreserve.gov/econres/feds/who-pays-for-your-rewards-redistribution-in-the-credit-card-market.htm) shows that reward programs already redistribute an estimated $15.1 billion annually from low-FICO consumers to high-FICO cardholders.\n\nThe political calculus is complicated by historical precedent. The Durbin Amendment's regulation of debit card fees resulted in banks [raising checking account fees and eliminating free checking](https://www.nerdwallet.com/credit-cards/news/is-congress-going-to-kill-credit-card-rewards), recouping an estimated $14 billion in lost interchange revenue through other channels. A similar dynamic could emerge with rate caps, potentially ending lucrative rewards programs or restricting credit access for riskier borrowers. While a cardholder with $5,000 in debt [would save roughly $600 annually](https://www.cbsnews.com/news/trump-credit-card-rates-democrats-politics) under a 10% cap, the industry's response mechanism remains the critical unknown. The [Consumer Bankers Association](https://consumerbankers.com/blog/what-the-latest-credit-card-data-tells-us-about-consumers-financial-health) argues that headline-grabbing balance figures obscure improving delinquency metrics, suggesting the crisis framing may overstate consumer distress. Whether Trump can navigate both industry lobbying and unintended consequences will determine if this bipartisan moment yields meaningful reform or merely political theater.",
+      "socialHighlights": [
+        {
+          "text": "Federal Reserve research demonstrates that credit card reward programs redistribute $15.1 billion annually from consumers with lower credit scores to those with higher scores, with sophisticated cardholders profiting at the expense of less financially savvy users regardless of income level.",
+          "source": "Federal Reserve FEDS",
+          "url": "https://www.federalreserve.gov/econres/feds/who-pays-for-your-rewards-redistribution-in-the-credit-card-market.htm"
+        },
+        {
+          "text": "Credit card rates move in tandem with Federal Reserve adjustments because nearly all cards carry variable rates tied to the prime rate, with issuers typically adding a substantial markup on top of the Fed's benchmark rate.",
+          "source": "Experian",
+          "url": "https://www.experian.com/blogs/ask-experian/how-rising-interest-rates-impact-credit-cards"
+        },
+        {
+          "text": "Following the Durbin Amendment's debit card fee regulations, banks subject to the rule became 35% less likely to offer free checking accounts and raised monthly fees by 17-20%, demonstrating how regulatory intervention can shift costs to consumers through alternative channels.",
+          "source": "NerdWallet analysis",
+          "url": "https://www.nerdwallet.com/credit-cards/news/is-congress-going-to-kill-credit-card-rewards"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Trump pledges to work with Democrats to cap credit card interest rates",
+          "url": "https://www.livenowfox.com/money/trump-pledges-work-democrats-cap-credit-card-interest-rates",
+          "outlet": "LiveNOW from FOX"
+        },
+        {
+          "title": "Trump vows to work with Democrats to cap credit card interest rates",
+          "url": "https://www.cbsnews.com/news/trump-credit-card-rates-democrats-politics",
+          "outlet": "CBS News"
+        },
+        {
+          "title": "Trump opens door to bipartisan deal on credit card rates",
+          "url": "https://www.foxbusiness.com/politics/trump-opens-door-bipartisan-deal-credit-card-rates-americans-face-record-debt",
+          "outlet": "Fox Business"
+        },
+        {
+          "title": "What the Latest Credit Card Data Tells Us About Consumers' Financial Health",
+          "url": "https://consumerbankers.com/blog/what-the-latest-credit-card-data-tells-us-about-consumers-financial-health",
+          "outlet": "Consumer Bankers Association"
+        },
+        {
+          "title": "Who Pays For Your Rewards? Redistribution in the Credit Card Market",
+          "url": "https://www.federalreserve.gov/econres/feds/who-pays-for-your-rewards-redistribution-in-the-credit-card-market.htm",
+          "outlet": "Federal Reserve"
+        }
+      ],
+      "researchedAt": "2026-11-22"
+    },
+    {
+      "category": "real-estate",
+      "topic": "mortgage rates housing market rentals",
+      "headline": "Housing Market Enters Deep Freeze as Mortgage Rates Above 7% Push Sales to Multi-Decade Lows",
+      "summary": "The U.S. housing market is experiencing its worst slowdown in over 16 years, with existing home sales plunging to a 3.75 million annualized rate in October—the lowest since 2010. Mortgage rates hovering between 7.18% and 7.40% have created a historic affordability crisis, with typical monthly payments reaching $2,004 to $2,468, while inventory sits 8.6% higher year-over-year as buyers retreat from the market.",
+      "editorial": "The American housing market has entered a paralyzing gridlock that extends far beyond the traditional metrics of supply and demand. [Existing home sales dropped 5.5% month-over-month in October](https://www.dailymail.com/real-estate/article-16305023/housing-market-home-sales-construction-usa.html), marking the lowest level in 16 years—a particularly alarming figure given that the U.S. population has grown by roughly 75 million since comparable sales volumes were last recorded in the mid-1990s. The culprit is clear: [mortgage rates climbed from a brief dip to 5.98% in late February to 7.4% by October](https://www.thestreet.com/real-estate/zillow-warns-the-housing-market-is-heading-for-a-rough-patch), driven initially by geopolitical shocks including the U.S.-Iran conflict and subsequently sustained by persistent inflation. [Shelter costs emerged as a significant driver of October's hotter-than-expected inflation](https://www.thestreet.com/real-estate/zillow-mortgage-rate-home-price-predictions), with new-lease rents accelerating rather than moderating, creating a feedback loop that keeps pressure on both the Federal Reserve and prospective homebuyers.\n\nWhat makes this downturn particularly concerning is the structural mismatch it reveals between current prices and fundamental demand. With [pending home sales hitting historic lows](https://www.businessinsider.com/housing-market-slowdown-pending-sales-crash-record-low-2026-11), the National Association of Realtors' chief economist Lawrence Yun suggests the market could be \"building sizable housing demand in the background\" or facing a more fundamental reset. Paradoxically, some market advantages have emerged for persistent buyers: [inventory is up 8.6% year-over-year, median listing prices fell 2.4% to $405,000, and sellers are increasingly willing to negotiate](https://www.realtor.com/news/trends/mortgage-rates-this-week-november-19-2026). Yet these concessions mean little when monthly mortgage payments have surged 85% compared to what current homeowners pay. The [National Association of Realtors reported sales at a 3.75 million annualized rate](https://www.hsh.com/trends.html), levels not seen since the housing market was \"still very much in the doldrums\" in 2010. Unless inflation moderates substantially or a broader economic reset occurs, this frozen market may persist well into 2027, with profound implications for household formation, construction employment, and wealth accumulation patterns.",
+      "socialHighlights": [
+        {
+          "text": "Nick Gerli argues the fundamental issue isn't mortgage rates but rather record-high inflation-adjusted home prices, noting that \"no one wants to buy a house they know it will be worth less in 3 years\" and that seller dynamics change dramatically when owners have higher mortgage rates and can't afford to wait out the market.",
+          "source": "@nickgerli1",
+          "url": "https://x.com/nickgerli1/status/2035133456556974205"
+        },
+        {
+          "text": "Money highlights that purchasing a typical home now costs an estimated $2,468 per month—roughly 85% more than what current homeowners pay—as the market faces its steepest slowdown in over 16 years.",
+          "source": "@Money",
+          "url": "https://x.com/Money/status/2121309881915285645"
+        },
+        {
+          "text": "PBS News reports the average 30-year mortgage rate is back above 7% for the first time in twenty months, delivering \"rough news for the housing market and homebuyers already struggling with rising prices elsewhere.\"",
+          "source": "@NewsHour",
+          "url": "https://x.com/NewsHour/status/2104699669557154091"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Zillow warns the housing market is heading for a rough patch",
+          "url": "https://www.thestreet.com/real-estate/zillow-warns-the-housing-market-is-heading-for-a-rough-patch",
+          "outlet": "TheStreet"
+        },
+        {
+          "title": "Housing market enters deep freeze as home sales plunge to 25-year low",
+          "url": "https://www.dailymail.com/real-estate/article-16305023/housing-market-home-sales-construction-usa.html",
+          "outlet": "Daily Mail"
+        },
+        {
+          "title": "A historic crash in pending home sales is the latest dire data point",
+          "url": "https://www.businessinsider.com/housing-market-slowdown-pending-sales-crash-record-low-2026-11",
+          "outlet": "Business Insider"
+        },
+        {
+          "title": "Mortgage Rates Surge Again as Stubborn Inflation Ends Brief Reprieve",
+          "url": "https://www.realtor.com/news/trends/mortgage-rates-this-week-november-19-2026",
+          "outlet": "Realtor.com"
+        },
+        {
+          "title": "US Mortgage Rates Unchanged at 7.4% as Housing Market Struggles",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-15/us-mortgage-rates-unchanged-at-7-4-as-housing-market-struggles?srnd=homepage-asia",
+          "outlet": "Bloomberg"
+        }
+      ],
+      "researchedAt": "2026-11-22"
+    }
+  ]
+}
